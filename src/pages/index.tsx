@@ -11,7 +11,7 @@ const Index = () => (
           <Logo>
             <img src={'/logo.svg'} alt="Logo" />
           </Logo>
-          <Text>Engineer Recruting</Text>
+          <Text>Engineer Recruiting</Text>
         </Left>
         <Right>
           <EntryButton href="">ENTRY</EntryButton>
