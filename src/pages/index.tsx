@@ -25,6 +25,7 @@ export default Index
 
 const Wrapper = styled.div`
   background-image: url(/mv.png);
+  background-size: cover;
   height: 100vh;
 `
 
