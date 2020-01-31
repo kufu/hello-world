@@ -1,39 +1,22 @@
-import React, { FC } from 'react'
+import React from 'react'
 import styled from 'styled-components'
-import Link from 'gatsby-link'
 
 import { App } from '../components/App'
 
-export const pageQuery = graphql`
-  query IndexQuery {
-    site {
-      siteMetadata {
-        title
-      }
-    }
-  }
-`
-
-type IndexPageProps = {
-  data: {
-    site: {
-      siteMetadata: {
-        title: string
-      }
-    }
-  }
-}
-
-const Index: FC<IndexPageProps> = ({ data }) => (
+const Index = () => (
   <App>
     <Wrapper>
-      <Title>Hi people</Title>
-      <Text>
-        Welcome to your new <Strong>{data.site.siteMetadata.title}</Strong>.
-        <br />
-        Now go build something great.
-      </Text>
-      <TextLink to="/page-2/">Go to page 2</TextLink>
+      <Header>
+        <Left>
+          <Logo>
+            <img src={'/logo.svg'} alt="Logo" />
+          </Logo>
+          <Text>Engineer Recruting</Text>
+        </Left>
+        <Right>
+          <EntryButton href="">ENTRY</EntryButton>
+        </Right>
+      </Header>
     </Wrapper>
   </App>
 )
@@ -41,22 +24,45 @@ const Index: FC<IndexPageProps> = ({ data }) => (
 export default Index
 
 const Wrapper = styled.div`
-  padding: 2.4rem;
+  background-image: url(/mv.png);
+  height: 100vh;
 `
-const Title = styled.h1`
-  margin-bottom: 1.6rem;
-  font-size: 3rem;
+
+const Header = styled.header`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 90px;
+  margin: 0 28px;
+  color: #e8e7e5;
 `
-const Text = styled.h1`
-  margin-bottom: 1.6rem;
-  font-size: 1.8rem;
-  line-height: 1.5;
+
+const Left = styled.div`
+  display: flex;
 `
-const Strong = styled.strong`
+
+const Text = styled.p`
+  font-size: 14px;
+  border-left: 1px solid #797979;
+  margin-left: 18px;
+  padding-left: 18px;
+  display: flex;
+  align-items: center;
+`
+
+const Logo = styled.div``
+
+const Right = styled.div`
+  display: flex;
+`
+
+const EntryButton = styled.a`
+  background-color: #fff;
+  color: #555555;
+  font-size: 16px;
   font-weight: bold;
-`
-const TextLink = styled(Link)`
-  color: blue;
-  font-size: 1.6rem;
-  text-decoration: underline;
+  width: 130px;
+  padding: 12px 0;
+  text-align: center;
+  border-radius: 35px;
 `
