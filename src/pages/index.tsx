@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 import { App } from '../components/App'
+import { MessageSection } from '../components/MessageSection'
 
 const Index = () => (
   <App>
@@ -75,7 +76,6 @@ const EntryButton = styled.a`
   border-radius: 35px;
 `
 
-const MessageSection = styled.section``
 const AboutSection = styled.section``
 const TechnologyStackSection = styled.section``
 const MembersVoiceSection = styled.section``
