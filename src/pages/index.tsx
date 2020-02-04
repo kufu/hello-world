@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 import { App } from '../components/App'
+import { MessageSection } from '../components/MessageSection'
 
 const Index = () => (
   <App>
@@ -11,12 +12,19 @@ const Index = () => (
           <Logo>
             <img src={'/logo.svg'} alt="Logo" />
           </Logo>
-          <Text>Engineer Recruting</Text>
+          <Text>Engineer Recruiting</Text>
         </Left>
         <Right>
           <EntryButton href="">ENTRY</EntryButton>
         </Right>
       </Header>
+      <MessageSection />
+      <AboutSection />
+      <TechnologyStackSection />
+      <MembersVoiceSection />
+      <WelfareSection />
+      <EntrySection />
+      <Footer />
     </Wrapper>
   </App>
 )
@@ -67,3 +75,10 @@ const EntryButton = styled.a`
   text-align: center;
   border-radius: 35px;
 `
+
+const AboutSection = styled.section``
+const TechnologyStackSection = styled.section``
+const MembersVoiceSection = styled.section``
+const WelfareSection = styled.section``
+const EntrySection = styled.section``
+const Footer = styled.footer``
