@@ -1,30 +1,38 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import styled from 'styled-components'
+
+import { CommandPaletteContext } from '../commandPalette'
 
 import { MessageSection } from '../parts/MessageSection'
 
-export const IndexPage = () => (
-  <Wrapper>
-    <Header>
-      <Left>
-        <Logo>
-          <img src={'/logo.svg'} alt="Logo" />
-        </Logo>
-        <Text>Engineer Recruiting</Text>
-      </Left>
-      <Right>
-        <EntryButton href="">ENTRY</EntryButton>
-      </Right>
-    </Header>
-    <MessageSection />
-    <AboutSection />
-    <TechnologyStackSection />
-    <MembersVoiceSection />
-    <WelfareSection />
-    <EntrySection />
-    <Footer />
-  </Wrapper>
-)
+export const IndexPage = () => {
+  const { currentCommand } = useContext(CommandPaletteContext)
+
+  console.log(currentCommand)
+
+  return (
+    <Wrapper>
+      <Header>
+        <Left>
+          <Logo>
+            <img src={'/logo.svg'} alt="Logo" />
+          </Logo>
+          <Text>Engineer Recruiting</Text>
+        </Left>
+        <Right>
+          <EntryButton href="">ENTRY</EntryButton>
+        </Right>
+      </Header>
+      <MessageSection />
+      <AboutSection />
+      <TechnologyStackSection />
+      <MembersVoiceSection />
+      <WelfareSection />
+      <EntrySection />
+      <Footer />
+    </Wrapper>
+  )
+}
 
 const Wrapper = styled.div`
   background-image: url(/mv.png);

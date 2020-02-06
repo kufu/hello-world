@@ -5,75 +5,75 @@ import { Console } from './Console'
 
 export const commands = [
   {
-    name: 'alert',
-    component: <Alert />,
+    name: 'alert1',
+    component: <Alert value={1} />,
   },
   {
-    name: 'console',
-    component: <Console />,
+    name: 'console1',
+    component: <Console value={1} />,
   },
   {
-    name: '1',
-    component: <Alert />,
+    name: 'alert2',
+    component: <Alert value={2} />,
   },
   {
-    name: '2',
-    component: <Console />,
+    name: 'console2',
+    component: <Console value={2} />,
   },
   {
-    name: '3',
-    component: <Alert />,
+    name: 'alert3',
+    component: <Alert value={3} />,
   },
   {
-    name: '4',
-    component: <Console />,
+    name: 'console3',
+    component: <Console value={3} />,
   },
   {
-    name: '5',
-    component: <Alert />,
+    name: 'alert4',
+    component: <Alert value={4} />,
   },
   {
-    name: '6',
-    component: <Console />,
+    name: 'console4',
+    component: <Console value={4} />,
   },
   {
-    name: '7',
-    component: <Alert />,
+    name: 'alert5',
+    component: <Alert value={5} />,
   },
   {
-    name: '8',
-    component: <Console />,
+    name: 'console5',
+    component: <Console value={5} />,
   },
   {
-    name: '9',
-    component: <Alert />,
+    name: 'alert6',
+    component: <Alert value={6} />,
   },
   {
-    name: '10',
-    component: <Console />,
+    name: 'console6',
+    component: <Console value={6} />,
   },
   {
-    name: '11',
-    component: <Alert />,
+    name: 'alert7',
+    component: <Alert value={7} />,
   },
   {
-    name: '12',
-    component: <Console />,
+    name: 'console7',
+    component: <Console value={7} />,
   },
   {
-    name: '13',
-    component: <Alert />,
+    name: 'alert8',
+    component: <Alert value={8} />,
   },
   {
-    name: '14',
-    component: <Console />,
+    name: 'console8',
+    component: <Console value={8} />,
   },
   {
-    name: '15',
-    component: <Alert />,
+    name: 'alert9',
+    component: <Alert value={9} />,
   },
   {
-    name: '16',
-    component: <Console />,
+    name: 'console9',
+    component: <Console value={9} />,
   },
 ]

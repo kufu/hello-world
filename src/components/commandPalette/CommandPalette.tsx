@@ -10,7 +10,14 @@ type Command = {
   overlay?: boolean
 }
 
-const CommandPaletteContext = createContext<Command[]>([])
+type CommandPaletteContextType = {
+  commandList: Command[]
+  currentCommand: Command | null
+}
+export const CommandPaletteContext = createContext<CommandPaletteContextType>({
+  commandList: [],
+  currentCommand: null,
+})
 
 export const CommandPaletteProvider: FC<{
   commands: Command[]
@@ -19,6 +26,8 @@ export const CommandPaletteProvider: FC<{
   const COMMAND_PALETTE_UI_CLASS = 'COMMAND_PALETTE_UI_CLASS'
   const [isActive, setIsActive] = useState(false)
   const [searchText, changeSearchText] = useState('')
+  const [currentCommand, setCommand] = useState<Command | null>(null)
+  const matchCommans = commands.filter(command => command.name.includes(searchText))
 
   const removeCommandPalette = () => {
     setIsActive(false)
@@ -45,12 +54,19 @@ export const CommandPaletteProvider: FC<{
   }
 
   const handleSelectCommand = (commandIndex: number) => {
-    console.log(commands[commandIndex])
-    removeCommandPalette()
+    if (matchCommans[commandIndex]) {
+      setCommand(matchCommans[commandIndex])
+      removeCommandPalette()
+    }
   }
 
   return (
-    <CommandPaletteContext.Provider value={commands}>
+    <CommandPaletteContext.Provider
+      value={{
+        commandList: commands,
+        currentCommand: currentCommand,
+      }}
+    >
       <Hotkeys
         keyName="command+shift+p"
         onKeyDown={(_, e) => {
@@ -60,7 +76,7 @@ export const CommandPaletteProvider: FC<{
       >
         {isActive && (
           <CommandPaletteUI
-            commandNames={commands.map(({ name }) => name)}
+            commandNames={matchCommans.map(({ name }) => name)}
             searchText={searchText}
             className={COMMAND_PALETTE_UI_CLASS}
             onChangeInput={handleChangeInput}

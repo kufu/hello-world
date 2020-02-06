@@ -16,7 +16,6 @@ const BUTTON_HEIGHT = 28
 export const CommandPaletteUI: FC<Props> = ({ commandNames, searchText, className, onChangeInput, onSelectCommand }) => {
   const [currentIndex, setIndex] = useState(0)
   const ref = useRef<HTMLUListElement>(null)
-  const matchedCommands = commandNames.filter(commandName => commandName.includes(searchText))
 
   const handleKeyPress = useCallback(
     (e: KeyboardEvent) => {
@@ -25,7 +24,7 @@ export const CommandPaletteUI: FC<Props> = ({ commandNames, searchText, classNam
         e.preventDefault()
 
         if (currentIndex === 0) {
-          setIndex(matchedCommands.length - 1)
+          setIndex(commandNames.length - 1)
         } else {
           setIndex(currentIndex - 1)
         }
@@ -35,14 +34,14 @@ export const CommandPaletteUI: FC<Props> = ({ commandNames, searchText, classNam
       if (e.keyCode === 40) {
         e.preventDefault()
 
-        if (currentIndex === matchedCommands.length - 1) {
+        if (currentIndex === commandNames.length - 1) {
           setIndex(0)
         } else {
           setIndex(currentIndex + 1)
         }
       }
     },
-    [currentIndex, matchedCommands.length],
+    [currentIndex, commandNames.length],
   )
 
   useEffect(() => {
@@ -97,10 +96,12 @@ export const CommandPaletteUI: FC<Props> = ({ commandNames, searchText, classNam
         </InputWrapper>
       </Head>
       <List ref={ref}>
-        {matchedCommands.length > 0 ? (
-          matchedCommands.map((name, i) => (
+        {commandNames.length > 0 ? (
+          commandNames.map((name, i) => (
             <li key={`command-name-${name}`}>
-              <Button className={i === currentIndex ? 'active' : ''}>{name}</Button>
+              <Button type="button" className={i === currentIndex ? 'active' : ''} onClick={() => onSelectCommand(i)}>
+                {name}
+              </Button>
             </li>
           ))
         ) : (
