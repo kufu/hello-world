@@ -1,4 +1,4 @@
-import React, { FC, useCallback, useEffect, useState } from 'react'
+import React, { FC, useCallback, useEffect, useRef, useState } from 'react'
 import styled from 'styled-components'
 
 type Props = {
@@ -6,10 +6,16 @@ type Props = {
   searchText: string
   className: string
   onChangeInput: (value: string) => void
+  onSelectCommand: (commandIndex: number) => void
 }
 
-export const CommandPaletteUI: FC<Props> = ({ commandNames, searchText, className, onChangeInput }) => {
+const HEAD_HEIGHT = 46
+const LIST_HEIGHT = 400
+const BUTTON_HEIGHT = 28
+
+export const CommandPaletteUI: FC<Props> = ({ commandNames, searchText, className, onChangeInput, onSelectCommand }) => {
   const [currentIndex, setIndex] = useState(0)
+  const ref = useRef<HTMLUListElement>(null)
   const matchedCommands = commandNames.filter(commandName => commandName.includes(searchText))
 
   const handleKeyPress = useCallback(
@@ -40,12 +46,41 @@ export const CommandPaletteUI: FC<Props> = ({ commandNames, searchText, classNam
   )
 
   useEffect(() => {
+    if (ref && ref.current) {
+      const listEl = ref.current
+
+      if (listEl.children.length > 0) {
+        const listItemEl = Array.from(listEl.children)[currentIndex]
+
+        if (listItemEl && listItemEl.children.length > 0) {
+          const ButtonEl = listItemEl.children[0] as HTMLButtonElement
+          const VisibleHeight = listEl.scrollTop + LIST_HEIGHT
+          const ButtonVisibleTop = ButtonEl.offsetTop - HEAD_HEIGHT
+          const ButtonVisibleBottom = ButtonVisibleTop + BUTTON_HEIGHT
+
+          if (ButtonVisibleBottom > VisibleHeight) {
+            listEl.scrollTop = listEl.scrollTop + ButtonVisibleBottom - VisibleHeight
+          } else if (listEl.scrollTop > ButtonVisibleTop) {
+            listEl.scrollTop = ButtonVisibleTop
+          }
+        }
+      }
+    }
+  }, [currentIndex])
+
+  useEffect(() => {
     document.addEventListener('keydown', handleKeyPress)
     return () => document.removeEventListener('keydown', handleKeyPress)
   }, [handleKeyPress])
 
   return (
-    <Wrapper className={className}>
+    <Wrapper
+      className={className}
+      onSubmit={e => {
+        e.preventDefault()
+        onSelectCommand(currentIndex)
+      }}
+    >
       <Head>
         <InputWrapper>
           <InputIcon>&gt;</InputIcon>
@@ -61,7 +96,7 @@ export const CommandPaletteUI: FC<Props> = ({ commandNames, searchText, classNam
           />
         </InputWrapper>
       </Head>
-      <List>
+      <List ref={ref}>
         {matchedCommands.length > 0 ? (
           matchedCommands.map((name, i) => (
             <li key={`command-name-${name}`}>
@@ -78,7 +113,7 @@ export const CommandPaletteUI: FC<Props> = ({ commandNames, searchText, classNam
   )
 }
 
-const Wrapper = styled.div`
+const Wrapper = styled.form`
   position: fixed;
   top: 0;
   left: 50%;
@@ -88,7 +123,9 @@ const Wrapper = styled.div`
   color: #fff;
 `
 const Head = styled.div`
+  height: ${HEAD_HEIGHT}px;
   padding: 8px;
+  box-sizing: border-box;
 `
 const InputWrapper = styled.div`
   position: relative;
@@ -112,11 +149,13 @@ const Input = styled.input`
 `
 const List = styled.ul`
   overflow-y: scroll;
-  max-height: 500px;
+  max-height: ${LIST_HEIGHT}px;
   padding-bottom: 8px;
+  box-sizing: border-box;
 `
 const Button = styled.button`
   width: 100%;
+  height: ${BUTTON_HEIGHT}px;
   padding: 5px 15px;
   border: none;
   font-size: 16px;

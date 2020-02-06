@@ -20,14 +20,17 @@ export const CommandPaletteProvider: FC<{
   const [isActive, setIsActive] = useState(false)
   const [searchText, changeSearchText] = useState('')
 
-  useHandleEscape(() => {
+  const removeCommandPalette = () => {
     setIsActive(false)
-  })
+    changeSearchText('')
+  }
+
+  useHandleEscape(() => removeCommandPalette())
 
   useEffect(() => {
     const onClickBody = (e: any) => {
       if (includeElement(e.target, COMMAND_PALETTE_UI_CLASS)) return
-      setIsActive(false)
+      removeCommandPalette()
     }
 
     document.body.addEventListener('click', onClickBody, false)
@@ -39,6 +42,11 @@ export const CommandPaletteProvider: FC<{
 
   const handleChangeInput = (value: string) => {
     changeSearchText(value)
+  }
+
+  const handleSelectCommand = (commandIndex: number) => {
+    console.log(commands[commandIndex])
+    removeCommandPalette()
   }
 
   return (
@@ -56,6 +64,7 @@ export const CommandPaletteProvider: FC<{
             searchText={searchText}
             className={COMMAND_PALETTE_UI_CLASS}
             onChangeInput={handleChangeInput}
+            onSelectCommand={handleSelectCommand}
           />
         )}
       </Hotkeys>
