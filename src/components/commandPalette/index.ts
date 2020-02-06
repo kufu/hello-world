@@ -1,0 +1,1 @@
+export { CommandPaletteProvider } from './CommandPalette'

@@ -2,10 +2,22 @@ import React, { FC, ReactNode } from 'react'
 import { createGlobalStyle } from 'styled-components'
 import reset from 'styled-reset'
 
+import { CommandPaletteProvider } from './commandPalette'
+import { Alert } from './commandPalette/commands/Alert'
+
 export const App: FC<{ children: ReactNode }> = ({ children }) => (
   <>
     <GlobalStyle />
-    {children}
+    <CommandPaletteProvider
+      commands={[
+        {
+          name: 'alert',
+          component: <Alert />,
+        },
+      ]}
+    >
+      {children}
+    </CommandPaletteProvider>
   </>
 )
 
