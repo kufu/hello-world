@@ -7,7 +7,6 @@ import { CommandPaletteUI } from './CommandPaletteUI'
 type Command = {
   name: string
   component: ReactNode
-  overlay?: boolean
 }
 
 type CommandPaletteContextType = {
@@ -71,6 +70,7 @@ export const CommandPaletteProvider: FC<{
         keyName="command+shift+p"
         onKeyDown={(_, e) => {
           e.preventDefault()
+          setCommand(null)
           setIsActive(true)
         }}
       >

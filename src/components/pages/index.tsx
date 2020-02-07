@@ -8,10 +8,9 @@ import { MessageSection } from '../parts/MessageSection'
 export const IndexPage = () => {
   const { currentCommand } = useContext(CommandPaletteContext)
 
-  console.log(currentCommand)
-
   return (
     <Wrapper>
+      {currentCommand && currentCommand.component}
       <Header>
         <Left>
           <Logo>
