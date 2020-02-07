@@ -1,5 +1,5 @@
 import React from 'react'
-import styled from 'styled-components'
+import styled, { keyframes } from 'styled-components'
 import Helmet from 'react-helmet'
 
 import { App } from '../components/App'
@@ -99,6 +99,28 @@ const EyecatchSection = styled.section`
   margin: 0 auto;
 `
 
+const scroll = keyframes`
+  0% {
+    bottom: 80px;
+    height: 0px;
+  }
+
+  40% {
+    bottom: 0px;
+    height: 80px;
+  }
+
+  60% {
+    bottom: 0px;
+    height: 80px;
+  }
+
+  100% {
+    bottom: 0px;
+    height: 0px;
+  }
+`
+
 const ScrollIcon = styled.div`
   position: fixed;
   bottom: 0;
@@ -124,7 +146,8 @@ const ScrollIcon = styled.div`
     content: '';
     position: absolute;
     width: 3px;
-    height: 24px;
+    height: 0px;
+    animation: ${scroll} 1s infinite ease-in;
     left: 50%;
     transform: translateX(-50%);
     background-color: #ebebeb;
