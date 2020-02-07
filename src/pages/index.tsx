@@ -18,6 +18,11 @@ const Index = () => (
           <EntryButton href="">ENTRY</EntryButton>
         </Right>
       </Header>
+      <EyecatchSection>
+        <PageTitle>
+          <PageTitleImage src="/eyecatch/title.svg" alt="歴史に残る模範的なソフトウェアをつくろう" />
+        </PageTitle>
+      </EyecatchSection>
       <MessageSection />
       <AboutSection />
       <TechnologyStackSection />
@@ -75,7 +80,18 @@ const EntryButton = styled.a`
   text-align: center;
   border-radius: 35px;
 `
+const PageTitle = styled.h1`
+  position: relative;
+  line-height: 0;
+`
+const PageTitleImage = styled.img`
+  display: block;
+`
 
+const EyecatchSection = styled.section`
+  max-width: 1160px;
+  margin: 0 auto;
+`
 const AboutSection = styled.section``
 const TechnologyStackSection = styled.section``
 const MembersVoiceSection = styled.section``
