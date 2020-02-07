@@ -1,11 +1,16 @@
 import React from 'react'
 import styled from 'styled-components'
+import Helmet from 'react-helmet'
 
 import { App } from '../components/App'
 import { MessageSection } from '../components/MessageSection'
+import { AboutSection } from '../components/AboutSection'
 
 const Index = () => (
   <App>
+    <Helmet>
+      <link href="https://fonts.googleapis.com/css?family=Homemade+Apple&display=swap" rel="stylesheet" />
+    </Helmet>
     <Wrapper>
       <Header>
         <Left>
@@ -34,7 +39,7 @@ export default Index
 const Wrapper = styled.div`
   background-image: url(/mv.png);
   background-size: cover;
-  height: 100vh;
+  background-attachment: fixed;
 `
 
 const Header = styled.header`
@@ -76,7 +81,6 @@ const EntryButton = styled.a`
   border-radius: 35px;
 `
 
-const AboutSection = styled.section``
 const TechnologyStackSection = styled.section``
 const MembersVoiceSection = styled.section``
 const WelfareSection = styled.section``
