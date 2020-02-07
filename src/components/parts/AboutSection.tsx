@@ -9,12 +9,12 @@ export const AboutSection = () => (
     <List>
       <li>
         <a href="">
-          <img src="/product.png" alt="product" />
+          <img src="/images/about/product.png" alt="product" />
         </a>
       </li>
       <li>
         <a href="">
-          <img src="/development.png" alt="development" />
+          <img src="/images/about/development.png" alt="development" />
         </a>
       </li>
     </List>
