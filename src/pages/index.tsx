@@ -18,12 +18,18 @@ const Index = () => (
           <EntryButton href="">ENTRY</EntryButton>
         </Right>
       </Header>
+      <EyecatchSection>
+        <PageTitle>
+          <PageTitleImage src="/eyecatch/title.svg" alt="歴史に残る模範的なソフトウェアをつくろう" />
+        </PageTitle>
+      </EyecatchSection>
       <MessageSection />
       <AboutSection />
       <TechnologyStackSection />
       <MembersVoiceSection />
       <WelfareSection />
       <EntrySection />
+      <ScrollIcon>SCROLL</ScrollIcon>
       <Footer />
     </Wrapper>
   </App>
@@ -75,10 +81,56 @@ const EntryButton = styled.a`
   text-align: center;
   border-radius: 35px;
 `
+const PageTitle = styled.h1`
+  position: relative;
+  line-height: 0;
+`
+const PageTitleImage = styled.img`
+  display: block;
+`
+
+const EyecatchSection = styled.section`
+  max-width: 1160px;
+  margin: 0 auto;
+`
+
+const ScrollIcon = styled.div`
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 10px;
+  height: 104px;
+  color: #e1e1e1;
+  &::before {
+    display: block;
+    bottom: 0;
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #797979;
+  }
+  &::after {
+    display: block;
+    bottom: 56px;
+    content: '';
+    position: absolute;
+    width: 3px;
+    height: 24px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #ebebeb;
+  }
+`
 
 const AboutSection = styled.section``
 const TechnologyStackSection = styled.section``
 const MembersVoiceSection = styled.section``
 const WelfareSection = styled.section``
 const EntrySection = styled.section``
-const Footer = styled.footer``
+const Footer = styled.footer`
+  padding-top: 1000px; // FIXME: スクロール確認のため
+`
