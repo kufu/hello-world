@@ -1,9 +1,14 @@
 import React from 'react'
 
+import { AoyagiRun } from './AoyagiRun'
 import { Alert } from './Alert'
 import { Console } from './Console'
 
 export const commands = [
+  {
+    name: 'aoyagi run',
+    component: <AoyagiRun />,
+  },
   {
     name: 'alert1',
     component: <Alert value={1} />,
