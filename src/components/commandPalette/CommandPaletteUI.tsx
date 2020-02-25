@@ -122,7 +122,7 @@ const Wrapper = styled.form`
   transform: translateX(-50%);
   background-color: #252526;
   color: #fff;
-  z-index: 1;
+  z-index: 100;
 `
 const Head = styled.div`
   height: ${HEAD_HEIGHT}px;

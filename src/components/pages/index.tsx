@@ -1,5 +1,4 @@
 import React, { useContext } from 'react'
-import Helmet from 'react-helmet'
 import styled, { keyframes } from 'styled-components'
 
 import { CommandPaletteContext } from '../commandPalette'
@@ -10,38 +9,34 @@ export const IndexPage = () => {
   const { currentCommand } = useContext(CommandPaletteContext)
 
   return (
-    <>
+    <Wrapper>
       {currentCommand && currentCommand.component}
-      <Helmet>
-        <link href="https://fonts.googleapis.com/css?family=Homemade+Apple&display=swap" rel="stylesheet" />
-      </Helmet>
-      <Wrapper>
-        <Header>
-          <Left>
-            <Logo>
-              <img src={'/images/logo.svg'} alt="Logo" />
-            </Logo>
-            <Text>Engineer Recruiting</Text>
-          </Left>
-          <Right>
-            <EntryButton href="">ENTRY</EntryButton>
-          </Right>
-        </Header>
-        <EyecatchSection>
-          <PageTitle>
-            <PageTitleImage src="/images/eyecatch/title.svg" alt="歴史に残る模範的なソフトウェアをつくろう" />
-          </PageTitle>
-        </EyecatchSection>
-        <MessageSection />
-        <AboutSection />
-        <TechnologyStackSection />
-        <MembersVoiceSection />
-        <WelfareSection />
-        <EntrySection />
-        <ScrollIcon>SCROLL</ScrollIcon>
-        <Footer />
-      </Wrapper>
-    </>
+
+      <Header>
+        <Left>
+          <Logo>
+            <img src={'/images/logo.svg'} alt="Logo" />
+          </Logo>
+          <Text>Engineer Recruiting</Text>
+        </Left>
+        <Right>
+          <EntryButton href="">ENTRY</EntryButton>
+        </Right>
+      </Header>
+      <EyecatchSection>
+        <PageTitle>
+          <PageTitleImage src="/images/eyecatch/title.svg" alt="歴史に残る模範的なソフトウェアをつくろう" />
+        </PageTitle>
+      </EyecatchSection>
+      <MessageSection />
+      <AboutSection />
+      <TechnologyStackSection />
+      <MembersVoiceSection />
+      <WelfareSection />
+      <EntrySection />
+      <ScrollIcon>SCROLL</ScrollIcon>
+      <Footer />
+    </Wrapper>
   )
 }
 
