@@ -18,8 +18,9 @@ const GlobalStyle = createGlobalStyle`
   }
   body {
     word-wrap: break-word;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', Meiryo, 'メイリオ', sans-serif;
+    font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ", sans-serif;
     background-color: black;
+
   }
   a {
     color: inherit;
