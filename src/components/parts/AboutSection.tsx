@@ -4,7 +4,7 @@ import { SectionTitle } from './SectionTitle'
 
 export const AboutSection = () => (
   <Wrapper>
-    <SectionTitle backgroundText="About \AUs">About Us</SectionTitle>
+    <SectionTitle backgroundText="About\AUs">About Us</SectionTitle>
 
     <List>
       <li>
