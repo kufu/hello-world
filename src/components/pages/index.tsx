@@ -4,6 +4,7 @@ import styled, { keyframes } from 'styled-components'
 import { CommandPaletteContext } from '../commandPalette'
 import { MessageSection } from '../parts/MessageSection'
 import { AboutSection } from '../parts/AboutSection'
+import { TechnologyStackSection } from '../parts/TechnologyStackSection'
 
 export const IndexPage = () => {
   const { currentCommand } = useContext(CommandPaletteContext)
@@ -142,7 +143,6 @@ const ScrollIcon = styled.div`
     background-color: #ebebeb;
   }
 `
-const TechnologyStackSection = styled.section``
 const MembersVoiceSection = styled.section``
 const WelfareSection = styled.section``
 const EntrySection = styled.section``
