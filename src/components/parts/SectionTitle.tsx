@@ -16,7 +16,7 @@ const Title = styled.h2<{ backgroundText: string }>`
   ${({ backgroundText }) => css`
     color: #fff;
     font-size: 26px;
-    padding-left: 102.5px;
+    padding-left: 102px;
     position: relative;
 
     > span {
