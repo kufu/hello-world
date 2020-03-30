@@ -39,8 +39,8 @@ const AccordionTitle = styled.dt`
   color: #d3d3d3;
   font-size: 22px;
   font-weight: bold;
-  letter-spacing: 0.85px;
-  line-height: 39.6px;
+  letter-spacing: 1px;
+  line-height: 40px;
   padding: 30px;
   position: relative;
   cursor: pointer;

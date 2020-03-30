@@ -1,15 +1,13 @@
 import React from 'react'
 import styled from 'styled-components'
 
+import { SectionTitle } from './SectionTitle'
 import { Accordion } from './Accordion'
 
 export const MembersVoiceSection = () => {
   return (
     <Wrapper>
-      {/* TODO: https://github.com/kufu/hello-world/pull/14をmergeしたらSectionTitleコンポーネント使うようにする */}
-      <Title>
-        <span>Members Voice</span>
-      </Title>
+      <SectionTitle backgroundText="Members\AVoice">Members Voice</SectionTitle>
       <AcoordionWrapper>
         <Accordion title="Q. 前職についておしえてください?">
           <ul>
@@ -129,47 +127,7 @@ export const MembersVoiceSection = () => {
 }
 
 const Wrapper = styled.section`
-  padding: 285px 0 115px;
-`
-
-const Title = styled.h2`
-  color: #fff;
-  font-size: 26px;
-  padding-left: 102.5px;
-  position: relative;
-
-  > span {
-    z-index: 1;
-    position: relative;
-  }
-
-  &::before {
-    content: '';
-    display: block;
-    background: #797979;
-    height: 2px;
-    width: 93px;
-    margin-bottom: 5px;
-    position: absolute;
-    transform: translateY(-50%);
-    top: 50%;
-    left: 0;
-  }
-
-  &::after {
-    content: 'Members \\AVoice';
-    font-family: 'Homemade Apple', cursive;
-    color: #fff;
-    position: absolute;
-    z-index: 0;
-    white-space: pre;
-    font-size: 100px;
-    left: 20px;
-    top: -56px;
-    z-index: 0;
-    opacity: 0.4;
-    transform: rotate(-7deg);
-  }
+  padding-top: 235px;
 `
 
 const AcoordionWrapper = styled.div`
@@ -178,20 +136,20 @@ const AcoordionWrapper = styled.div`
 
   & > dl {
     &:not(:first-of-type) {
-      margin-top: 26.5px;
+      margin-top: 26px;
     }
   }
 `
 
 const DescriptionItem = styled.li`
-  padding: 30px 25.5px 0 68.5px;
+  padding: 30px 25px 0 68px;
   list-style: none;
 
   &:not(:first-child) {
     padding-top: 55px;
   }
   &:last-child {
-    padding-bottom: 50.5px;
+    padding-bottom: 50px;
   }
 `
 
@@ -199,7 +157,7 @@ const Description = styled.p`
   color: #d3d3d3;
   font-size: 18px;
   font-weight: 500;
-  letter-spacing: 2.25px;
+  letter-spacing: 2px;
   line-height: 48.6px;
 `
 
