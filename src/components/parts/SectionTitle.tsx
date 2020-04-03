@@ -18,6 +18,7 @@ const Title = styled.h2<{ backgroundText: string }>`
     font-size: 26px;
     padding-left: 102px;
     position: relative;
+    transform: translateX(-102px);
 
     > span {
       z-index: 1;
