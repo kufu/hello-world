@@ -5,6 +5,7 @@ import { CommandPaletteContext } from '../commandPalette'
 import { MessageSection } from '../parts/MessageSection'
 import { AboutSection } from '../parts/AboutSection'
 import { TechnologyStackSection } from '../parts/TechnologyStackSection'
+import { WelfareSection } from '../parts/WelfareSection'
 
 export const IndexPage = () => {
   const { currentCommand } = useContext(CommandPaletteContext)
@@ -24,17 +25,19 @@ export const IndexPage = () => {
           <EntryButton href="">ENTRY</EntryButton>
         </Right>
       </Header>
-      <EyecatchSection>
-        <PageTitle>
-          <PageTitleImage src="/images/eyecatch/title.svg" alt="歴史に残る模範的なソフトウェアをつくろう" />
-        </PageTitle>
-      </EyecatchSection>
-      <MessageSection />
-      <AboutSection />
-      <TechnologyStackSection />
-      <MembersVoiceSection />
-      <WelfareSection />
-      <EntrySection />
+      <Sections>
+        <EyecatchSection>
+          <PageTitle>
+            <PageTitleImage src="/images/eyecatch/title.svg" alt="歴史に残る模範的なソフトウェアをつくろう" />
+          </PageTitle>
+        </EyecatchSection>
+        <MessageSection />
+        <AboutSection />
+        <TechnologyStackSection />
+        <MembersVoiceSection />
+        <WelfareSection />
+        <EntrySection />
+      </Sections>
       <ScrollIcon>SCROLL</ScrollIcon>
       <Footer />
     </Wrapper>
@@ -86,10 +89,11 @@ const PageTitle = styled.h1`
 const PageTitleImage = styled.img`
   display: block;
 `
-const EyecatchSection = styled.section`
+const Sections = styled.div`
   max-width: 1160px;
   margin: 0 auto;
 `
+const EyecatchSection = styled.section``
 const scroll = keyframes`
   0% {
     bottom: 80px;
@@ -144,7 +148,6 @@ const ScrollIcon = styled.div`
   }
 `
 const MembersVoiceSection = styled.section``
-const WelfareSection = styled.section``
 const EntrySection = styled.section``
 const Footer = styled.footer`
   padding-top: 1000px; // FIXME: スクロール確認のため
