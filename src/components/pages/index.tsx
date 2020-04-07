@@ -5,6 +5,7 @@ import { CommandPaletteContext } from '../commandPalette'
 import { MessageSection } from '../parts/MessageSection'
 import { AboutSection } from '../parts/AboutSection'
 import { TechnologyStackSection } from '../parts/TechnologyStackSection'
+import { MembersVoiceSection } from '../parts/MembersVoiceSection'
 import { WelfareSection } from '../parts/WelfareSection'
 
 export const IndexPage = () => {
@@ -147,7 +148,7 @@ const ScrollIcon = styled.div`
     background-color: #ebebeb;
   }
 `
-const MembersVoiceSection = styled.section``
+
 const EntrySection = styled.section``
 const Footer = styled.footer`
   padding-top: 1000px; // FIXME: スクロール確認のため
