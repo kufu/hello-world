@@ -8,6 +8,7 @@ import { TechnologyStackSection } from '../parts/TechnologyStackSection'
 import { MembersVoiceSection } from '../parts/MembersVoiceSection'
 import { WelfareSection } from '../parts/WelfareSection'
 import { EntrySection } from '../parts/EntrySection'
+import { Footer } from '../parts/Footer'
 
 export const IndexPage = () => {
   const { currentCommand } = useContext(CommandPaletteContext)
@@ -148,8 +149,4 @@ const ScrollIcon = styled.div`
     transform: translateX(-50%);
     background-color: #ebebeb;
   }
-`
-
-const Footer = styled.footer`
-  padding-top: 1000px; // FIXME: スクロール確認のため
 `
