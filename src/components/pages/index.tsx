@@ -7,6 +7,7 @@ import { AboutSection } from '../parts/AboutSection'
 import { TechnologyStackSection } from '../parts/TechnologyStackSection'
 import { MembersVoiceSection } from '../parts/MembersVoiceSection'
 import { WelfareSection } from '../parts/WelfareSection'
+import { EntrySection } from '../parts/EntrySection'
 
 export const IndexPage = () => {
   const { currentCommand } = useContext(CommandPaletteContext)
@@ -149,7 +150,6 @@ const ScrollIcon = styled.div`
   }
 `
 
-const EntrySection = styled.section``
 const Footer = styled.footer`
   padding-top: 1000px; // FIXME: スクロール確認のため
 `
