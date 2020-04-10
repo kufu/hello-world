@@ -16,36 +16,24 @@ export const EntrySection = () => {
           一緒に SmartHR というスタートアップをグロースさせてください！
         </Message>
         <List>
-          <Item>
-            <span />
-            ソフトウェアエンジニア（バックエンド）
-            <span>></span>
-          </Item>
-          <Item>
-            <span />
-            ソフトウェアエンジニア（フロントエンド）
-            <span>></span>
-          </Item>
-          <Item>
-            <span />
-            ソフトウェアエンジニア（マネージャ）
-            <span>></span>
-          </Item>
-          <Item>
-            <span />
-            情報システム エンジニア
-            <span>></span>
-          </Item>
-          <Item>
-            <span />
-            ソフトウェアエンジニア（SET/テスト）
-            <span>></span>
-          </Item>
-          <Item>
-            <span />
-            QAエンジニア
-            <span>></span>
-          </Item>
+          <li>
+            <Item href="#">ソフトウェアエンジニア（バックエンド）</Item>
+          </li>
+          <li>
+            <Item href="#">ソフトウェアエンジニア（フロントエンド）</Item>
+          </li>
+          <li>
+            <Item>ソフトウェアエンジニア（マネージャ）</Item>
+          </li>
+          <li>
+            <Item>情報システム エンジニア</Item>
+          </li>
+          <li>
+            <Item>ソフトウェアエンジニア（SET/テスト）</Item>
+          </li>
+          <li>
+            <Item>QAエンジニア</Item>
+          </li>
         </List>
       </Wrapper>
     </Section>
@@ -65,7 +53,7 @@ const Wrapper = styled.div`
   justify-content: space-between;
 `
 
-const Message = styled.span`
+const Message = styled.p`
   height: 178px;
   width: 868px;
   color: #d3d3d3;
@@ -79,12 +67,15 @@ const Message = styled.span`
 const List = styled.ul`
   display: flex;
   flex-direction: column;
+  > li:not(:first-child) {
+    margin-top: 26px;
+  }
 `
 
-const Item = styled.li`
-  margin-top: 26px;
-  display: flex;
-  justify-content: space-between;
+const Item = styled.a`
+  display: block;
+  text-align: center;
+  position: relative;
   box-sizing: border-box;
   height: 71px;
   width: 572px;
@@ -96,4 +87,15 @@ const Item = styled.li`
   font-size: 14px;
   font-weight: bold;
   letter-spacing: 0.69px;
+  &::after {
+    position: absolute;
+    content: '';
+    width: 7px;
+    height: 7px;
+    border-top: solid 1px #252525;
+    border-right: solid 1px #252525;
+    transform: rotate(45deg) translateY(-50%);
+    top: 50%;
+    right: 17px;
+  }
 `
