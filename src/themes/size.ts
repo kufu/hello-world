@@ -1,7 +1,7 @@
 import { FlattenSimpleInterpolation } from 'styled-components'
 
 const mediumMaxWidth = 1199
-const smallMaxWidth = 740
+const smallMaxWidth = 739
 
 export const mediaQuery = {
   mediumStyle: (style: FlattenSimpleInterpolation) => `@media screen and (max-width: ${mediumMaxWidth}px) {${style}}`,
