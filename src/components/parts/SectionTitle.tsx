@@ -1,5 +1,6 @@
 import React, { FC } from 'react'
 import styled, { css } from 'styled-components'
+import { mediaQuery } from '../../themes'
 
 type Props = {
   backgroundText: string
@@ -52,5 +53,9 @@ const Title = styled.h2<{ backgroundText: string }>`
       opacity: 0.4;
       transform: rotate(-7deg);
     }
+
+    ${mediaQuery.mediumStyle(css`
+      font-size: 36px;
+    `)}
   `}
 `
