@@ -1,5 +1,5 @@
-import React, { useContext } from 'react'
-import styled, { keyframes } from 'styled-components'
+import React, { useContext, useEffect, useState } from 'react'
+import styled, { css, keyframes } from 'styled-components'
 
 import { CommandPaletteContext } from '../commandPalette'
 import { MessageSection } from '../parts/MessageSection'
@@ -13,44 +13,76 @@ import { Footer } from '../parts/Footer'
 export const IndexPage = () => {
   const { currentCommand } = useContext(CommandPaletteContext)
 
+  const [scrolled, setScrolled] = useState(false)
+
+  useEffect(() => {
+    document.addEventListener('scroll', () => {
+      if (scrollY >= innerHeight / 3) {
+        setScrolled(true)
+      } else {
+        setScrolled(false)
+      }
+    })
+  }, [])
+
   return (
     <Wrapper>
+      <Underlay scrolled={scrolled} />
       {currentCommand && currentCommand.component}
 
-      <Header>
-        <Left>
-          <Logo>
-            <img src={'/images/logo.svg'} alt="Logo" />
-          </Logo>
-          <Text>Engineer Recruiting</Text>
-        </Left>
-        <Right>
-          <EntryButton href="">ENTRY</EntryButton>
-        </Right>
-      </Header>
-      <Sections>
-        <EyecatchSection>
-          <PageTitle>
-            <PageTitleImage src="/images/eyecatch/title.svg" alt="歴史に残る模範的なソフトウェアをつくろう" />
-          </PageTitle>
-        </EyecatchSection>
-        <MessageSection />
-        <AboutSection />
-        <TechnologyStackSection />
-        <MembersVoiceSection />
-        <WelfareSection />
-        <EntrySection />
-      </Sections>
-      <ScrollIcon>SCROLL</ScrollIcon>
-      <Footer />
+      <Contents>
+        <Header>
+          <Left>
+            <Logo>
+              <img src={'/images/logo.svg'} alt="Logo" />
+            </Logo>
+            <Text>Engineer Recruiting</Text>
+          </Left>
+          <Right>
+            <EntryButton href="">ENTRY</EntryButton>
+          </Right>
+        </Header>
+        <Sections>
+          <EyecatchSection>
+            <PageTitle>
+              <PageTitleImage src="/images/eyecatch/title.svg" alt="歴史に残る模範的なソフトウェアをつくろう" />
+            </PageTitle>
+          </EyecatchSection>
+          <MessageSection />
+          <AboutSection />
+          <TechnologyStackSection />
+          <MembersVoiceSection />
+          <WelfareSection />
+          <EntrySection />
+        </Sections>
+        <ScrollIcon>SCROLL</ScrollIcon>
+        <Footer />
+      </Contents>
     </Wrapper>
   )
 }
 
 const Wrapper = styled.div`
-  background-image: url(/images/mv.png);
-  background-size: cover;
-  background-attachment: fixed;
+  position: relative;
+`
+const Underlay = styled.div`
+  ${({ scrolled }) => {
+    return css`
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      background-image: url(/images/mv.png);
+      background-size: cover;
+      background-attachment: fixed;
+      opacity: ${scrolled ? '0.7' : '1'};
+      transition: opacity 0.3s ease-in-out;
+    `
+  }}
+`
+const Contents = styled.div`
+  position: relative;
 `
 const Header = styled.header`
   display: flex;
