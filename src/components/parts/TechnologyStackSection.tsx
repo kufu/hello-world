@@ -1,6 +1,7 @@
 import React from 'react'
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 
+import { mediaQuery } from '../../themes'
 import { SectionTitle } from './SectionTitle'
 
 export const TechnologyStackSection = () => {
@@ -61,6 +62,10 @@ const ChildSection = styled.section`
   padding-top: 130px;
   width: 570px;
   margin: 0 auto;
+
+  ${mediaQuery.mediumStyle(css`
+    width: 100%;
+  `)}
 `
 
 const ChildSectionTitle = styled.h3`

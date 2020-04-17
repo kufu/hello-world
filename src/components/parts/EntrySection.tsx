@@ -1,7 +1,8 @@
 import React from 'react'
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 
 import { SectionTitle } from './SectionTitle'
+import { mediaQuery } from '../../themes'
 
 export const EntrySection = () => {
   return (
@@ -51,6 +52,10 @@ const Wrapper = styled.div`
   margin-bottom: 55px;
   width: 869px;
   justify-content: space-between;
+
+  ${mediaQuery.mediumStyle(css`
+    width: 100%;
+  `)}
 `
 
 const Message = styled.p`
@@ -62,6 +67,10 @@ const Message = styled.p`
   letter-spacing: 2.25px;
   line-height: 48.6px;
   margin-bottom: 36px;
+
+  ${mediaQuery.mediumStyle(css`
+    width: 100%;
+  `)}
 `
 
 const List = styled.ul`
@@ -87,6 +96,11 @@ const Item = styled.a`
   font-size: 14px;
   font-weight: bold;
   letter-spacing: 0.69px;
+
+  ${mediaQuery.mediumStyle(css`
+    width: 100%;
+  `)}
+
   &::after {
     position: absolute;
     content: '';

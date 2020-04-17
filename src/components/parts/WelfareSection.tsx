@@ -1,6 +1,7 @@
 import React from 'react'
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 
+import { mediaQuery } from '../../themes'
 import { SectionTitle } from './SectionTitle'
 
 export const WelfareSection = () => {
@@ -73,6 +74,10 @@ const List = styled.ul`
   margin-bottom: 55px;
   width: 869px;
   justify-content: space-between;
+
+  ${mediaQuery.mediumStyle(css`
+    width: 100%;
+  `)}
 `
 
 const Item = styled.li`
@@ -124,5 +129,9 @@ const LinkButton = styled.a`
   font-size: 22px;
   font-weight: bold;
   letter-spacing: 0.85px;
+
+  ${mediaQuery.mediumStyle(css`
+    width: 100%;
+  `)}
 `
 const Icon = styled.span``
