@@ -4,7 +4,7 @@ import styled from 'styled-components'
 export const Footer = () => {
   return (
     <Wrapper>
-      <img src={'/images/logo_smarthr.png'} alt="SmartHR" width="144" height="140" />
+      <Logo src={'/images/logo_smarthr.png'} alt="SmartHR" />
       <Copyright>&copy; SmartHR, Inc.</Copyright>
     </Wrapper>
   )
@@ -14,6 +14,11 @@ const Wrapper = styled.footer`
   text-align: center;
   padding-top: 142px;
   padding-bottom: 26px;
+`
+
+const Logo = styled.img`
+  width: 144px;
+  height: 140px;
 `
 
 const Copyright = styled.p`
