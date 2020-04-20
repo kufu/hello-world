@@ -1,6 +1,7 @@
 import React from 'react'
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 
+import { mediaQuery } from '../../themes'
 import { SectionTitle } from './SectionTitle'
 import { Accordion } from './Accordion'
 
@@ -133,6 +134,10 @@ const Wrapper = styled.section`
 const AcoordionWrapper = styled.div`
   margin: 140px 0 0 auto;
   width: 867px;
+
+  ${mediaQuery.mediumStyle(css`
+    width: 100%;
+  `)}
 
   & > dl {
     &:not(:first-of-type) {

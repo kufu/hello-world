@@ -1,7 +1,8 @@
 import React, { FC, ReactNode } from 'react'
-import { createGlobalStyle } from 'styled-components'
+import { createGlobalStyle, css } from 'styled-components'
 import reset from 'styled-reset'
 
+import { mediaQuery } from '../themes'
 import { CommandPaletteProvider, commands } from './commandPalette'
 
 export const App: FC<{ children: ReactNode }> = ({ children }) => (
@@ -27,6 +28,10 @@ const GlobalStyle = createGlobalStyle`
   }
   img {
     vertical-align: middle;
+
+    ${mediaQuery.mediumStyle(css`
+      width: 100%;
+    `)}
   }
   input, button, textarea {
     margin: 0;

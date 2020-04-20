@@ -1,5 +1,7 @@
 import React from 'react'
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
+
+import { mediaQuery } from '../../themes'
 
 export const MessageSection = () => (
   <Wrapper>
@@ -20,11 +22,29 @@ export const MessageSection = () => (
 
 const Wrapper = styled.section`
   padding: 285px 0 115px;
+
+  ${mediaQuery.mediumStyle(css`
+    padding: 140px 0 0;
+  `)}
+
+  ${mediaQuery.smallStyle(css`
+    padding: 72px 0 0;
+  `)}
 `
 
 const TextWrapper = styled.div`
   width: 640px;
   margin: 0 auto;
+
+  ${mediaQuery.mediumStyle(css`
+    width: 500px;
+  `)}
+
+  ${mediaQuery.smallStyle(css`
+    width: 100%;
+    padding: 0 40px;
+    box-sizing: border-box;
+  `)}
 `
 
 const Text = styled.p`
@@ -32,4 +52,12 @@ const Text = styled.p`
   font-size: 18px;
   padding-top: 50px;
   line-height: 72px;
+
+  ${mediaQuery.mediumStyle(css`
+    font-size: 14px;
+  `)}
+
+  ${mediaQuery.smallStyle(css`
+    font-size: 18px;
+  `)}
 `
