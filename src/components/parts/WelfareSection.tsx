@@ -96,14 +96,11 @@ const Item = styled.li`
   `)}
   > img {
     width: 276px;
-    height: 193px;
     ${mediaQuery.mediumStyle(css`
       width: 223px;
-      height: 156px;
     `)}
     ${mediaQuery.smallStyle(css`
       width: 315px;
-      height: 220px;
     `)}
   }
 `

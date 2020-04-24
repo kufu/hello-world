@@ -18,7 +18,6 @@ const Wrapper = styled.footer`
 
 const Logo = styled.img`
   width: 144px;
-  height: 140px;
 `
 
 const Copyright = styled.p`
