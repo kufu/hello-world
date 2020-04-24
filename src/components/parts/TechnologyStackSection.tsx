@@ -64,7 +64,11 @@ const ChildSection = styled.section`
   margin: 0 auto;
 
   ${mediaQuery.mediumStyle(css`
+    padding-top: 69px;
+  `)}
+  ${mediaQuery.smallStyle(css`
     width: 100%;
+    padding-top: 38px;
   `)}
 `
 
@@ -107,4 +111,22 @@ const Supplements = styled.dl`
   > dd {
     float: left;
   }
+  ${mediaQuery.mediumStyle(css`
+    padding-top: 7px;
+  `)}
+  ${mediaQuery.smallStyle(css`
+    padding-top: 38px;
+    > dt,
+    > dd {
+      float: none;
+    }
+    > dt {
+      &:not(:first-child) {
+        margin-top: 30px;
+      }
+      &::after {
+        display: none;
+      }
+    }
+  `)}
 `
