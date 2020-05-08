@@ -129,21 +129,30 @@ export const MembersVoiceSection = () => {
 
 const Wrapper = styled.section`
   padding-top: 235px;
+
+  ${mediaQuery.smallStyle(css`
+    padding-top: 180px;
+  `)}
 `
 
 const AcoordionWrapper = styled.div`
   margin: 140px 0 0 auto;
   width: 867px;
 
-  ${mediaQuery.mediumStyle(css`
-    width: 100%;
-  `)}
-
   & > dl {
     &:not(:first-of-type) {
       margin-top: 26px;
     }
   }
+
+  ${mediaQuery.mediumStyle(css`
+    width: 100%;
+    margin-top: 60px;
+  `)}
+
+  ${mediaQuery.smallStyle(css`
+    margin-top: 35px;
+  `)}
 `
 
 const DescriptionItem = styled.li`
@@ -156,6 +165,18 @@ const DescriptionItem = styled.li`
   &:last-child {
     padding-bottom: 50px;
   }
+
+  ${mediaQuery.mediumStyle(css`
+    padding: 30px 25px 0 25px;
+  `)}
+
+  ${mediaQuery.smallStyle(css`
+    padding: 20px 15px 0 15px;
+
+    &:last-child {
+      padding-bottom: 55px;
+    }
+  `)}
 `
 
 const Description = styled.p`
@@ -164,6 +185,11 @@ const Description = styled.p`
   font-weight: 500;
   letter-spacing: 2px;
   line-height: 48.6px;
+
+  ${mediaQuery.smallStyle(css`
+    font-size: 14px;
+    line-height: 38px;
+  `)}
 `
 
 const Member = styled.p`
@@ -171,6 +197,10 @@ const Member = styled.p`
   font-size: 14px;
   line-height: 21px;
   text-align: right;
+
+  ${mediaQuery.mediumStyle(css`
+    padding-top: 10px;
+  `)}
 `
 
 const Name = styled.span`
