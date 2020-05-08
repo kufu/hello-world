@@ -76,7 +76,7 @@ const Underlay = styled.div`
       background-image: url(/images/mv.png);
       background-size: cover;
       background-attachment: fixed;
-      opacity: ${scrolled ? '0.7' : '1'};
+      opacity: ${scrolled ? '0.4' : '1'};
       transition: opacity 0.3s ease-in-out;
     `
   }}
