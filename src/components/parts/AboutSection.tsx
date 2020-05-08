@@ -8,14 +8,28 @@ export const AboutSection = () => (
 
     <List>
       <li>
-        <a href="">
-          <img src="/images/about/product.png" alt="product" />
-        </a>
+        <iframe
+          src="https://smarthr.slides.com/smarthr_dev/smarthr_product-d1c5eb/embed?style=light"
+          width="576"
+          height="420"
+          scrolling="no"
+          frameBorder="0"
+          webkitallowfullscreen
+          mozallowfullscreen
+          allowFullScreen
+        ></iframe>
       </li>
       <li>
-        <a href="">
-          <img src="/images/about/development.png" alt="development" />
-        </a>
+        <iframe
+          src="https://smarthr.slides.com/smarthr_dev/smarthr_development-016f16/embed?style=light"
+          width="576"
+          height="420"
+          scrolling="no"
+          frameBorder="0"
+          webkitallowfullscreen
+          mozallowfullscreen
+          allowFullScreen
+        ></iframe>
       </li>
     </List>
   </Wrapper>
@@ -30,6 +44,19 @@ const List = styled.ul`
   margin: 78px auto 0;
   position: relative;
   z-index: 1;
+  & > li {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-top: 56.25%;
+    & > iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
 
   & > li:not(:first-child) {
     margin-top: 67px;
