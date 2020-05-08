@@ -64,6 +64,10 @@ export const WelfareSection = () => {
 const Section = styled.section`
   padding-top: 233px;
   color: #d3d3d3;
+
+  ${mediaQuery.smallStyle(css`
+    padding-top: 150px;
+  `)}
 `
 
 const List = styled.ul`
@@ -111,6 +115,10 @@ const ItemTitle = styled.p`
   font-weight: bold;
   letter-spacing: 0.85px;
   margin-bottom: 26px;
+
+  ${mediaQuery.smallStyle(css`
+    font-size: 18px;
+  `)}
 `
 const ItemDescription = styled.p`
   color: #d3d3d3;
@@ -152,6 +160,11 @@ const LinkButton = styled.a`
 
   ${mediaQuery.mediumStyle(css`
     width: 100%;
+  `)}
+
+  ${mediaQuery.smallStyle(css`
+    font-size: 16px;
+    height: 70px;
   `)}
 `
 const Icon = styled.span``
