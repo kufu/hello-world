@@ -25,7 +25,7 @@ const Wrapper = styled.section`
   padding: 285px 0 0;
 
   ${mediaQuery.mediumStyle(css`
-    padding: 140px 0 0;
+    padding: 0;
   `)}
 
   ${mediaQuery.smallStyle(css`
@@ -51,7 +51,6 @@ const TextWrapper = styled.div`
 const Text = styled.p`
   color: #e0e0e0;
   font-size: 18px;
-  padding-top: 50px;
   line-height: 72px;
 
   ${mediaQuery.mediumStyle(css`

@@ -42,7 +42,7 @@ const Wrapper = styled.section`
   padding-top: 380px;
 
   ${mediaQuery.mediumStyle(css`
-    padding: 220px 0 0;
+    padding: 260px 0 0;
   `)}
   ${mediaQuery.smallStyle(css`
     padding-top: 150px;
