@@ -21,6 +21,17 @@ const Title = styled.h2<{ backgroundText: string }>`
     position: relative;
     transform: translateX(-102px);
 
+    ${mediaQuery.mediumStyle(css`
+      padding-left: 40px;
+      transform: translateX(-35px);
+      font-size: 36px;
+    `)}
+
+    ${mediaQuery.smallStyle(css`
+      padding-left: 20px;
+      transform: translateX(-20px);
+    `)}
+
     > span {
       z-index: 1;
       position: relative;
@@ -37,6 +48,14 @@ const Title = styled.h2<{ backgroundText: string }>`
       transform: translateY(-50%);
       top: 50%;
       left: 0;
+
+      ${mediaQuery.mediumStyle(css`
+        width: 30px;
+      `)}
+
+      ${mediaQuery.smallStyle(css`
+        width: 15px;
+      `)}
     }
 
     &::after {
@@ -52,10 +71,17 @@ const Title = styled.h2<{ backgroundText: string }>`
       z-index: 0;
       opacity: 0.4;
       transform: rotate(-7deg);
-    }
 
-    ${mediaQuery.mediumStyle(css`
-      font-size: 36px;
-    `)}
+      ${mediaQuery.mediumStyle(css`
+        left: 30px;
+        top: -72px;
+      `)}
+
+      ${mediaQuery.smallStyle(css`
+        font-size: 50px;
+        left: 15px;
+        top: -40px;
+      `)}
+    }
   `}
 `

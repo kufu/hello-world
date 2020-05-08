@@ -89,6 +89,7 @@ const Underlay = styled.div`
 
       ${mediaQuery.smallStyle(css`
         background-image: url(/images/mv_sp.png);
+        background-size: 100% 100%;
       `)}
     `
   }}
