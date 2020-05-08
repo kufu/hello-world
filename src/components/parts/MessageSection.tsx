@@ -8,10 +8,11 @@ export const MessageSection = () => (
     <TextWrapper>
       <Text>
         世の中には多くの形骸化した既成概念や慣習があり、
-        <br />
+        <BrPc />
         人々はそれを受け入れて生活をしています。
         <br />
-        私たちの役目は、テクノロジーと創意工夫をもって、 <br />
+        私たちの役目は、テクノロジーと創意工夫をもって、
+        <BrPc />
         それらの社会の非合理をハックしていくことです。
         <br />
         社会の仕組みを変え、 歴史に名を残すようなソフトウェアをつくりましょう。
@@ -21,7 +22,7 @@ export const MessageSection = () => (
 )
 
 const Wrapper = styled.section`
-  padding: 285px 0 115px;
+  padding: 285px 0 0;
 
   ${mediaQuery.mediumStyle(css`
     padding: 140px 0 0;
@@ -42,7 +43,7 @@ const TextWrapper = styled.div`
 
   ${mediaQuery.smallStyle(css`
     width: 100%;
-    padding: 0 40px;
+    padding: 0 20px;
     box-sizing: border-box;
   `)}
 `
@@ -59,5 +60,11 @@ const Text = styled.p`
 
   ${mediaQuery.smallStyle(css`
     font-size: 18px;
+  `)}
+`
+
+const BrPc = styled.br`
+  ${mediaQuery.smallStyle(css`
+    display: none;
   `)}
 `

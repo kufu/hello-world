@@ -166,8 +166,10 @@ const PageTitle = styled.h1`
   `)}
 `
 const ButtonWrapper = styled.div`
-  text-align: center;
-  margin-top: 145px;
+  ${mediaQuery.smallStyle(css`
+    text-align: center;
+    margin-top: 145px;
+  `)}
 `
 const EntryButtonSp = styled.a`
   display: none;
@@ -202,7 +204,9 @@ const Sections = styled.div`
     padding: 0 20px;
   `)}
 `
-const EyecatchSection = styled.section``
+const EyecatchSection = styled.section`
+  height: 100vh;
+`
 const scroll = keyframes`
   0% {
     bottom: 80px;
