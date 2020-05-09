@@ -27,12 +27,24 @@ export const IndexPage = () => {
         <EyeCatch />
 
         <Sections>
-          <MessageSection />
-          <AboutSection />
-          <TechnologyStackSection />
-          <MembersVoiceSection />
-          <WelfareSection />
-          <EntrySection />
+          <Section>
+            <MessageSection />
+          </Section>
+          <Section>
+            <AboutSection />
+          </Section>
+          <Section>
+            <TechnologyStackSection />
+          </Section>
+          <Section>
+            <MembersVoiceSection />
+          </Section>
+          <Section>
+            <WelfareSection />
+          </Section>
+          <Section>
+            <EntrySection />
+          </Section>
         </Sections>
 
         <Footer />
@@ -45,6 +57,7 @@ const Wrapper = styled.div`
   position: relative;
 `
 const Contents = styled.div`
+  overflow: hidden;
   position: relative;
 `
 const Sections = styled.div`
@@ -52,9 +65,15 @@ const Sections = styled.div`
   margin: 0 auto;
 
   ${mediaQuery.mediumStyle(css`
-    padding: 0 35px;
+    padding: 0 33px;
   `)}
+
   ${mediaQuery.smallStyle(css`
-    padding: 0 20px;
+    padding: 0 17px;
   `)}
+`
+const Section = styled.section`
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
 `

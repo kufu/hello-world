@@ -1,6 +1,8 @@
 import React from 'react'
 import styled, { css } from 'styled-components'
+
 import { mediaQuery } from '../../themes'
+
 import { SectionTitle } from './SectionTitle'
 
 export const AboutSection = () => (
@@ -9,64 +11,51 @@ export const AboutSection = () => (
 
     <List>
       <li>
-        <iframe
+        <Iframe
           src="https://smarthr.slides.com/smarthr_dev/smarthr_product-d1c5eb/embed?style=light"
           width="576"
           height="420"
           scrolling="no"
           frameBorder="0"
           webkitallowfullscreen="true"
-          mozallowfullscreenn="true"
+          mozallowfullscreen="true"
           allowFullScreen
           title="PRODUCTS"
-        ></iframe>
+        />
       </li>
+
       <li>
-        <iframe
+        <Iframe
           src="https://smarthr.slides.com/smarthr_dev/smarthr_development-016f16/embed?style=light"
           width="576"
           height="420"
           scrolling="no"
           frameBorder="0"
-          webkitallowfullscreenn="true"
-          mozallowfullscreenn="true"
+          webkitallowfullscreen="true"
+          mozallowfullscreen="true"
           allowFullScreen
           title="DEVELOPMENT"
-        ></iframe>
+        />
       </li>
     </List>
   </Wrapper>
 )
 
-const Wrapper = styled.section`
-  padding-top: 380px;
-
-  ${mediaQuery.mediumStyle(css`
-    padding: 260px 0 0;
-  `)}
-  ${mediaQuery.smallStyle(css`
-    padding-top: 150px;
-  `)}
+const Wrapper = styled.div`
+  width: 100%;
+  padding: 20px 0;
 `
-
 const List = styled.ul`
   max-width: 1160px;
   margin: 78px auto 0;
   position: relative;
   z-index: 1;
 
-  & > li {
+  > li {
     position: relative;
     width: 100%;
     height: 0;
     padding-top: 56.25%;
-    & > iframe {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-    }
   }
 
   & > li:not(:first-child) {
@@ -88,4 +77,11 @@ const List = styled.ul`
       margin-top: 28px;
     }
   `)}
+`
+const Iframe = styled.iframe<{ webkitallowfullscreen: string; mozallowfullscreen: string }>`
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 `
