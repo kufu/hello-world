@@ -1,6 +1,8 @@
 import React, { FC, ReactNode, useRef, useState } from 'react'
 import styled, { css } from 'styled-components'
 
+import { mediaQuery } from '../../themes'
+
 type Props = {
   title: string
   children: ReactNode
@@ -32,6 +34,7 @@ export const Accordion: FC<Props> = ({ title, children }) => {
 const AccordionWrapper = styled.dl`
   border: 1px solid #4e4e4e;
   border-radius: 6px;
+  background-color: rgba(21, 17, 17, 0.52);
   transition: background-color 0.2s ease;
 `
 
@@ -63,6 +66,20 @@ const AccordionTitle = styled.dt`
       transform: rotate(-45deg);
     }
   }
+
+  ${mediaQuery.mediumStyle(css`
+    padding: 25px;
+  `)}
+
+  ${mediaQuery.smallStyle(css`
+    font-size: 16px;
+    padding: 15px;
+
+    &::after {
+      right: 14px;
+      margin-top: -6px;
+    }
+  `)}
 `
 
 const AccordionContent = styled.dd<{ height: number }>`

@@ -18,19 +18,35 @@ export const EntrySection = () => {
         </Message>
         <List>
           <li>
-            <Item href="#">ソフトウェアエンジニア（バックエンド）</Item>
+            <Item href="#">
+              ソフトウェアエンジニア
+              <BrSp />
+              <span>（バックエンド）</span>
+            </Item>
           </li>
           <li>
-            <Item href="#">ソフトウェアエンジニア（フロントエンド）</Item>
+            <Item href="#">
+              ソフトウェアエンジニア
+              <BrSp />
+              <span>（フロントエンド）</span>
+            </Item>
           </li>
           <li>
-            <Item>ソフトウェアエンジニア（マネージャ）</Item>
+            <Item>
+              ソフトウェアエンジニア
+              <BrSp />
+              <span>（マネージャ）</span>
+            </Item>
           </li>
           <li>
             <Item>情報システム エンジニア</Item>
           </li>
           <li>
-            <Item>ソフトウェアエンジニア（SET/テスト）</Item>
+            <Item>
+              ソフトウェアエンジニア
+              <BrSp />
+              <span>（SET/テスト）</span>
+            </Item>
           </li>
           <li>
             <Item>QAエンジニア</Item>
@@ -44,22 +60,32 @@ export const EntrySection = () => {
 const Section = styled.section`
   padding-top: 233px;
   color: #d3d3d3;
+
+  ${mediaQuery.mediumStyle(css`
+    padding-top: 115px;
+  `)}
+  ${mediaQuery.smallStyle(css`
+    padding-top: 90px;
+  `)}
 `
 
 const Wrapper = styled.div`
   margin-top: 113px;
   margin-left: auto;
-  margin-bottom: 55px;
   width: 869px;
   justify-content: space-between;
 
   ${mediaQuery.mediumStyle(css`
     width: 100%;
+    margin-top: 70px;
+  `)}
+
+  ${mediaQuery.smallStyle(css`
+    margin-top: 50px;
   `)}
 `
 
 const Message = styled.p`
-  height: 178px;
   width: 868px;
   color: #d3d3d3;
   font-size: 18px;
@@ -70,6 +96,10 @@ const Message = styled.p`
 
   ${mediaQuery.mediumStyle(css`
     width: 100%;
+    margin-bottom: 50px;
+  `)}
+  ${mediaQuery.smallStyle(css`
+    margin-bottom: 60px;
   `)}
 `
 
@@ -97,10 +127,6 @@ const Item = styled.a`
   font-weight: bold;
   letter-spacing: 0.69px;
 
-  ${mediaQuery.mediumStyle(css`
-    width: 100%;
-  `)}
-
   &::after {
     position: absolute;
     content: '';
@@ -112,4 +138,23 @@ const Item = styled.a`
     top: 50%;
     right: 17px;
   }
+
+  & > span {
+    font-size: 12px;
+  }
+
+  ${mediaQuery.mediumStyle(css`
+    margin: 0 auto;
+  `)}
+  ${mediaQuery.smallStyle(css`
+    width: 100%;
+  `)}
+`
+
+const BrSp = styled.br`
+  display: none;
+
+  ${mediaQuery.smallStyle(css`
+    display: block;
+  `)}
 `

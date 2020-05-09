@@ -1,5 +1,6 @@
 import React from 'react'
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
+import { mediaQuery } from '../../themes'
 
 export const Footer = () => {
   return (
@@ -12,12 +13,22 @@ export const Footer = () => {
 
 const Wrapper = styled.footer`
   text-align: center;
-  padding-top: 142px;
-  padding-bottom: 26px;
+  padding: 142px 0 26px;
+
+  ${mediaQuery.mediumStyle(css`
+    padding: 121px 0 26px;
+  `)}
+  ${mediaQuery.smallStyle(css`
+    padding: 98px 0 20px;
+  `)}
 `
 
 const Logo = styled.img`
   width: 144px;
+
+  ${mediaQuery.smallStyle(css`
+    width: 103px;
+  `)}
 `
 
 const Copyright = styled.p`
@@ -25,4 +36,11 @@ const Copyright = styled.p`
   color: #7b7b7b;
   font-size: 12px;
   line-height: 18px;
+
+  ${mediaQuery.mediumStyle(css`
+    margin-top: 140px;
+  `)}
+  ${mediaQuery.smallStyle(css`
+    margin-top: 106px;
+  `)}
 `

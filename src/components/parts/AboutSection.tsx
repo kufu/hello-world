@@ -1,5 +1,6 @@
 import React from 'react'
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
+import { mediaQuery } from '../../themes'
 import { SectionTitle } from './SectionTitle'
 
 export const AboutSection = () => (
@@ -14,9 +15,10 @@ export const AboutSection = () => (
           height="420"
           scrolling="no"
           frameBorder="0"
-          webkitallowfullscreen
-          mozallowfullscreen
+          webkitallowfullscreen="true"
+          mozallowfullscreenn="true"
           allowFullScreen
+          title="PRODUCTS"
         ></iframe>
       </li>
       <li>
@@ -26,9 +28,10 @@ export const AboutSection = () => (
           height="420"
           scrolling="no"
           frameBorder="0"
-          webkitallowfullscreen
-          mozallowfullscreen
+          webkitallowfullscreenn="true"
+          mozallowfullscreenn="true"
           allowFullScreen
+          title="DEVELOPMENT"
         ></iframe>
       </li>
     </List>
@@ -36,7 +39,14 @@ export const AboutSection = () => (
 )
 
 const Wrapper = styled.section`
-  padding-top: 247px;
+  padding-top: 380px;
+
+  ${mediaQuery.mediumStyle(css`
+    padding: 260px 0 0;
+  `)}
+  ${mediaQuery.smallStyle(css`
+    padding-top: 150px;
+  `)}
 `
 
 const List = styled.ul`
@@ -44,6 +54,7 @@ const List = styled.ul`
   margin: 78px auto 0;
   position: relative;
   z-index: 1;
+
   & > li {
     position: relative;
     width: 100%;
@@ -61,4 +72,20 @@ const List = styled.ul`
   & > li:not(:first-child) {
     margin-top: 67px;
   }
+
+  ${mediaQuery.mediumStyle(css`
+    margin-top: 40px;
+
+    & > li:not(:first-child) {
+      margin-top: 40px;
+    }
+  `)}
+
+  ${mediaQuery.smallStyle(css`
+    margin-top: 60px;
+
+    & > li:not(:first-child) {
+      margin-top: 28px;
+    }
+  `)}
 `

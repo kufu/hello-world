@@ -2,6 +2,8 @@ import React, { useContext, useEffect, useState } from 'react'
 import styled, { css, keyframes } from 'styled-components'
 
 import { CommandPaletteContext } from '../commandPalette'
+import { mediaQuery } from '../../themes'
+
 import { MessageSection } from '../parts/MessageSection'
 import { AboutSection } from '../parts/AboutSection'
 import { TechnologyStackSection } from '../parts/TechnologyStackSection'
@@ -31,6 +33,7 @@ export const IndexPage = () => {
       {currentCommand && currentCommand.component}
 
       <Contents>
+        {/* TODO: Headerコンポーネント化する */}
         <Header>
           <Left>
             <Logo>
@@ -43,10 +46,14 @@ export const IndexPage = () => {
           </Right>
         </Header>
         <Sections>
+          {/* TODO: EyecatchSectionコンポーネント化する */}
           <EyecatchSection>
             <PageTitle>
               <PageTitleImage src="/images/eyecatch/title.svg" alt="歴史に残る模範的なソフトウェアをつくろう" />
             </PageTitle>
+            <ButtonWrapper>
+              <EntryButtonSp href="">ENTRY</EntryButtonSp>
+            </ButtonWrapper>
           </EyecatchSection>
           <MessageSection />
           <AboutSection />
@@ -76,8 +83,14 @@ const Underlay = styled.div`
       background-image: url(/images/mv.png);
       background-size: cover;
       background-attachment: fixed;
+      background-position: top;
       opacity: ${scrolled ? '0.4' : '1'};
       transition: opacity 0.3s ease-in-out;
+
+      ${mediaQuery.smallStyle(css`
+        background-image: url(/images/mv_sp.png);
+        background-size: 100% 100%;
+      `)}
     `
   }}
 `
@@ -91,6 +104,19 @@ const Header = styled.header`
   height: 90px;
   margin: 0 28px;
   color: #e8e7e5;
+
+  ${mediaQuery.mediumStyle(css`
+    margin: 0 15px;
+    height: 70px;
+  `)}
+  ${mediaQuery.smallStyle(css`
+    margin: 0 20px;
+    height: 50px;
+
+    img {
+      width: 148px;
+    }
+  `)}
 `
 const Left = styled.div`
   display: flex;
@@ -102,6 +128,12 @@ const Text = styled.p`
   padding-left: 18px;
   display: flex;
   align-items: center;
+
+  ${mediaQuery.smallStyle(css`
+    font-size: 12px;
+    margin-left: 14px;
+    padding-left: 14px;
+  `)}
 `
 const Logo = styled.div``
 const Right = styled.div`
@@ -116,19 +148,65 @@ const EntryButton = styled.a`
   padding: 12px 0;
   text-align: center;
   border-radius: 35px;
+
+  ${mediaQuery.smallStyle(css`
+    display: none;
+  `)}
 `
 const PageTitle = styled.h1`
   position: relative;
   line-height: 0;
+  padding-top: 25px;
+
+  ${mediaQuery.mediumStyle(css`
+    padding-top: 167px;
+  `)}
+  ${mediaQuery.smallStyle(css`
+    padding-top: 123px;
+  `)}
+`
+const ButtonWrapper = styled.div`
+  ${mediaQuery.smallStyle(css`
+    text-align: center;
+    margin-top: 145px;
+  `)}
+`
+const EntryButtonSp = styled.a`
+  display: none;
+
+  ${mediaQuery.mediumStyle(css`
+    display: none;
+  `)}
+  ${mediaQuery.smallStyle(css`
+    background-color: #fff;
+    color: #555555;
+    font-size: 20px;
+    font-weight: bold;
+    width: 185px;
+    padding: 16px 0;
+    text-align: center;
+    border-radius: 35px;
+    display: inline-block;
+  `)}
 `
 const PageTitleImage = styled.img`
   display: block;
+  margin: 0 auto;
 `
 const Sections = styled.div`
   max-width: 1160px;
   margin: 0 auto;
+
+  ${mediaQuery.mediumStyle(css`
+    padding: 0 35px;
+  `)}
+  ${mediaQuery.smallStyle(css`
+    padding: 0 20px;
+  `)}
 `
-const EyecatchSection = styled.section``
+const EyecatchSection = styled.section`
+  height: 100vh;
+`
 const scroll = keyframes`
   0% {
     bottom: 80px;
