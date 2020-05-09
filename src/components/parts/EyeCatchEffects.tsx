@@ -32,7 +32,7 @@ export const EyeCatchEffects = () => {
   return (
     <>
       <Underlay opacity={opacity} />
-      <ScrollIcon>SCROLL</ScrollIcon>
+      <ScrollIcon visible={y < innerHeight / 2}>SCROLL</ScrollIcon>
     </>
   )
 }
@@ -76,49 +76,56 @@ const Underlay = styled.div<{ opacity: number }>`
     `
   }}
 `
-const ScrollIcon = styled.div`
-  position: fixed;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 10px;
-  height: 104px;
-  color: #e1e1e1;
+const ScrollIcon = styled.div<{ visible: boolean }>`
+  ${({ visible }) => {
+    return css`
+      visibility: ${visible ? 'visible' : 'hidden'};
+      opacity: ${visible ? 1 : 0};
+      position: fixed;
+      bottom: 0;
+      left: 50%;
+      font-size: 10px;
+      height: 104px;
+      color: #e1e1e1;
+      transform: translateX(-50%);
+      transition: all 0.3s ease-in-out;
 
-  &::before {
-    display: block;
-    bottom: 0;
-    content: '';
-    position: absolute;
-    width: 1px;
-    height: 80px;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: #797979;
-  }
+      &::before {
+        display: block;
+        bottom: 0;
+        content: '';
+        position: absolute;
+        width: 1px;
+        height: 80px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #797979;
+      }
 
-  &::after {
-    display: block;
-    bottom: 56px;
-    content: '';
-    position: absolute;
-    width: 2px;
-    height: 0px;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: #ebebeb;
-    animation: ${scroll} 2s infinite;
-  }
+      &::after {
+        display: block;
+        bottom: 56px;
+        content: '';
+        position: absolute;
+        width: 2px;
+        height: 0px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #ebebeb;
+        animation: ${scroll} 2s infinite;
+      }
 
-  ${mediaQuery.mediumStyle(css`
-    height: 83px;
+      ${mediaQuery.mediumStyle(css`
+        height: 83px;
 
-    &::before {
-      height: 59px;
-    }
+        &::before {
+          height: 59px;
+        }
 
-    &::after {
-      bottom: 35px;
-    }
-  `)}
+        &::after {
+          bottom: 35px;
+        }
+      `)}
+    `
+  }}
 `
