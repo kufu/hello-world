@@ -1,1 +1,1 @@
-export { mediaQuery } from './size'
+export { mediaQuery, isMediumWindow } from './size'

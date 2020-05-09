@@ -1,7 +1,7 @@
 import React from 'react'
 import styled, { css, keyframes } from 'styled-components'
 
-import { mediaQuery } from '../../themes'
+import { isMediumWindow, mediaQuery } from '../../themes'
 import { useStoredScroll } from '../hooks/useStoredScroll'
 
 const MIN_OPACITY = 0.4
@@ -38,19 +38,16 @@ export const EyeCatchEffects = () => {
 }
 
 const scroll = keyframes`
-  0% {
-    bottom: 80px;
+  0%,
+  30% {
+    bottom: ${isMediumWindow() ? 59 : 80}px;
     height: 0px;
   }
 
-  40% {
+  60%,
+  70% {
     bottom: 0px;
-    height: 80px;
-  }
-
-  60% {
-    bottom: 0px;
-    height: 80px;
+    height: ${isMediumWindow() ? 59 : 80}px;
   }
 
   100% {
@@ -87,6 +84,7 @@ const ScrollIcon = styled.div`
   font-size: 10px;
   height: 104px;
   color: #e1e1e1;
+
   &::before {
     display: block;
     bottom: 0;
@@ -98,16 +96,29 @@ const ScrollIcon = styled.div`
     transform: translateX(-50%);
     background-color: #797979;
   }
+
   &::after {
     display: block;
     bottom: 56px;
     content: '';
     position: absolute;
-    width: 3px;
+    width: 2px;
     height: 0px;
-    animation: ${scroll} 1s infinite ease-in;
     left: 50%;
     transform: translateX(-50%);
     background-color: #ebebeb;
+    animation: ${scroll} 2s infinite;
   }
+
+  ${mediaQuery.mediumStyle(css`
+    height: 83px;
+
+    &::before {
+      height: 59px;
+    }
+
+    &::after {
+      bottom: 35px;
+    }
+  `)}
 `
