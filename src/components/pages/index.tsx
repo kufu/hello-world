@@ -1,8 +1,8 @@
-import React, { useContext, useEffect, useState } from 'react'
+import React, { useContext } from 'react'
 import styled, { css, keyframes } from 'styled-components'
 
-import { CommandPaletteContext } from '../commandPalette'
 import { mediaQuery } from '../../themes'
+import { CommandPaletteContext } from '../commandPalette'
 
 import { MessageSection } from '../parts/MessageSection'
 import { AboutSection } from '../parts/AboutSection'
@@ -11,26 +11,16 @@ import { MembersVoiceSection } from '../parts/MembersVoiceSection'
 import { WelfareSection } from '../parts/WelfareSection'
 import { EntrySection } from '../parts/EntrySection'
 import { Footer } from '../parts/Footer'
+import { EyeCatchEffects } from '../parts/EyeCatchEffects'
 
 export const IndexPage = () => {
   const { currentCommand } = useContext(CommandPaletteContext)
 
-  const [scrolled, setScrolled] = useState(false)
-
-  useEffect(() => {
-    document.addEventListener('scroll', () => {
-      if (scrollY >= innerHeight / 3) {
-        setScrolled(true)
-      } else {
-        setScrolled(false)
-      }
-    })
-  }, [])
-
   return (
     <Wrapper>
-      <Underlay scrolled={scrolled} />
       {currentCommand && currentCommand.component}
+
+      <EyeCatchEffects />
 
       <Contents>
         {/* TODO: Headerコンポーネント化する */}
@@ -45,6 +35,7 @@ export const IndexPage = () => {
             <EntryButton href="">ENTRY</EntryButton>
           </Right>
         </Header>
+
         <Sections>
           {/* TODO: EyecatchSectionコンポーネント化する */}
           <EyecatchSection>
@@ -62,7 +53,7 @@ export const IndexPage = () => {
           <WelfareSection />
           <EntrySection />
         </Sections>
-        <ScrollIcon>SCROLL</ScrollIcon>
+
         <Footer />
       </Contents>
     </Wrapper>
@@ -71,28 +62,6 @@ export const IndexPage = () => {
 
 const Wrapper = styled.div`
   position: relative;
-`
-const Underlay = styled.div`
-  ${({ scrolled }) => {
-    return css`
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      background-image: url(/images/mv.png);
-      background-size: cover;
-      background-attachment: fixed;
-      background-position: top;
-      opacity: ${scrolled ? '0.4' : '1'};
-      transition: opacity 0.3s ease-in-out;
-
-      ${mediaQuery.smallStyle(css`
-        background-image: url(/images/mv_sp.png);
-        background-size: 100% 100%;
-      `)}
-    `
-  }}
 `
 const Contents = styled.div`
   position: relative;
@@ -206,57 +175,4 @@ const Sections = styled.div`
 `
 const EyecatchSection = styled.section`
   height: 100vh;
-`
-const scroll = keyframes`
-  0% {
-    bottom: 80px;
-    height: 0px;
-  }
-
-  40% {
-    bottom: 0px;
-    height: 80px;
-  }
-
-  60% {
-    bottom: 0px;
-    height: 80px;
-  }
-
-  100% {
-    bottom: 0px;
-    height: 0px;
-  }
-`
-const ScrollIcon = styled.div`
-  position: fixed;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 10px;
-  height: 104px;
-  color: #e1e1e1;
-  &::before {
-    display: block;
-    bottom: 0;
-    content: '';
-    position: absolute;
-    width: 1px;
-    height: 80px;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: #797979;
-  }
-  &::after {
-    display: block;
-    bottom: 56px;
-    content: '';
-    position: absolute;
-    width: 3px;
-    height: 0px;
-    animation: ${scroll} 1s infinite ease-in;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: #ebebeb;
-  }
 `
