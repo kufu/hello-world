@@ -22,8 +22,10 @@ export const Accordion: FC<Props> = ({ title, children }) => {
   }
 
   return (
-    <AccordionWrapper onClick={toggleAccordion}>
-      <AccordionTitle className={isActive}>{title}</AccordionTitle>
+    <AccordionWrapper>
+      <AccordionTitle className={isActive} onClick={toggleAccordion} role="button">
+        {title}
+      </AccordionTitle>
       <AccordionContent ref={content} height={height}>
         {children}
       </AccordionContent>
