@@ -2,140 +2,142 @@ import React from 'react'
 import styled, { css } from 'styled-components'
 
 import { mediaQuery } from '../../themes'
+
 import { SectionTitle } from './SectionTitle'
 import { Accordion } from './Accordion'
 
-export const MembersVoiceSection = () => {
-  return (
-    <Wrapper>
-      <SectionTitle backgroundText="Members\AVoice">Members Voice</SectionTitle>
-      <AcoordionWrapper>
-        <Accordion title="Q. 前職についておしえてください?">
-          <ul>
-            <DescriptionItem>
-              <Description>
-                SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由
-              </Description>
-              <Member>
-                ソフトウェアエンジニア : <Name>@AtsushiM</Name>
-              </Member>
-            </DescriptionItem>
-            <DescriptionItem>
-              <Description>
-                SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由
-              </Description>
-              <Member>
-                ソフトウェアエンジニア : <Name>@AtsushiM</Name>
-              </Member>
-            </DescriptionItem>
-            <DescriptionItem>
-              <Description>
-                SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由
-              </Description>
-              <Member>
-                ソフトウェアエンジニア : <Name>@AtsushiM</Name>
-              </Member>
-            </DescriptionItem>
-          </ul>
-        </Accordion>
-        <Accordion title="Q. SmartHRに入った理由は？">
-          <ul>
-            <DescriptionItem>
-              <Description>
-                SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由
-              </Description>
-              <Member>
-                ソフトウェアエンジニア : <Name>@AtsushiM</Name>
-              </Member>
-            </DescriptionItem>
-            <DescriptionItem>
-              <Description>
-                SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由
-              </Description>
-              <Member>
-                ソフトウェアエンジニア : <Name>@AtsushiM</Name>
-              </Member>
-            </DescriptionItem>
-            <DescriptionItem>
-              <Description>
-                SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由
-              </Description>
-              <Member>
-                ソフトウェアエンジニア : <Name>@AtsushiM</Name>
-              </Member>
-            </DescriptionItem>
-          </ul>
-        </Accordion>
-        <Accordion title="Q. 開発チームの特色といえば？">
-          <ul>
-            <DescriptionItem>
-              <Description>
-                SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由
-              </Description>
-              <Member>
-                ソフトウェアエンジニア : <Name>@AtsushiM</Name>
-              </Member>
-            </DescriptionItem>
-            <DescriptionItem>
-              <Description>
-                SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由
-              </Description>
-              <Member>
-                ソフトウェアエンジニア : <Name>@AtsushiM</Name>
-              </Member>
-            </DescriptionItem>
-            <DescriptionItem>
-              <Description>
-                SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由
-              </Description>
-              <Member>
-                ソフトウェアエンジニア : <Name>@AtsushiM</Name>
-              </Member>
-            </DescriptionItem>
-          </ul>
-        </Accordion>
-        <Accordion title="Q. こういう人に入ってきてほしい！">
-          <ul>
-            <DescriptionItem>
-              <Description>
-                SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由
-              </Description>
-              <Member>
-                ソフトウェアエンジニア : <Name>@AtsushiM</Name>
-              </Member>
-            </DescriptionItem>
-            <DescriptionItem>
-              <Description>
-                SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由
-              </Description>
-              <Member>
-                ソフトウェアエンジニア : <Name>@AtsushiM</Name>
-              </Member>
-            </DescriptionItem>
-            <DescriptionItem>
-              <Description>
-                SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由
-              </Description>
-              <Member>
-                ソフトウェアエンジニア : <Name>@AtsushiM</Name>
-              </Member>
-            </DescriptionItem>
-          </ul>
-        </Accordion>
-      </AcoordionWrapper>
-    </Wrapper>
-  )
-}
+export const MembersVoiceSection = () => (
+  <Wrapper>
+    <SectionTitle backgroundText="Members\AVoice">Members Voice</SectionTitle>
+
+    <AccordionWrapper>
+      <Accordion title="Q. 前職についておしえてください?">
+        <ul>
+          <DescriptionItem>
+            <Description>
+              SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由
+            </Description>
+            <Member>
+              ソフトウェアエンジニア : <Name>@AtsushiM</Name>
+            </Member>
+          </DescriptionItem>
+          <DescriptionItem>
+            <Description>
+              SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由
+            </Description>
+            <Member>
+              ソフトウェアエンジニア : <Name>@AtsushiM</Name>
+            </Member>
+          </DescriptionItem>
+          <DescriptionItem>
+            <Description>
+              SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由
+            </Description>
+            <Member>
+              ソフトウェアエンジニア : <Name>@AtsushiM</Name>
+            </Member>
+          </DescriptionItem>
+        </ul>
+      </Accordion>
+
+      <Accordion title="Q. SmartHRに入った理由は？">
+        <ul>
+          <DescriptionItem>
+            <Description>
+              SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由
+            </Description>
+            <Member>
+              ソフトウェアエンジニア : <Name>@AtsushiM</Name>
+            </Member>
+          </DescriptionItem>
+          <DescriptionItem>
+            <Description>
+              SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由
+            </Description>
+            <Member>
+              ソフトウェアエンジニア : <Name>@AtsushiM</Name>
+            </Member>
+          </DescriptionItem>
+          <DescriptionItem>
+            <Description>
+              SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由
+            </Description>
+            <Member>
+              ソフトウェアエンジニア : <Name>@AtsushiM</Name>
+            </Member>
+          </DescriptionItem>
+        </ul>
+      </Accordion>
+
+      <Accordion title="Q. 開発チームの特色といえば？">
+        <ul>
+          <DescriptionItem>
+            <Description>
+              SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由
+            </Description>
+            <Member>
+              ソフトウェアエンジニア : <Name>@AtsushiM</Name>
+            </Member>
+          </DescriptionItem>
+          <DescriptionItem>
+            <Description>
+              SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由
+            </Description>
+            <Member>
+              ソフトウェアエンジニア : <Name>@AtsushiM</Name>
+            </Member>
+          </DescriptionItem>
+          <DescriptionItem>
+            <Description>
+              SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由
+            </Description>
+            <Member>
+              ソフトウェアエンジニア : <Name>@AtsushiM</Name>
+            </Member>
+          </DescriptionItem>
+        </ul>
+      </Accordion>
+
+      <Accordion title="Q. こういう人に入ってきてほしい！">
+        <ul>
+          <DescriptionItem>
+            <Description>
+              SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由
+            </Description>
+            <Member>
+              ソフトウェアエンジニア : <Name>@AtsushiM</Name>
+            </Member>
+          </DescriptionItem>
+          <DescriptionItem>
+            <Description>
+              SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由
+            </Description>
+            <Member>
+              ソフトウェアエンジニア : <Name>@AtsushiM</Name>
+            </Member>
+          </DescriptionItem>
+          <DescriptionItem>
+            <Description>
+              SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由
+            </Description>
+            <Member>
+              ソフトウェアエンジニア : <Name>@AtsushiM</Name>
+            </Member>
+          </DescriptionItem>
+        </ul>
+      </Accordion>
+    </AccordionWrapper>
+  </Wrapper>
+)
 
 const Wrapper = styled.section`
-  padding-top: 235px;
+  width: 100%;
 
-  ${mediaQuery.smallStyle(css`
-    padding-top: 180px;
+  ${mediaQuery.mediumStyle(css`
+    padding: 40px 0;
   `)}
 `
-
-const AcoordionWrapper = styled.div`
+const AccordionWrapper = styled.div`
   margin: 140px 0 0 auto;
   width: 867px;
 
@@ -154,7 +156,6 @@ const AcoordionWrapper = styled.div`
     margin-top: 35px;
   `)}
 `
-
 const DescriptionItem = styled.li`
   padding: 30px 25px 0 68px;
   list-style: none;
@@ -162,6 +163,7 @@ const DescriptionItem = styled.li`
   &:not(:first-child) {
     padding-top: 55px;
   }
+
   &:last-child {
     padding-bottom: 50px;
   }
@@ -178,7 +180,6 @@ const DescriptionItem = styled.li`
     }
   `)}
 `
-
 const Description = styled.p`
   color: #d3d3d3;
   font-size: 18px;
@@ -191,7 +192,6 @@ const Description = styled.p`
     line-height: 38px;
   `)}
 `
-
 const Member = styled.p`
   color: #808080;
   font-size: 14px;
@@ -202,7 +202,6 @@ const Member = styled.p`
     padding-top: 10px;
   `)}
 `
-
 const Name = styled.span`
   text-decoration: underline;
 `

@@ -1,79 +1,73 @@
 import React from 'react'
 import styled, { css } from 'styled-components'
 
-import { SectionTitle } from './SectionTitle'
 import { mediaQuery } from '../../themes'
 
-export const EntrySection = () => {
-  return (
-    <Section>
-      <SectionTitle backgroundText="We Are\AHiring!!">We Are Hiring!!</SectionTitle>
-      <Wrapper>
-        <Message>
-          「入退社の書類作成」「社会保険・労働保険の各種手続き」等を、
-          <br />
-          かんたん、シンプルにするクラウド人事労務ソフト「SmartHR」を開発しています。
-          <br />
-          一緒に SmartHR というスタートアップをグロースさせてください！
-        </Message>
-        <List>
-          <li>
-            <Item href="#">
-              ソフトウェアエンジニア
-              <BrSp />
-              <span>（バックエンド）</span>
-            </Item>
-          </li>
-          <li>
-            <Item href="#">
-              ソフトウェアエンジニア
-              <BrSp />
-              <span>（フロントエンド）</span>
-            </Item>
-          </li>
-          <li>
-            <Item>
-              ソフトウェアエンジニア
-              <BrSp />
-              <span>（マネージャ）</span>
-            </Item>
-          </li>
-          <li>
-            <Item>情報システム エンジニア</Item>
-          </li>
-          <li>
-            <Item>
-              ソフトウェアエンジニア
-              <BrSp />
-              <span>（SET/テスト）</span>
-            </Item>
-          </li>
-          <li>
-            <Item>QAエンジニア</Item>
-          </li>
-        </List>
-      </Wrapper>
-    </Section>
-  )
-}
+import { SectionTitle } from './SectionTitle'
 
-const Section = styled.section`
-  padding-top: 233px;
+export const EntrySection = () => (
+  <Wrapper>
+    <SectionTitle backgroundText="We Are\AHiring!!">We Are Hiring!!</SectionTitle>
+
+    <Inner>
+      <Message>
+        「入退社の書類作成」「社会保険・労働保険の各種手続き」等を、
+        <BrPc />
+        かんたん、シンプルにするクラウド人事労務ソフト「SmartHR」を開発しています。
+        <BrPc />
+        一緒に SmartHR というスタートアップをグロースさせてください！
+      </Message>
+      <List>
+        <li>
+          <Item href="#">
+            ソフトウェアエンジニア
+            <BrSp />
+            <span>（バックエンド）</span>
+          </Item>
+        </li>
+        <li>
+          <Item href="#">
+            ソフトウェアエンジニア
+            <BrSp />
+            <span>（フロントエンド）</span>
+          </Item>
+        </li>
+        <li>
+          <Item>
+            ソフトウェアエンジニア
+            <BrSp />
+            <span>（マネージャ）</span>
+          </Item>
+        </li>
+        <li>
+          <Item>情報システム エンジニア</Item>
+        </li>
+        <li>
+          <Item>
+            ソフトウェアエンジニア
+            <BrSp />
+            <span>（SET/テスト）</span>
+          </Item>
+        </li>
+        <li>
+          <Item>QAエンジニア</Item>
+        </li>
+      </List>
+    </Inner>
+  </Wrapper>
+)
+
+const Wrapper = styled.section`
+  width: 100%;
   color: #d3d3d3;
 
   ${mediaQuery.mediumStyle(css`
-    padding-top: 115px;
-  `)}
-  ${mediaQuery.smallStyle(css`
-    padding-top: 90px;
+    padding: 100px 0;
   `)}
 `
-
-const Wrapper = styled.div`
-  margin-top: 113px;
-  margin-left: auto;
+const Inner = styled.div`
   width: 869px;
-  justify-content: space-between;
+  margin: 113px 0 0 auto;
 
   ${mediaQuery.mediumStyle(css`
     width: 100%;
@@ -84,7 +78,6 @@ const Wrapper = styled.div`
     margin-top: 50px;
   `)}
 `
-
 const Message = styled.p`
   width: 868px;
   color: #d3d3d3;
@@ -98,11 +91,11 @@ const Message = styled.p`
     width: 100%;
     margin-bottom: 50px;
   `)}
+
   ${mediaQuery.smallStyle(css`
     margin-bottom: 60px;
   `)}
 `
-
 const List = styled.ul`
   display: flex;
   flex-direction: column;
@@ -110,21 +103,22 @@ const List = styled.ul`
     margin-top: 26px;
   }
 `
-
 const Item = styled.a`
-  display: block;
-  text-align: center;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   box-sizing: border-box;
-  height: 71px;
   width: 572px;
-  border: 1px solid #979797;
+  height: 71px;
+  padding: 0 26px;
   border-radius: 35px;
+  border: 1px solid #979797;
   background-color: #d8d8d8;
   color: #252525;
-  padding: 25.5px 17.43px;
-  font-size: 14px;
   font-weight: bold;
+  font-size: 18px;
   letter-spacing: 0.69px;
 
   &::after {
@@ -139,18 +133,24 @@ const Item = styled.a`
     right: 17px;
   }
 
-  & > span {
-    font-size: 12px;
+  > span {
+    font-size: 14px;
   }
 
   ${mediaQuery.mediumStyle(css`
     margin: 0 auto;
   `)}
+
   ${mediaQuery.smallStyle(css`
     width: 100%;
+    align-items: flex-start;
   `)}
 `
-
+const BrPc = styled.br`
+  ${mediaQuery.mediumStyle(css`
+    display: none;
+  `)}
+`
 const BrSp = styled.br`
   display: none;
 
