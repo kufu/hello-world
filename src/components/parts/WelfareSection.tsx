@@ -57,8 +57,7 @@ export const WelfareSection = () => (
 
     <LinkButton href="https://shanaiho.smarthr.co.jp/n/nf32ba99b0233" target="_blank" rel="noopener noreferrer">
       その他の福利厚生
-      {/* TODO: アイコンをいれる */}
-      <span>■</span>
+      <img src="/images/welfare/window_icon.svg" alt="icon" />
     </LinkButton>
   </Wrapper>
 )
@@ -149,12 +148,24 @@ const LinkButton = styled.a`
   font-weight: bold;
   letter-spacing: 0.85px;
 
+  & > img {
+    width: 24px;
+  }
+
   ${mediaQuery.mediumStyle(css`
     width: 100%;
+
+    & > img {
+      width: 20px;
+    }
   `)}
 
   ${mediaQuery.smallStyle(css`
     font-size: 16px;
     height: 70px;
+
+    & > img {
+      width: 18px;
+    }
   `)}
 `
