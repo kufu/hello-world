@@ -3,7 +3,7 @@ import { useEffect, useRef } from 'react'
 export const useEventListener = <T extends Event>(
   eventName: string,
   handler: (e: T) => void,
-  element: Element | Window = window,
+  element: Element | Window | null = typeof window !== 'undefined' ? window : null,
 ) => {
   const savedHandler = useRef<(e: T) => void>()
 
@@ -16,10 +16,14 @@ export const useEventListener = <T extends Event>(
       savedHandler.current && savedHandler.current(e)
     }
 
-    element.addEventListener(eventName, eventListener as any)
+    if (element) {
+      element.addEventListener(eventName, eventListener as any)
+    }
 
     return () => {
-      element.removeEventListener(eventName, eventListener as any)
+      if (element) {
+        element.removeEventListener(eventName, eventListener as any)
+      }
     }
   }, [eventName, element])
 }
