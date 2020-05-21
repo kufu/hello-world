@@ -6,24 +6,26 @@ import { useStoredScroll } from '../hooks/useStoredScroll'
 
 const MIN_OPACITY = 0.4
 
-const getCalculatedOpacity = (scrollY: number) => {
-  const halfInnerHeight = innerHeight / 2
+const getCalculatedOpacity = (scrollTop: number) => {
+  const height = typeof window !== 'undefined' ? window.innerHeight : 1
+  const halfInnerHeight = height / 2
   const opacityRange = 1 - MIN_OPACITY
   const scrollRange = opacityRange / halfInnerHeight
-  const y = -(scrollY - halfInnerHeight * 3)
-  const scroll = innerHeight - y
+  const y = -(scrollTop - halfInnerHeight * 3)
+  const scroll = height - y
   const amount = scroll * scrollRange
 
   return 1 - amount
 }
 
 export const EyeCatchEffects = () => {
+  const height = typeof window !== 'undefined' ? window.innerHeight : 1
   const { y } = useStoredScroll()
   let opacity: number
 
-  if (y < innerHeight / 2) {
+  if (y < height / 2) {
     opacity = 1
-  } else if (y > innerHeight) {
+  } else if (y > height) {
     opacity = MIN_OPACITY
   } else {
     opacity = getCalculatedOpacity(y)
@@ -32,7 +34,7 @@ export const EyeCatchEffects = () => {
   return (
     <>
       <Underlay opacity={opacity} />
-      <ScrollIcon visible={y < innerHeight / 2}>SCROLL</ScrollIcon>
+      <ScrollIcon visible={y < height / 2}>SCROLL</ScrollIcon>
     </>
   )
 }
