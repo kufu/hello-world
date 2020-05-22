@@ -56,9 +56,13 @@ export const TechnologyStackSection = () => (
 const Wrapper = styled.div`
   width: 100%;
   color: #d3d3d3;
+  margin-top: 230px;
+  ${mediaQuery.mediumStyle(css`
+    margin-top: 81px;
+  `)}
 
   ${mediaQuery.smallStyle(css`
-    padding: 40px 0;
+    margin-top: 38px;
   `)}
 `
 const Section = styled.section`
