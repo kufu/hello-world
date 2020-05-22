@@ -43,7 +43,7 @@ export const AboutSection = () => (
 
 const Wrapper = styled.div`
   width: 100%;
-  padding: 20px 0;
+  padding: 20px 0 0;
 `
 const List = styled.ul`
   max-width: 1160px;
