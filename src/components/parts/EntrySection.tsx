@@ -59,7 +59,6 @@ export const EntrySection = () => (
 
 const Wrapper = styled.section`
   width: 100%;
-  color: #d3d3d3;
 
   ${mediaQuery.mediumStyle(css`
     padding: 100px 0;
@@ -80,7 +79,6 @@ const Inner = styled.div`
 `
 const Message = styled.p`
   width: 868px;
-  color: #d3d3d3;
   font-size: 18px;
   font-weight: 500;
   letter-spacing: 2.25px;

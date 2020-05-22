@@ -1,7 +1,7 @@
 import React from 'react'
 import styled, { css } from 'styled-components'
 
-import { mediaQuery } from '../../themes'
+import { mediaQuery, palette } from '../../themes'
 
 import { SectionTitle } from './SectionTitle'
 
@@ -55,7 +55,6 @@ export const TechnologyStackSection = () => (
 
 const Wrapper = styled.div`
   width: 100%;
-  color: #d3d3d3;
   margin-top: 230px;
   ${mediaQuery.mediumStyle(css`
     margin-top: 81px;
@@ -108,7 +107,7 @@ const Supplements = styled.dl`
   > dt {
     clear: both;
     float: left;
-    color: #808080;
+    color: ${palette.TEXT_GREY};
 
     &::after {
       display: inline;
