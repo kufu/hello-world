@@ -11,30 +11,69 @@ export const MembersVoiceSection = () => (
     <SectionTitle backgroundText="Members\AVoice">Members Voice</SectionTitle>
 
     <AccordionWrapper>
-      <Accordion title="Q. 前職についておしえてください?">
+      <Accordion title="Q. 前職についておしえてください">
         <ul>
           <DescriptionItem>
             <Description>
-              SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由
+              商用スペースのオンラインマーケットプレイスサービスの開発、運用を行っていました。開発チーム3人といったスタートアップ企業でグロースや開発をメインに行っていました。
             </Description>
             <Member>
-              ソフトウェアエンジニア : <Name>@AtsushiM</Name>
+              サーバサイドエンジニア :{' '}
+              <Name>
+                <a href="https://twitter.com/h1kita" target="_blank" rel="noopener noreferrer">
+                  @h1kita
+                </a>
+              </Name>
+            </Member>
+          </DescriptionItem>
+          <DescriptionItem>
+            <Description>沖縄県の SIer で、PHP 製 グループウェアの開発・運用保守に携わっていました。</Description>
+            <Member>
+              サーバサイドエンジニア :{' '}
+              <Name>
+                <a href="https://twitter.com/gongoZ" target="_blank" rel="noopener noreferrer">
+                  @gongoZ
+                </a>
+              </Name>
+            </Member>
+          </DescriptionItem>
+          <DescriptionItem>
+            <Description>仮想通貨交換業の取引所サービスの開発を担当するフロントエンドエンジニアでした。</Description>
+            <Member>
+              フロントエンドエンジニア :{' '}
+              <Name>
+                <a href="https://twitter.com/taaabbooo" target="_blank" rel="noopener noreferrer">
+                  @taaabbooo
+                </a>
+              </Name>
             </Member>
           </DescriptionItem>
           <DescriptionItem>
             <Description>
-              SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由
+              受託制作会社で最初はコーダーとしてマークアップをやっていて、その後 JavaScript
+              の描画系のライブラリを使ったスペシャルコンテンツサイトを多く担当するようになりました。その後は広告系の会社に転職しフロントエンドエンジニアとして広告出稿システムの管理画面の制作や表示される広告のコンポーネントの作成を
+              React を使って担当していました。
             </Description>
             <Member>
-              ソフトウェアエンジニア : <Name>@AtsushiM</Name>
+              フロントエンドエンジニア :{' '}
+              <Name>
+                <a href="https://twitter.com/nabeliwo" target="_blank" rel="noopener noreferrer">
+                  @nabeliwo
+                </a>
+              </Name>
             </Member>
           </DescriptionItem>
           <DescriptionItem>
             <Description>
-              SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由
+              動画生放送サイトの開発保守運用、プレゼン用スライド共有サイトの開発、オンライン教育システムの開発とかをやっている会社でした。Scala、Ruby、TypeScriptをメインに開発してました。
             </Description>
             <Member>
-              ソフトウェアエンジニア : <Name>@AtsushiM</Name>
+              サーバサイドエンジニア :{' '}
+              <Name>
+                <a href="https://twitter.com/GhostBrain" target="_blank" rel="noopener noreferrer">
+                  @GhostBrain
+                </a>
+              </Name>
             </Member>
           </DescriptionItem>
         </ul>
@@ -44,26 +83,63 @@ export const MembersVoiceSection = () => (
         <ul>
           <DescriptionItem>
             <Description>
-              SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由
+              最新の従業員データがどんどん溜まっていくので、今後はデータの使い方や見せ方の工夫次第で幅広くサービスを提供できるというポテンシャルを感じたため。
             </Description>
             <Member>
-              ソフトウェアエンジニア : <Name>@AtsushiM</Name>
+              サーバサイドエンジニア :{' '}
+              <Name>
+                <a href="https://twitter.com/ykarakita" target="_blank" rel="noopener noreferrer">
+                  @ykarakita
+                </a>
+              </Name>
             </Member>
           </DescriptionItem>
           <DescriptionItem>
             <Description>
-              SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由
+              前職で入社手続きや年末調整にて SmartHR を利用しており、非常にいいプロダクトだなという印象を持っていたこと、会社の
+              Value がアジャイルと親和性が高いと感じられたことなどから入社を決めました。
             </Description>
             <Member>
-              ソフトウェアエンジニア : <Name>@AtsushiM</Name>
+              サーバサイドエンジニア : <Name>Takuya MORIZUMI</Name>
             </Member>
           </DescriptionItem>
           <DescriptionItem>
             <Description>
-              SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由
+              オープンな社風や素早い意思決定に惹かれました。また、大きく成長していく途上の企業で働く経験を得たいと考えました。
             </Description>
             <Member>
-              ソフトウェアエンジニア : <Name>@AtsushiM</Name>
+              サーバサイドエンジニア :{' '}
+              <Name>
+                <a href="https://twitter.com/sugamasao" target="_blank" rel="noopener noreferrer">
+                  @sugamasao
+                </a>
+              </Name>
+            </Member>
+          </DescriptionItem>
+          <DescriptionItem>
+            <Description>
+              人の役に立っていることを自分で納得できるプロダクトを、チームで開発していける会社だと思ったから。
+            </Description>
+            <Member>
+              サーバサイドエンジニア :{' '}
+              <Name>
+                <a href="https://twitter.com/meganemura" target="_blank" rel="noopener noreferrer">
+                  @meganemura
+                </a>
+              </Name>
+            </Member>
+          </DescriptionItem>
+          <DescriptionItem>
+            <Description>
+              カジュアル面談や面接で話した方々の人柄に惹かれました。雰囲気が合うというか一緒に良いプロダクトを作りたい！と思いました！
+            </Description>
+            <Member>
+              フロントエンドエンジニア :{' '}
+              <Name>
+                <a href="https://twitter.com/cidermitaina" target="_blank" rel="noopener noreferrer">
+                  @cidermitaina
+                </a>
+              </Name>
             </Member>
           </DescriptionItem>
         </ul>
@@ -73,26 +149,52 @@ export const MembersVoiceSection = () => (
         <ul>
           <DescriptionItem>
             <Description>
-              SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由
+              人が良くて根が真面目な人が多いかなという印象です。プロダクトをより良いものにしたいという気持ちはみんな強いと思います。あと、一部の人はお酒を飲むと性格が変わります。
             </Description>
             <Member>
-              ソフトウェアエンジニア : <Name>@AtsushiM</Name>
+              サーバサイドエンジニア :{' '}
+              <Name>
+                <a href="https://twitter.com/tak_wak_dev" target="_blank" rel="noopener noreferrer">
+                  @wakasa
+                </a>
+              </Name>
             </Member>
           </DescriptionItem>
           <DescriptionItem>
             <Description>
-              SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由
+              困っている人がいたら助けようという気持ちの強い人が多いです。自チームだけではなく他チームからもコメントが来るのでとてもありがたいです。
             </Description>
             <Member>
-              ソフトウェアエンジニア : <Name>@AtsushiM</Name>
+              サーバサイドエンジニア :{' '}
+              <Name>
+                <a href="https://twitter.com/hypermkt" target="_blank" rel="noopener noreferrer">
+                  @hypermkt
+                </a>
+              </Name>
             </Member>
           </DescriptionItem>
           <DescriptionItem>
             <Description>
-              SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由
+              一部のエースエンジニアが引っ張っていくというよりも、みんなで話し合って決めて、協力して進めていこうという雰囲気があるかも。
             </Description>
             <Member>
-              ソフトウェアエンジニア : <Name>@AtsushiM</Name>
+              iOS エンジニア :{' '}
+              <Name>
+                <a href="https://twitter.com/sy_hash" target="_blank" rel="noopener noreferrer">
+                  @sy_hash
+                </a>
+              </Name>
+            </Member>
+          </DescriptionItem>
+          <DescriptionItem>
+            <Description>みんな大喜利が大好きなことですね。ほぼ笑点です。</Description>
+            <Member>
+              フロントエンドエンジニア :{' '}
+              <Name>
+                <a href="https://twitter.com/Tokky0425" target="_blank" rel="noopener noreferrer">
+                  @Tokky0425
+                </a>
+              </Name>
             </Member>
           </DescriptionItem>
         </ul>
@@ -102,26 +204,48 @@ export const MembersVoiceSection = () => (
         <ul>
           <DescriptionItem>
             <Description>
-              SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由
+              技術スタックはそんなにとんがっていなくても、プロダクトを中心とする文化に合いそうな方はぜひ。
             </Description>
             <Member>
-              ソフトウェアエンジニア : <Name>@AtsushiM</Name>
+              サーバサイドエンジニア :{' '}
+              <Name>
+                <a href="https://twitter.com/f440" target="_blank" rel="noopener noreferrer">
+                  @f440
+                </a>
+              </Name>
             </Member>
           </DescriptionItem>
           <DescriptionItem>
-            <Description>
-              SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由
-            </Description>
+            <Description>胆力の必要な開発ができる方。</Description>
             <Member>
-              ソフトウェアエンジニア : <Name>@AtsushiM</Name>
+              サーバサイドエンジニア :{' '}
+              <Name>
+                <a href="https://twitter.com/tknzk" target="_blank" rel="noopener noreferrer">
+                  @tknzk
+                </a>
+              </Name>
             </Member>
           </DescriptionItem>
           <DescriptionItem>
-            <Description>
-              SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由SmartHRに入った理由
-            </Description>
+            <Description>負債になりにくい設計や実装を考えたい方。</Description>
             <Member>
-              ソフトウェアエンジニア : <Name>@AtsushiM</Name>
+              サーバサイドエンジニア :{' '}
+              <Name>
+                <a href="https://twitter.com/motsat" target="_blank" rel="noopener noreferrer">
+                  @motsat
+                </a>
+              </Name>
+            </Member>
+          </DescriptionItem>
+          <DescriptionItem>
+            <Description>社会の非合理をハックするんだ！という気持ちを持っている方。</Description>
+            <Member>
+              サーバサイドエンジニア :{' '}
+              <Name>
+                <a href="https://twitter.com/kody015" target="_blank" rel="noopener noreferrer">
+                  @kody015
+                </a>
+              </Name>
             </Member>
           </DescriptionItem>
         </ul>
