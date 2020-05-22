@@ -327,5 +327,10 @@ const Member = styled.p`
   `)}
 `
 const Name = styled.span`
-  text-decoration: underline;
+  & > a {
+    text-decoration: underline;
+    &:hover {
+      text-decoration: none;
+    }
+  }
 `
