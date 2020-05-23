@@ -66,14 +66,25 @@ const Underlay = styled.div<{ opacity: number }>`
       left: 0;
       width: 100%;
       height: 100%;
-      position: absolute;
-      background-image: url(/images/mv.png);
-      background-size: cover;
-      background-attachment: fixed;
-      background-position: top;
+
+      &::before {
+        content: '';
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        width: 100%;
+        height: 100vh;
+        background-image: url(/images/mv.png);
+        background-size: cover;
+        background-position: top;
+      }
 
       ${mediaQuery.smallStyle(css`
-        background-image: url(/images/mv_sp.png);
+        &::before {
+          background-image: url(/images/mv_sp.png);
+        }
       `)}
     `
   }}
