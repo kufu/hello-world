@@ -62,29 +62,17 @@ const Underlay = styled.div<{ opacity: number }>`
   ${({ opacity }) => {
     return css`
       opacity: ${opacity};
+      position: fixed;
       top: 0;
       left: 0;
       width: 100%;
       height: 100%;
-
-      &::before {
-        content: '';
-        display: block;
-        position: fixed;
-        top: 0;
-        left: 0;
-        z-index: -1;
-        width: 100%;
-        height: 100vh;
-        background-image: url(/images/mv.png);
-        background-size: cover;
-        background-position: top;
-      }
+      background-image: url(/images/mv.png);
+      background-size: cover;
+      background-position: top;
 
       ${mediaQuery.smallStyle(css`
-        &::before {
-          background-image: url(/images/mv_sp.png);
-        }
+        background-image: url(/images/mv_sp.png);
       `)}
     `
   }}
