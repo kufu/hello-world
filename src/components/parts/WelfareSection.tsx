@@ -1,7 +1,7 @@
 import React from 'react'
 import styled, { css } from 'styled-components'
 
-import { mediaQuery } from '../../themes'
+import { mediaQuery, palette } from '../../themes'
 
 import { SectionTitle } from './SectionTitle'
 
@@ -64,7 +64,6 @@ export const WelfareSection = () => (
 
 const Wrapper = styled.div`
   width: 100%;
-  color: #d3d3d3;
 `
 const List = styled.ul`
   display: flex;
@@ -101,7 +100,6 @@ const Image = styled.img`
   width: 100%;
 `
 const ItemTitle = styled.p`
-  color: #d3d3d3;
   font-size: 22px;
   font-weight: bold;
   letter-spacing: 0.85px;
@@ -112,7 +110,6 @@ const ItemTitle = styled.p`
   `)}
 `
 const ItemDescription = styled.p`
-  color: #d3d3d3;
   font-size: 14px;
   font-weight: 500;
   letter-spacing: 2px;
@@ -139,11 +136,11 @@ const LinkButton = styled.a`
   width: 867px;
   border: 1px solid #4e4e4e;
   border-radius: 6px;
-  background-color: rgba(21, 17, 17, 0.52);
+  background-color: ${palette.BUTTON_BACKGROUND};
   align-items: center;
   justify-content: space-between;
   padding: 0 35.5px;
-  color: #d3d3d3;
+  color: ${palette.TEXT};
   font-size: 22px;
   font-weight: bold;
   letter-spacing: 0.85px;

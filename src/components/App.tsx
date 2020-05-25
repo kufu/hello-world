@@ -2,7 +2,7 @@ import React, { FC, ReactNode } from 'react'
 import { createGlobalStyle, css } from 'styled-components'
 import reset from 'styled-reset'
 
-import { mediaQuery } from '../themes'
+import { mediaQuery, palette } from '../themes'
 import { CommandPaletteProvider, commands } from './commandPalette'
 
 export const App: FC<{ children: ReactNode }> = ({ children }) => (
@@ -21,6 +21,7 @@ const GlobalStyle = createGlobalStyle`
     word-wrap: break-word;
     font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ", sans-serif;
     background-color: black;
+    color: ${palette.TEXT}
   }
   a {
     color: inherit;

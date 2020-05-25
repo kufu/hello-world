@@ -15,7 +15,7 @@ export const SectionTitle: FC<Props> = ({ children, backgroundText }) => (
 
 const Title = styled.h2<{ backgroundText: string }>`
   ${({ backgroundText }) => css`
-    color: #fff;
+    color: #D0D0D0;
     font-size: 26px;
     padding-left: 102px;
     position: relative;

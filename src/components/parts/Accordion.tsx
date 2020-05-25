@@ -1,7 +1,7 @@
 import React, { FC, ReactNode, useRef, useState } from 'react'
 import styled, { css } from 'styled-components'
 
-import { mediaQuery } from '../../themes'
+import { mediaQuery, palette } from '../../themes'
 
 type Props = {
   title: string
@@ -36,12 +36,11 @@ export const Accordion: FC<Props> = ({ title, children }) => {
 const AccordionWrapper = styled.dl`
   border: 1px solid #4e4e4e;
   border-radius: 6px;
-  background-color: rgba(21, 17, 17, 0.52);
+  background-color: ${palette.BUTTON_BACKGROUND};
   transition: background-color 0.2s ease;
 `
 
 const AccordionTitle = styled.dt`
-  color: #d3d3d3;
   font-size: 22px;
   font-weight: bold;
   letter-spacing: 1px;

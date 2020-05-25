@@ -1,7 +1,7 @@
 import React from 'react'
 import styled, { css } from 'styled-components'
 
-import { mediaQuery } from '../../themes'
+import { mediaQuery, palette } from '../../themes'
 
 import { SectionTitle } from './SectionTitle'
 import { Accordion } from './Accordion'
@@ -305,7 +305,6 @@ const DescriptionItem = styled.li`
   `)}
 `
 const Description = styled.p`
-  color: #d3d3d3;
   font-size: 18px;
   font-weight: 500;
   letter-spacing: 2px;
@@ -317,7 +316,7 @@ const Description = styled.p`
   `)}
 `
 const Member = styled.p`
-  color: #808080;
+  color: ${palette.TEXT_GREY};
   font-size: 14px;
   line-height: 21px;
   text-align: right;
