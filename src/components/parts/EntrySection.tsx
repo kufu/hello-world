@@ -6,7 +6,7 @@ import { mediaQuery } from '../../themes'
 import { SectionTitle } from './SectionTitle'
 
 export const EntrySection = () => (
-  <Wrapper>
+  <Wrapper id="entry">
     <SectionTitle backgroundText="We Are\AHiring!!">We Are Hiring!!</SectionTitle>
 
     <Inner>
@@ -19,38 +19,50 @@ export const EntrySection = () => (
       </Message>
       <List>
         <li>
-          <Item href="#">
-            ソフトウェアエンジニア
-            <BrSp />
-            <span>（バックエンド）</span>
+          <Item href="https://open.talentio.com/1/c/smarthr/requisitions/detail/6632" target="_blank" rel="noopener noreferrer">
+            バックエンドエンジニア
           </Item>
         </li>
         <li>
-          <Item href="#">
-            ソフトウェアエンジニア
-            <BrSp />
-            <span>（フロントエンド）</span>
+          <Item href="https://open.talentio.com/1/c/smarthr/requisitions/detail/7349" target="_blank" rel="noopener noreferrer">
+            フロントエンドエンジニア
           </Item>
         </li>
         <li>
-          <Item>
+          <Item href="https://open.talentio.com/1/c/smarthr/requisitions/detail/7350" target="_blank" rel="noopener noreferrer">
             ソフトウェアエンジニア
             <BrSp />
-            <span>（マネージャ）</span>
+            <span>（マネージャー候補）</span>
           </Item>
         </li>
         <li>
-          <Item>情報システム エンジニア</Item>
-        </li>
-        <li>
-          <Item>
-            ソフトウェアエンジニア
+          <Item href="https://open.talentio.com/1/c/smarthr/requisitions/detail/12856" target="_blank" rel="noopener noreferrer">
+            テストエンジニア
             <BrSp />
-            <span>（SET/テスト）</span>
+            <span>（Software Engineer in Test）</span>
           </Item>
         </li>
         <li>
-          <Item>QAエンジニア</Item>
+          <Item href="https://open.talentio.com/1/c/smarthr/requisitions/detail/12855" target="_blank" rel="noopener noreferrer">
+            QA
+            <BrSp />
+            <span>（品質保証）</span>
+          </Item>
+        </li>
+        <li>
+          <Item href="https://open.talentio.com/1/c/smarthr/requisitions/detail/7587" target="_blank" rel="noopener noreferrer">
+            情報システム エンジニア
+          </Item>
+        </li>
+        <li>
+          <Item href="https://open.talentio.com/1/c/smarthr/requisitions/detail/13859" target="_blank" rel="noopener noreferrer">
+            セキュリティエンジニア
+          </Item>
+        </li>
+        <li>
+          <Item href="https://open.talentio.com/1/c/smarthr/requisitions/detail/13762" target="_blank" rel="noopener noreferrer">
+            カジュアル面談ご希望の方
+          </Item>
         </li>
       </List>
     </Inner>
@@ -59,10 +71,7 @@ export const EntrySection = () => (
 
 const Wrapper = styled.section`
   width: 100%;
-
-  ${mediaQuery.mediumStyle(css`
-    padding: 100px 0;
-  `)}
+  padding: 100px 0;
 `
 const Inner = styled.div`
   width: 869px;
@@ -141,7 +150,7 @@ const Item = styled.a`
     &:hover {
       opacity: 0.7;
     }
-  `)} 
+  `)}
 
   ${mediaQuery.mediumStyle(css`
     margin: 0 auto;

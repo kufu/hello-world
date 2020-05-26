@@ -11,7 +11,7 @@ export const EyeCatch = () => (
         <SiteTitle>Engineer Recruiting</SiteTitle>
       </Logo>
 
-      <PcEntryButton href="">ENTRY</PcEntryButton>
+      <PcEntryButton href="#entry">ENTRY</PcEntryButton>
     </Header>
 
     <PageTitle>
@@ -19,7 +19,7 @@ export const EyeCatch = () => (
     </PageTitle>
 
     <SpButtonWrapper>
-      <SpEntryButton href="">ENTRY</SpEntryButton>
+      <SpEntryButton href="#entry">ENTRY</SpEntryButton>
     </SpButtonWrapper>
   </Wrapper>
 )
