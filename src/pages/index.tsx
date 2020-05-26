@@ -11,7 +11,7 @@ const Index = () => (
       <meta
         name="description"
         content="2年連続シェアNo.1のクラウド人事労務ソフト「SmartHR」を開発しています。私たちはアナログな世界を、テクノロジーと創意工夫でもっとシンプル、かんたん、便利に変えていきます。歴史に残るソフトウェアを作ろう！"
-      ></meta>
+      />
       <meta property="og:title" content="SmartHR エンジニア採用" />
       <meta property="og:type" content="website" />
       <meta property="og:url" content="https://hello-world.smarthr.co.jp" />
