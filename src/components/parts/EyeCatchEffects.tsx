@@ -40,11 +40,11 @@ const Underlay = styled.div<{ visible: boolean }>`
   ${({ visible }) => {
     return css`
       opacity: ${visible ? 1 : 0.4};
+      position: fixed;
       top: 0;
       left: 0;
       width: 100%;
       height: 100%;
-      position: fixed;
       background-image: url(/images/mv.png);
       background-size: cover;
       background-position: top;
