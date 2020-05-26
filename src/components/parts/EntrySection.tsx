@@ -135,6 +135,14 @@ const Item = styled.a`
     font-size: 14px;
   }
 
+  ${mediaQuery.largeStyle(css`
+    transition: opacity 0.3s ease-in-out;
+
+    &:hover {
+      opacity: 0.7;
+    }
+  `)} 
+
   ${mediaQuery.mediumStyle(css`
     margin: 0 auto;
   `)}

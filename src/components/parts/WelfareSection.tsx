@@ -75,8 +75,10 @@ const List = styled.ul`
   justify-content: space-between;
 
   ${mediaQuery.mediumStyle(css`
-    margin-top: 59px;
     width: 100%;
+    max-width: 702px;
+    margin-top: 59px;
+    margin-right: auto;
   `)}
 
   ${mediaQuery.smallStyle(css`
@@ -148,6 +150,14 @@ const LinkButton = styled.a`
   & > img {
     width: 24px;
   }
+
+  ${mediaQuery.largeStyle(css`
+    transition: background-color 0.3s ease-in-out;
+
+    &:hover {
+      background-color: rgba(21, 17, 17, 1);
+    }
+  `)} 
 
   ${mediaQuery.mediumStyle(css`
     width: 100%;
