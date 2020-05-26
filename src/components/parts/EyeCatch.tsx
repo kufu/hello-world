@@ -85,6 +85,11 @@ const PcEntryButton = styled.a`
   font-weight: bold;
   font-size: 16px;
   text-align: center;
+  transition: opacity 0.3s ease-in-out;
+
+  &:hover {
+    opacity: 0.7;
+  }
 
   ${mediaQuery.smallStyle(css`
     display: none;
