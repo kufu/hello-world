@@ -151,6 +151,14 @@ const LinkButton = styled.a`
     width: 24px;
   }
 
+  ${mediaQuery.largeStyle(css`
+    transition: background-color 0.3s ease-in-out;
+
+    &:hover {
+      background-color: rgba(21, 17, 17, 1);
+    }
+  `)} 
+
   ${mediaQuery.mediumStyle(css`
     width: 100%;
 
