@@ -75,8 +75,10 @@ const List = styled.ul`
   justify-content: space-between;
 
   ${mediaQuery.mediumStyle(css`
-    margin-top: 59px;
     width: 100%;
+    max-width: 702px;
+    margin-top: 59px;
+    margin-right: auto;
   `)}
 
   ${mediaQuery.smallStyle(css`
