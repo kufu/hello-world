@@ -12,7 +12,7 @@ export const TechnologyStackSection = () => (
     <Section>
       <SectionHeadline>SmartHR</SectionHeadline>
       <Text>
-        開発に必要な技術は、現場の担当エンジニアがユーザとシステムにとって最適な技術を選定しています。SmartHR本体は、現在は以下の技術スタックのもとに開発が進められています。
+        開発に必要な技術は、現場の担当エンジニアがユーザとシステムにとって最適なものを選定しています。SmartHR本体は、現在は以下の技術スタックのもとに開発が進められています。
       </Text>
       <Supplements>
         <dt>プログラミング言語</dt>
