@@ -6,8 +6,8 @@ import { IndexPage } from '../components/pages'
 import { IePage } from '../components/pages/ie'
 
 const Index = () => {
-  const ua = typeof window !== 'undefined' ? window.navigator.userAgent : null
-  const isIe = ua ? ua.indexOf('msie') !== -1 : false
+  const ua = typeof window !== 'undefined' ? window.navigator.userAgent.toLowerCase() : null
+  const isIe = ua ? ua.indexOf('msie') !== -1 || ua.indexOf('trident') !== -1 : false
 
   return (
     <App>
