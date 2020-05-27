@@ -13,6 +13,11 @@ export const IePage = () => (
       <Link href="https://www.google.com/intl/ja_jp/chrome/" title="無料Chromeのダウンロード">
         無料Chromeのダウンロード
       </Link>
+      <Description>
+        ※このページは SmartHR のエンジニア採用サイトです。
+        <br />
+        Internet Explorer には対応していません。
+      </Description>
     </div>
   </Wrapper>
 )
@@ -23,12 +28,12 @@ const Wrapper = styled.div`
   justify-content: center;
   height: 100vh;
   background-color: #fff;
-`
-const Text = styled.p`
-  margin-bottom: 20px;
   color: #646464;
   font: normal 64px/63px Helvetica, Arial, sans-serif;
   text-align: center;
+`
+const Text = styled.p`
+  margin-bottom: 20px;
 `
 const Link = styled.a`
   display: block;
@@ -40,6 +45,10 @@ const Link = styled.a`
   color: #fff;
   font-weight: bold;
   font-size: 14px;
-  text-align: center;
   line-height: 47px;
+`
+const Description = styled.p`
+  margin-top: 20px;
+  font-size: 14px;
+  line-height: 1.4;
 `
