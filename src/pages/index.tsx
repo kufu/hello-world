@@ -12,7 +12,7 @@ const Index = () => {
   return (
     <App>
       <Helmet>
-        <title>Engineer Recruiting | SmartHR</title>
+        <title>SmartHR エンジニア採用</title>
         <meta
           name="description"
           content="2年連続シェアNo.1のクラウド人事労務ソフト「SmartHR」を開発しています。私たちはアナログな世界を、テクノロジーと創意工夫でもっとシンプル、かんたん、便利に変えていきます。歴史に残るソフトウェアを作ろう！"
