@@ -47,10 +47,10 @@ export const WelfareSection = () => (
         <ItemTitle>リモートワーク</ItemTitle>
         <Image src="/images/welfare/welfare6.jpg" alt="リモートワーク" />
         <ItemDescription>
-          リモートワークは事前申請のうえ週1回まで可能。好きな時間帯で4時間働けば良い半休制度と併用すると、日中の時間が有効に活用可能。
+          情勢を踏まえて、現在は全員フルリモート体制で勤務。今後については絶賛検討中で、積極的にリモートワークを取り入れる予定。
         </ItemDescription>
-        <Link href="https://shanaiho.smarthr.co.jp/n/nf32ba99b0233" target="_blank" rel="noopener noreferrer">
-          「シン・半休制度について」
+        <Link href="https://shanaiho.smarthr.co.jp/n/nb9e27c4f9fc0" target="_blank" rel="noopener noreferrer">
+          「感染症対策、リモートワークについて」
         </Link>
       </Item>
     </List>
