@@ -7,7 +7,7 @@ import { mediaQuery } from '../../themes'
 
 export const Footer = () => (
   <Wrapper>
-    <Logo src="/images/logo_smarthr.png" alt="SmartHR" />
+    <Logo src="/images/logo_smarthr.png" alt="" />
     <Copyright>&copy; SmartHR, Inc.</Copyright>
   </Wrapper>
 )
