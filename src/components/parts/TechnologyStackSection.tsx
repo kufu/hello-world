@@ -23,8 +23,6 @@ export const TechnologyStackSection = () => (
         <dd>AWS</dd>
         <dt>CI</dt>
         <dd>CircleCI</dd>
-        <dt>オーケストレーション</dt>
-        <dd>Ansible</dd>
         <dt>モニタリング</dt>
         <dd>Mackerel, Sentry</dd>
       </Supplements>
