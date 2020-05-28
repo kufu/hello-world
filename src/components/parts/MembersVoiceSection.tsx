@@ -71,7 +71,7 @@ export const MembersVoiceSection = () => (
               サーバサイドエンジニア :{' '}
               <Name>
                 <a href="https://twitter.com/GhostBrain" target="_blank" rel="noopener noreferrer">
-                  kinoppyd
+                  @kinoppyd
                 </a>
               </Name>
             </Member>
