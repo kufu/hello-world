@@ -1,19 +1,23 @@
-import React from 'react'
+import React, { FC, useContext } from 'react'
 import styled, { css, keyframes } from 'styled-components'
 
 import { isMediumWindow, mediaQuery } from '../../themes'
 import { useStoredScroll } from '../hooks/useStoredScroll'
 import { useWebp } from '../hooks/useWebp'
+import { ImageEffectContext } from '../commandPalette/commands/ImageEffect'
 
-export const EyeCatchEffects = () => {
+export const EyeCatchEffects: FC = () => {
   const height = typeof window !== 'undefined' ? window.innerHeight : 1
   const { y } = useStoredScroll()
   const visible = y < height / 2
   const supportsWebp = useWebp()
+  const { baseCanvasRef, targetCanvasRef } = useContext(ImageEffectContext)
 
   return (
     <>
       <Underlay visible={visible} supportsWebp={supportsWebp} />
+      <BaseCanvas ref={baseCanvasRef} />
+      <TargetCanvas ref={targetCanvasRef} />
       <ScrollIcon visible={visible}>SCROLL</ScrollIcon>
     </>
   )
@@ -58,6 +62,20 @@ const Underlay = styled.div<{ visible: boolean; supportsWebp: boolean }>`
       `)}
     `
   }}
+`
+const BaseCanvas = styled.canvas`
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+`
+const TargetCanvas = styled.canvas`
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
 `
 const ScrollIcon = styled.div<{ visible: boolean }>`
   ${({ visible }) => {

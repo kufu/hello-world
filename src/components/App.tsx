@@ -4,11 +4,14 @@ import reset from 'styled-reset'
 
 import { mediaQuery, palette } from '../themes'
 import { CommandPaletteProvider, commands } from './commandPalette'
+import { ImageEffectProvider } from './commandPalette/commands/ImageEffect'
 
 export const App: FC<{ children: ReactNode }> = ({ children }) => (
   <>
     <GlobalStyle />
-    <CommandPaletteProvider commands={commands}>{children}</CommandPaletteProvider>
+    <CommandPaletteProvider commands={commands}>
+      <ImageEffectProvider>{children}</ImageEffectProvider>
+    </CommandPaletteProvider>
   </>
 )
 
