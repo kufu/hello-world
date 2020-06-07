@@ -15,9 +15,10 @@ export const EyeCatchEffects: FC = () => {
 
   return (
     <>
-      <Underlay visible={visible} supportsWebp={supportsWebp} />
+      <Underlay supportsWebp={supportsWebp} />
       <BaseCanvas ref={baseCanvasRef} />
       <TargetCanvas ref={targetCanvasRef} />
+      <UnderlayCover visible={visible} />
       <ScrollIcon visible={visible}>SCROLL</ScrollIcon>
     </>
   )
@@ -42,10 +43,9 @@ const scroll = keyframes`
   }
 `
 
-const Underlay = styled.div<{ visible: boolean; supportsWebp: boolean }>`
-  ${({ visible, supportsWebp }) => {
+const Underlay = styled.div<{ supportsWebp: boolean }>`
+  ${({ supportsWebp }) => {
     return css`
-      opacity: ${visible ? 1 : 0.4};
       position: fixed;
       top: 0;
       left: 0;
@@ -55,7 +55,6 @@ const Underlay = styled.div<{ visible: boolean; supportsWebp: boolean }>`
       ${supportsWebp ? `background-image: url(/images/mv.webp);` : `background-image: url(/images/mv.png);`}
       background-size: cover;
       background-position: top;
-      transition: opacity 0.3s ease-in-out;
 
       ${mediaQuery.smallStyle(css`
         ${supportsWebp ? `background-image: url(/images/mv_sp.webp);` : `background-image: url(/images/mv_sp.png);`}
@@ -76,6 +75,20 @@ const TargetCanvas = styled.canvas`
   left: 0;
   width: 100%;
   height: 100vh;
+`
+const UnderlayCover = styled.div<{ visible: boolean }>`
+  ${({ visible }) => {
+    return css`
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      background-color: #000;
+      opacity: ${visible ? 0 : 0.6};
+      transition: opacity 0.3s ease-in-out;
+    `
+  }}
 `
 const ScrollIcon = styled.div<{ visible: boolean }>`
   ${({ visible }) => {
