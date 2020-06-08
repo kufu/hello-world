@@ -84,22 +84,19 @@ export const useImageEffect = (fragmentShaderSource: string) => {
     ImageDomForGl.current.src = canvas.toDataURL()
   }, [canvas, initShader])
 
-  if (!imageDom.current.src) {
-    const callback = () => {
-      drawImageOnCanvas()
-      window.addEventListener('resize', drawImageOnCanvas)
-    }
-    imageDom.current.addEventListener('load', callback, { once: true })
-    imageDom.current.src = supportsWebp ? '/images/mv.webp' : '/images/mv.png'
-  }
-
   useEffect(() => {
+    window.addEventListener('resize', drawImageOnCanvas)
+    if (!imageDom.current.src) {
+      imageDom.current.addEventListener('load', drawImageOnCanvas, { once: true })
+      imageDom.current.src = supportsWebp ? '/images/mv.webp' : '/images/mv.png'
+    }
+
     const context = canvasContext.current
     return () => {
       canvas && context && context.clearRect(0, 0, canvas.width, canvas.height)
       window.removeEventListener('resize', drawImageOnCanvas)
     }
-  })
+  }, [canvas, drawImageOnCanvas, supportsWebp])
 }
 
 const createShader = (gl: WebGLRenderingContext, program: WebGLProgram, type: number, source: string) => {
