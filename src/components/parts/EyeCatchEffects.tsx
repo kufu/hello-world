@@ -1,19 +1,24 @@
-import React from 'react'
+import React, { FC, useContext } from 'react'
 import styled, { css, keyframes } from 'styled-components'
 
 import { isMediumWindow, mediaQuery } from '../../themes'
 import { useStoredScroll } from '../hooks/useStoredScroll'
 import { useWebp } from '../hooks/useWebp'
+import { ImageEffectContext } from '../commandPalette/commands/ImageEffect'
 
-export const EyeCatchEffects = () => {
+export const EyeCatchEffects: FC = () => {
   const height = typeof window !== 'undefined' ? window.innerHeight : 1
   const { y } = useStoredScroll()
   const visible = y < height / 2
   const supportsWebp = useWebp()
+  const { baseCanvasRef, targetCanvasRef } = useContext(ImageEffectContext)
 
   return (
     <>
-      <Underlay visible={visible} supportsWebp={supportsWebp} />
+      <Underlay supportsWebp={supportsWebp} />
+      <BaseCanvas ref={baseCanvasRef} />
+      <TargetCanvas ref={targetCanvasRef} />
+      <UnderlayCover visible={visible} />
       <ScrollIcon visible={visible}>SCROLL</ScrollIcon>
     </>
   )
@@ -38,10 +43,9 @@ const scroll = keyframes`
   }
 `
 
-const Underlay = styled.div<{ visible: boolean; supportsWebp: boolean }>`
-  ${({ visible, supportsWebp }) => {
+const Underlay = styled.div<{ supportsWebp: boolean }>`
+  ${({ supportsWebp }) => {
     return css`
-      opacity: ${visible ? 1 : 0.4};
       position: fixed;
       top: 0;
       left: 0;
@@ -51,11 +55,38 @@ const Underlay = styled.div<{ visible: boolean; supportsWebp: boolean }>`
       ${supportsWebp ? `background-image: url(/images/mv.webp);` : `background-image: url(/images/mv.png);`}
       background-size: cover;
       background-position: top;
-      transition: opacity 0.3s ease-in-out;
 
       ${mediaQuery.smallStyle(css`
         ${supportsWebp ? `background-image: url(/images/mv_sp.webp);` : `background-image: url(/images/mv_sp.png);`}
       `)}
+    `
+  }}
+`
+const BaseCanvas = styled.canvas`
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+`
+const TargetCanvas = styled.canvas`
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+`
+const UnderlayCover = styled.div<{ visible: boolean }>`
+  ${({ visible }) => {
+    return css`
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      background-color: #000;
+      opacity: ${visible ? 0 : 0.6};
+      transition: opacity 0.3s ease-in-out;
     `
   }}
 `
