@@ -3,6 +3,7 @@ import React from 'react'
 import { AoyagiRun } from './AoyagiRun'
 import { MiyashoGero } from './MiyashoGero'
 import { Glitch } from './Glitch'
+import { StarryNight } from './StarryNight'
 
 export const commands = [
   {
@@ -16,5 +17,9 @@ export const commands = [
   {
     name: 'glitch',
     component: <Glitch />,
+  },
+  {
+    name: 'starry night',
+    component: <StarryNight />,
   },
 ]
