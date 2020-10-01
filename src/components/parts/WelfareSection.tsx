@@ -8,7 +8,7 @@ import { Picture } from './Picture'
 
 export const WelfareSection = () => (
   <Wrapper>
-    <SectionTitle backgroundText="Welfare">Welfare</SectionTitle>
+    <SectionTitle backgroundText="Benefits">Benefits</SectionTitle>
 
     <List>
       <Item>
