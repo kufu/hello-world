@@ -53,6 +53,13 @@ export const EntrySection = () => (
           </Item>
         </li>
         <li>
+          <Item href="https://open.talentio.com/1/c/smarthr/requisitions/detail/17020" target="_blank" rel="noopener noreferrer">
+            コーポレートエンジニア
+            <BrSp />
+            <span>（カスタマーサポートグループ）</span>
+          </Item>
+        </li>
+        <li>
           <Item href="https://open.talentio.com/1/c/smarthr/requisitions/detail/13762" target="_blank" rel="noopener noreferrer">
             カジュアル面談ご希望の方
           </Item>
