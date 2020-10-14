@@ -9,7 +9,7 @@ import { MessageSection } from '../parts/MessageSection'
 import { AboutSection } from '../parts/AboutSection'
 import { TechnologyStackSection } from '../parts/TechnologyStackSection'
 import { MembersVoiceSection } from '../parts/MembersVoiceSection'
-import { WelfareSection } from '../parts/WelfareSection'
+import { BenefitsSection } from '../parts/BenefitsSection'
 import { EntrySection } from '../parts/EntrySection'
 import { Footer } from '../parts/Footer'
 import { EyeCatchEffects } from '../parts/EyeCatchEffects'
@@ -40,7 +40,7 @@ export const IndexPage = () => {
             <MembersVoiceSection />
           </Section>
           <Section>
-            <WelfareSection />
+            <BenefitsSection />
           </Section>
           <Section>
             <EntrySection />

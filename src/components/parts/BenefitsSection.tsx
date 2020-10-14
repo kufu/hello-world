@@ -6,47 +6,47 @@ import { mediaQuery, palette } from '../../themes'
 import { SectionTitle } from './SectionTitle'
 import { Picture } from './Picture'
 
-export const WelfareSection = () => (
+export const BenefitsSection = () => (
   <Wrapper>
     <SectionTitle backgroundText="Benefits">Benefits</SectionTitle>
 
     <List>
       <Item>
         <ItemTitle>書籍購入支援</ItemTitle>
-        <StyledPicture src="/images/welfare/welfare1.jpg" loading="lazy" alt="" />
+        <StyledPicture src="/images/benefits/benefits1.jpg" loading="lazy" alt="" />
         <ItemDescription>
           業務で必要な知識を得るための書籍の購入は、稟議不要で申請可能。Slack で Amazon のリンクを送るだけ。
         </ItemDescription>
       </Item>
       <Item>
         <ItemTitle>開発機材購入支援</ItemTitle>
-        <StyledPicture src="/images/welfare/welfare2.jpg" loading="lazy" alt="" />
+        <StyledPicture src="/images/benefits/benefits2.jpg" loading="lazy" alt="" />
         <ItemDescription>
           最大10万円まで PC 周辺機材を購入可能。開発効率を上げるため、好奇心を満たすため、その使い道に制限は無し。
         </ItemDescription>
       </Item>
       <Item>
         <ItemTitle>勉強会参加支援</ItemTitle>
-        <StyledPicture src="/images/welfare/welfare3.jpg" loading="lazy" alt="" />
+        <StyledPicture src="/images/benefits/benefits3.jpg" loading="lazy" alt="" />
         <ItemDescription>
           勉強会への参加費は会社負担。遠方の場合は、交通費および宿泊費も支援。業務として扱うため、休日の場合は振替休日を付与。
         </ItemDescription>
       </Item>
       <Item>
         <ItemTitle>4Kディスプレイ</ItemTitle>
-        <StyledPicture src="/images/welfare/welfare4.jpg" loading="lazy" alt="" />
+        <StyledPicture src="/images/benefits/benefits4.jpg" loading="lazy" alt="" />
         <ItemDescription>
           4K ディスプレイを標準で配布。USB PD 対応で、MacBook に給電しながらデュアルディスプレイでの作業が可能。
         </ItemDescription>
       </Item>
       <Item>
         <ItemTitle>昼寝推奨</ItemTitle>
-        <StyledPicture src="/images/welfare/welfare5.jpg" loading="lazy" alt="" />
+        <StyledPicture src="/images/benefits/benefits5.jpg" loading="lazy" alt="" />
         <ItemDescription>オフィスには昼寝スペース完備。好きな時間に利用可能。もちろん、自席での昼寝も可能。</ItemDescription>
       </Item>
       <Item>
         <ItemTitle>リモートワーク</ItemTitle>
-        <StyledPicture src="/images/welfare/welfare6.jpg" loading="lazy" alt="" />
+        <StyledPicture src="/images/benefits/benefits6.jpg" loading="lazy" alt="" />
         <ItemDescription>
           情勢を踏まえて、現在は全員フルリモート体制で勤務。今後については絶賛検討中で、積極的にリモートワークを取り入れる予定。
         </ItemDescription>
@@ -58,7 +58,7 @@ export const WelfareSection = () => (
 
     <LinkButton href="https://speakerdeck.com/miyasho88/we-are-hiring?slide=38" target="_blank" rel="noopener noreferrer">
       その他の福利厚生
-      <img src="/images/welfare/window_icon.svg" alt="外部サイトへのリンク" />
+      <img src="/images/benefits/window_icon.svg" alt="外部サイトへのリンク" />
     </LinkButton>
   </Wrapper>
 )
