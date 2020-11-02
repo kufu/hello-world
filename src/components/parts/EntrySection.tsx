@@ -54,9 +54,9 @@ export const EntrySection = () => (
         </li>
         <li>
           <Item href="https://open.talentio.com/1/c/smarthr/requisitions/detail/17020" target="_blank" rel="noopener noreferrer">
-            コーポレートエンジニア
+            カスタマーサポートOps
             <BrSp />
-            <span>（カスタマーサポートグループ）</span>
+            <span>（開発/データ分析）</span>
           </Item>
         </li>
         <li>
