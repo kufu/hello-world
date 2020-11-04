@@ -16,9 +16,9 @@ export const TechnologyStackSection = () => (
       </Text>
       <Supplements>
         <dt>プログラミング言語</dt>
-        <dd>Ruby</dd>
+        <dd>Ruby, TypeScript</dd>
         <dt>Webアプリケーションフレームワーク</dt>
-        <dd>Ruby on Rails, jQuery, Bootstrap</dd>
+        <dd>Ruby on Rails, jQuery, Bootstrap, React</dd>
         <dt>インフラストラクチャー</dt>
         <dd>AWS</dd>
         <dt>CI</dt>
