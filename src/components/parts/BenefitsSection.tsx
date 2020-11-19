@@ -50,9 +50,6 @@ export const BenefitsSection = () => (
         <ItemDescription>
           情勢を踏まえて、現在は全員フルリモート体制で勤務。今後については絶賛検討中で、積極的にリモートワークを取り入れる予定。
         </ItemDescription>
-        <Link href="https://shanaiho.smarthr.co.jp/n/nb9e27c4f9fc0" target="_blank" rel="noopener noreferrer">
-          「感染症対策、リモートワークについて」
-        </Link>
       </Item>
     </List>
 
