@@ -11,7 +11,13 @@ export const EyeCatch = () => (
         <SiteTitle>Engineer Recruiting</SiteTitle>
       </Logo>
 
-      <PcEntryButton href="#entry">ENTRY</PcEntryButton>
+      <PcButtonArea>
+        <GitHubLink href="https://github.com/kufu/hello-world" target="_blank" rel="noopener noreferrer">
+          GitHub
+        </GitHubLink>
+
+        <PcEntryButton href="#entry">ENTRY</PcEntryButton>
+      </PcButtonArea>
     </Header>
 
     <PageTitle>
@@ -76,7 +82,26 @@ const SiteTitle = styled.p`
     font-size: 12px;
   `)}
 `
+const PcButtonArea = styled.div`
+  display: flex;
+  align-items: center;
+
+  ${mediaQuery.smallStyle(css`
+    display: none;
+  `)}
+`
+const GitHubLink = styled.a`
+  margin-right: 18px;
+  color: #fff;
+  font-size: 16px;
+  text-decoration: underline;
+
+  &:hover {
+    text-decoration: none;
+  }
+`
 const PcEntryButton = styled.a`
+  display: block;
   width: 130px;
   padding: 12px 0;
   border-radius: 35px;
@@ -90,10 +115,6 @@ const PcEntryButton = styled.a`
   &:hover {
     opacity: 0.7;
   }
-
-  ${mediaQuery.smallStyle(css`
-    display: none;
-  `)}
 `
 const PageTitle = styled.h1`
   position: relative;
