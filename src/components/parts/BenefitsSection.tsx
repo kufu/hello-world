@@ -19,10 +19,10 @@ export const BenefitsSection = () => (
         </ItemDescription>
       </Item>
       <Item>
-        <ItemTitle>開発機材購入支援</ItemTitle>
+        <ItemTitle>ライフワークバランス</ItemTitle>
         <StyledPicture src="/images/benefits/benefits2.jpg" loading="lazy" alt="" />
         <ItemDescription>
-          最大10万円まで PC 周辺機材を購入可能。開発効率を上げるため、好奇心を満たすため、その使い道に制限は無し。
+          仕事もプライベートも、どちらも大切。フレックスタイム制、入社日に15日の有給付与、副業許可制度、出産＆育児休暇制度、など各種制度を用意。
         </ItemDescription>
       </Item>
       <Item>
