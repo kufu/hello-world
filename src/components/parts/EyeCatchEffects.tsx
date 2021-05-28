@@ -10,7 +10,6 @@ export const EyeCatchEffects: FC = () => {
   const height = typeof window !== 'undefined' ? window.innerHeight : 1
   const { y } = useStoredScroll()
   const visible = y < height / 2
-  const visibleScrollIcon = y < height / 5
   const supportsWebp = useWebp()
   const { baseCanvasRef, targetCanvasRef } = useContext(ImageEffectContext)
 
@@ -20,7 +19,7 @@ export const EyeCatchEffects: FC = () => {
       <BaseCanvas ref={baseCanvasRef} />
       <TargetCanvas ref={targetCanvasRef} />
       <UnderlayCover visible={visible} />
-      <ScrollIcon visible={visibleScrollIcon}>SCROLL</ScrollIcon>
+      <ScrollIcon visible={visible}>SCROLL</ScrollIcon>
     </>
   )
 }
