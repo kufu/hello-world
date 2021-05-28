@@ -60,6 +60,7 @@ const AccordionTitle = styled.dt`
     top: 50%;
     right: 30px;
     margin-top: -3px;
+    transition: transform 0.4s ease;
   }
 
   &.active {
