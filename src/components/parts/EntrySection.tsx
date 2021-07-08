@@ -137,6 +137,8 @@ const Item = styled.a`
 
   > span {
     font-size: 14px;
+    display: inline-block;
+    margin-top: 6px;
   }
 
   ${mediaQuery.largeStyle(css`
