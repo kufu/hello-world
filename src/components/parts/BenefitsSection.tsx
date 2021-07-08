@@ -47,9 +47,7 @@ export const BenefitsSection = () => (
       <Item>
         <ItemTitle>リモートワーク</ItemTitle>
         <StyledPicture src="/images/benefits/benefits6.jpg" loading="lazy" alt="" />
-        <ItemDescription>
-          情勢を踏まえて、現在は全員フルリモート体制で勤務。今後については絶賛検討中で、積極的にリモートワークを取り入れる予定。
-        </ItemDescription>
+        <ItemDescription>2021 年 7 月よりリモートワークを導入。東京オフィス通勤圏外からのフルリモートも可能。</ItemDescription>
       </Item>
     </List>
 
