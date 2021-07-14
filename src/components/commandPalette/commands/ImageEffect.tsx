@@ -88,7 +88,7 @@ export const useImageEffect = (fragmentShaderSource: string) => {
     window.addEventListener('resize', drawImageOnCanvas)
     if (!imageDom.current.src) {
       imageDom.current.addEventListener('load', drawImageOnCanvas, { once: true })
-      imageDom.current.src = supportsWebp ? '/images/mv.webp' : '/images/mv.png'
+      imageDom.current.src = supportsWebp === null ? `` : supportsWebp ? '/images/mv.webp' : '/images/mv.png'
     }
 
     const context = canvasContext.current

@@ -43,7 +43,7 @@ const scroll = keyframes`
   }
 `
 
-const Underlay = styled.div<{ supportsWebp: boolean }>`
+const Underlay = styled.div<{ supportsWebp: boolean | null }>`
   ${({ supportsWebp }) => {
     return css`
       position: fixed;
@@ -52,12 +52,20 @@ const Underlay = styled.div<{ supportsWebp: boolean }>`
       width: 100%;
       height: 100vh;
 
-      ${supportsWebp ? `background-image: url(/images/mv.webp);` : `background-image: url(/images/mv.png);`}
+      ${supportsWebp === null
+        ? ``
+        : supportsWebp
+        ? `background-image: url(/images/mv.webp);`
+        : `background-image: url(/images/mv.png);`}
       background-size: cover;
       background-position: top;
 
       ${mediaQuery.smallStyle(css`
-        ${supportsWebp ? `background-image: url(/images/mv_sp.webp);` : `background-image: url(/images/mv_sp.png);`}
+        ${supportsWebp === null
+          ? ``
+          : supportsWebp
+          ? `background-image: url(/images/mv_sp.webp);`
+          : `background-image: url(/images/mv_sp.png);`}
       `)}
     `
   }}
