@@ -1,0 +1,24 @@
+[[headers]]
+  for = "/*"
+  [headers.values]
+    cache-control = "public, max-age=3600"
+
+[[headers]]
+  for = "/app-*.js"
+  [headers.values]
+    cache-control = "public, max-age=31536000"
+
+[[headers]]
+  for = "/commons-*.js"
+  [headers.values]
+    cache-control = "public, max-age=31536000"
+
+[[headers]]
+  for = "/component-*.js"
+  [headers.values]
+    cache-control = "public, max-age=31536000"
+
+[[headers]]
+  for = "/webpack-runtime-*.js"
+  [headers.values]
+    cache-control = "public, max-age=31536000"
