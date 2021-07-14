@@ -30,16 +30,14 @@ export const EntrySection = () => (
         </li>
         <li>
           <Item href="https://open.talentio.com/1/c/smarthr/requisitions/detail/12856" target="_blank" rel="noopener noreferrer">
-            テストエンジニア
+            SET
             <BrSp />
             <span>（Software Engineer in Test）</span>
           </Item>
         </li>
         <li>
           <Item href="https://open.talentio.com/1/c/smarthr/requisitions/detail/12855" target="_blank" rel="noopener noreferrer">
-            QA
-            <BrSp />
-            <span>（品質保証）</span>
+            QAエンジニア
           </Item>
         </li>
         <li>
