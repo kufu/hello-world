@@ -1,7 +1,7 @@
 import { useState } from 'react'
 
 export const useWebp = () => {
-  const [enableWebp, setEnableWebp] = useState(false)
+  const [enableWebp, setEnableWebp] = useState<boolean | null>(null)
 
   if (typeof Image !== 'undefined') {
     const img = new Image()
