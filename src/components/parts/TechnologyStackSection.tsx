@@ -39,7 +39,7 @@ export const TechnologyStackSection = () => (
         <dt>Webアプリケーションフレームワーク</dt>
         <dd>Ruby on Rails, React</dd>
         <dt>インフラストラクチャー</dt>
-        <dd>Heroku, AWS</dd>
+        <dd>Heroku, AWS, GCP</dd>
         <dt>CI</dt>
         <dd>Heroku CI, CircleCI</dd>
         <dt>オーケストレーション</dt>
