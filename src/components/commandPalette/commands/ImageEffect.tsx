@@ -36,6 +36,7 @@ export const useImageEffect = (fragmentShaderSource: string) => {
 
   const drawImageOnCanvas = useCallback(() => {
     if (!canvas || !canvasContext.current) return
+
     const { naturalWidth, naturalHeight } = imageDom.current
     const { innerHeight } = window
     const innerWidth = document.body.clientWidth
@@ -86,7 +87,7 @@ export const useImageEffect = (fragmentShaderSource: string) => {
 
   useEffect(() => {
     window.addEventListener('resize', drawImageOnCanvas)
-    if (!imageDom.current.src) {
+    if (!imageDom.current.src && supportsWebp) {
       imageDom.current.addEventListener('load', drawImageOnCanvas, { once: true })
       imageDom.current.src = supportsWebp === null ? `` : supportsWebp ? '/images/mv.webp' : '/images/mv.png'
     }
