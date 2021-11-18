@@ -72,6 +72,27 @@ export const CommandPaletteUI: FC<Props> = ({ commandNames, searchText, classNam
     return () => document.removeEventListener('keydown', handleKeyPress)
   }, [handleKeyPress])
 
+  // コマンド名と先読み対象画像の対応表
+  const preloadImageMap: { [key: string]: string[] } = {
+    'miyasho gero': ['/images/commands/miyasho-gero/space.webp'],
+    'aoyagi run': ['/images/commands/aoyagi-run/aoyagisan.webp'],
+  }
+  // 現在選択されているコマンドが対応表に存在したら動的にlink要素を挿入して画像を先読みする
+  useEffect(() => {
+    document.querySelectorAll('link.preload-image').forEach(el => el.remove())
+    if (!Object.prototype.hasOwnProperty.call(preloadImageMap, commandNames[currentIndex])) {
+      return
+    }
+    preloadImageMap[commandNames[currentIndex]].forEach(src => {
+      const el = document.createElement('link')
+      el.setAttribute('rel', 'preload')
+      el.setAttribute('as', 'image')
+      el.setAttribute('href', src)
+      el.classList.add('preload-image')
+      document.head.appendChild(el)
+    })
+  }, [commandNames, currentIndex, preloadImageMap])
+
   return (
     <Wrapper
       className={className}
