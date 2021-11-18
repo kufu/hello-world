@@ -2,7 +2,12 @@ import React from 'react'
 import styled, { keyframes } from 'styled-components'
 
 export const MiyashoGero = () => {
-  return <Image src="/images/commands/miyasho-gero/space.png" width={200} alt="とーしゃん・・・" />
+  return (
+    <picture>
+      <source srcSet="/images/commands/miyasho-gero/space.webp" type="image/webp" />
+      <Image src="/images/commands/miyasho-gero/space.png" width={200} alt="とーしゃん・・・" />
+    </picture>
+  )
 }
 
 const horizontalMove = keyframes`
