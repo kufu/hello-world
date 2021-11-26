@@ -2,7 +2,12 @@ import React from 'react'
 import styled, { keyframes } from 'styled-components'
 
 export const AoyagiRun = () => {
-  return <Image src="/images/commands/aoyagi-run/aoyagisan.png" width={200} alt="アオヤギさん" />
+  return (
+    <picture>
+      <source srcSet="/images/commands/aoyagi-run/aoyagisan.webp" type="image/webp" />
+      <Image src="/images/commands/aoyagi-run/aoyagisan.png" width={200} alt="アオヤギさん" />
+    </picture>
+  )
 }
 
 const horizontalMove = keyframes`
