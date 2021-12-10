@@ -24,7 +24,7 @@ export const TechnologyStackSection = () => (
         <dt>CI</dt>
         <dd>CircleCI</dd>
         <dt>モニタリング</dt>
-        <dd>Mackerel, Sentry</dd>
+        <dd>Mackerel, Sentry, New Relic</dd>
       </Supplements>
     </Section>
 
@@ -45,7 +45,7 @@ export const TechnologyStackSection = () => (
         <dt>オーケストレーション</dt>
         <dd>Terraform</dd>
         <dt>モニタリング</dt>
-        <dd>Heroku, Sentry</dd>
+        <dd>Heroku, Sentry, New Relic</dd>
       </Supplements>
     </Section>
   </Wrapper>
