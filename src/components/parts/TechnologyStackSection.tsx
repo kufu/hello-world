@@ -20,7 +20,7 @@ export const TechnologyStackSection = () => (
         <dt>Webアプリケーションフレームワーク</dt>
         <dd>Ruby on Rails, jQuery, Bootstrap, React</dd>
         <dt>インフラストラクチャー</dt>
-        <dd>AWS</dd>
+        <dd>GCP</dd>
         <dt>CI</dt>
         <dd>CircleCI</dd>
         <dt>モニタリング</dt>
