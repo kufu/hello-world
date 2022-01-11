@@ -51,7 +51,7 @@ export const BenefitsSection = () => (
       </Item>
     </List>
 
-    <LinkButton href="https://speakerdeck.com/miyasho88/we-are-hiring?slide=38" target="_blank" rel="noopener noreferrer">
+    <LinkButton href="https://speakerdeck.com/miyasho88/we-are-hiring?slide=40" target="_blank" rel="noopener noreferrer">
       その他の福利厚生
       <img src="/images/benefits/window_icon.svg" alt="外部サイトへのリンク" />
     </LinkButton>
