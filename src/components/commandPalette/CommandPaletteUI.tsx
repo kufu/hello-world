@@ -19,8 +19,7 @@ export const CommandPaletteUI: FC<Props> = ({ commandNames, searchText, classNam
 
   const handleKeyPress = useCallback(
     (e: KeyboardEvent) => {
-      // up
-      if (e.keyCode === 38) {
+      if (e.key === 'ArrowUp') {
         e.preventDefault()
 
         if (currentIndex === 0) {
@@ -30,8 +29,7 @@ export const CommandPaletteUI: FC<Props> = ({ commandNames, searchText, classNam
         }
       }
 
-      // down
-      if (e.keyCode === 40) {
+      if (e.key === 'ArrowDown') {
         e.preventDefault()
 
         if (currentIndex === commandNames.length - 1) {
