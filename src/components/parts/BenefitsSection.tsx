@@ -12,13 +12,6 @@ export const BenefitsSection = () => (
 
     <List>
       <Item>
-        <ItemTitle>書籍購入支援</ItemTitle>
-        <StyledPicture src="/images/benefits/benefits1.jpg" loading="lazy" alt="" />
-        <ItemDescription>
-          業務で必要な知識を得るための書籍の購入は、稟議不要で申請可能。Slack で Amazon のリンクを送るだけ。
-        </ItemDescription>
-      </Item>
-      <Item>
         <ItemTitle>ライフワークバランス</ItemTitle>
         <StyledPicture src="/images/benefits/benefits2.jpg" loading="lazy" alt="" />
         <ItemDescription>
@@ -68,13 +61,14 @@ const List = styled.ul`
   margin-left: auto;
   margin-bottom: 55px;
   width: 869px;
-  justify-content: space-between;
+  gap: 0 20px;
 
   ${mediaQuery.mediumStyle(css`
     width: 100%;
     max-width: 702px;
     margin-top: 59px;
     margin-right: auto;
+    gap: 0 16px;
   `)}
 
   ${mediaQuery.smallStyle(css`
