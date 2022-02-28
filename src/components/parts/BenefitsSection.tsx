@@ -12,7 +12,22 @@ export const BenefitsSection = () => (
 
     <List>
       <Item>
-        <ItemTitle>ライフワークバランス</ItemTitle>
+        <ItemTitle>技術顧問が多数在籍</ItemTitle>
+        <StyledPicture src="/images/benefits/benefits7.jpg" loading="lazy" alt="" />
+        <ItemDescription>
+          Ruby on
+          Railsの技術書出版者や、Reactコミッターの技術顧問が在籍。そのほか、パーソナル/アジャイルコーチもおり、技術面だけではなくチーム開発に関する学習にも積極的。
+        </ItemDescription>
+      </Item>
+      <Item>
+        <ItemTitle>リモートワーク</ItemTitle>
+        <StyledPicture src="/images/benefits/benefits6.jpg" loading="lazy" alt="" />
+        <ItemDescription>
+          2021年7月より日本国内ならどこでも居住可・コアタイム無となり、柔軟な働き方が可能に。リモートワーク環境を整える手当もあり。
+        </ItemDescription>
+      </Item>
+      <Item>
+        <ItemTitle>ライフ・ワーク バランス</ItemTitle>
         <StyledPicture src="/images/benefits/benefits2.jpg" loading="lazy" alt="" />
         <ItemDescription>
           仕事もプライベートも、どちらも大切。フレックスタイム制、入社日に15日の有給付与、副業許可制度、出産＆育児休暇制度、など各種制度を用意。
@@ -26,21 +41,20 @@ export const BenefitsSection = () => (
         </ItemDescription>
       </Item>
       <Item>
-        <ItemTitle>4Kディスプレイ</ItemTitle>
-        <StyledPicture src="/images/benefits/benefits4.jpg" loading="lazy" alt="" />
+        <ItemTitle>ツール導入し放題</ItemTitle>
+        <StyledPicture src="/images/benefits/benefits8.jpg" loading="lazy" alt="" />
         <ItemDescription>
-          4K ディスプレイを標準で配布。USB PD 対応で、MacBook に給電しながらデュアルディスプレイでの作業が可能。
+          JetBrainsの有償IDEやParallels・Charlesといった検証用ソフトウェアなど、効率化のためのツールは (ほぼノールックで！)
+          積極的に導入。個人利用も可能な1Passwordアカウントは全員に付与。
         </ItemDescription>
       </Item>
       <Item>
-        <ItemTitle>昼寝推奨</ItemTitle>
-        <StyledPicture src="/images/benefits/benefits5.jpg" loading="lazy" alt="" />
-        <ItemDescription>オフィスには昼寝スペース完備。好きな時間に利用可能。もちろん、自席での昼寝も可能。</ItemDescription>
-      </Item>
-      <Item>
-        <ItemTitle>リモートワーク</ItemTitle>
-        <StyledPicture src="/images/benefits/benefits6.jpg" loading="lazy" alt="" />
-        <ItemDescription>2021 年 7 月よりリモートワークを導入。東京オフィス通勤圏外からのフルリモートも可能。</ItemDescription>
+        <ItemTitle>4Kディスプレイ</ItemTitle>
+        <StyledPicture src="/images/benefits/benefits4.jpg" loading="lazy" alt="" />
+        <ItemDescription>
+          リモートワーク導入により、オフィスはフリーアドレスに。全席に4K ディスプレイを標準で配布。USB PD
+          対応で、給電しながらデュアルディスプレイでの作業が可能。
+        </ItemDescription>
       </Item>
     </List>
 
