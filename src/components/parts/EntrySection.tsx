@@ -29,13 +29,6 @@ export const EntrySection = () => (
           </Item>
         </li>
         <li>
-          <Item href="https://open.talentio.com/1/c/smarthr/requisitions/detail/12856" target="_blank" rel="noopener noreferrer">
-            SET
-            <BrSp />
-            <span>（Software Engineer in Test）</span>
-          </Item>
-        </li>
-        <li>
           <Item href="https://open.talentio.com/1/c/smarthr/requisitions/detail/12855" target="_blank" rel="noopener noreferrer">
             QAエンジニア
           </Item>
