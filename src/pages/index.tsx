@@ -15,7 +15,7 @@ const Index = () => {
         <title>SmartHR エンジニア採用</title>
         <meta
           name="description"
-          content="2年連続シェアNo.1のクラウド人事労務ソフト「SmartHR」を開発しています。私たちはアナログな世界を、テクノロジーと創意工夫でもっとシンプル、かんたん、便利に変えていきます。歴史に残るソフトウェアを作ろう！"
+          content="4年連続シェアNo.1のクラウド人事労務ソフト「SmartHR」を開発しています。私たちはアナログな世界を、テクノロジーと創意工夫でもっとシンプル、かんたん、便利に変えていきます。歴史に残るソフトウェアを作ろう！"
         />
         <meta property="og:title" content="SmartHR エンジニア採用" />
         <meta property="og:type" content="website" />
@@ -24,7 +24,7 @@ const Index = () => {
         <meta property="og:site_name" content="Engineer Recruiting | SmartHR" />
         <meta
           property="og:description"
-          content="2年連続シェアNo.1のクラウド人事労務ソフト「SmartHR」を開発しています。私たちはアナログな世界を、テクノロジーと創意工夫でもっとシンプル、かんたん、便利に変えていきます。歴史に残るソフトウェアを作ろう！"
+          content="4年連続シェアNo.1のクラウド人事労務ソフト「SmartHR」を開発しています。私たちはアナログな世界を、テクノロジーと創意工夫でもっとシンプル、かんたん、便利に変えていきます。歴史に残るソフトウェアを作ろう！"
         />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="SmartHR エンジニア採用" />
