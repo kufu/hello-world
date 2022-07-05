@@ -41,6 +41,8 @@ export const EntrySection = () => (
             <span>（情報システム エンジニア）</span>
           </Item>
         </li>
+        */}
+        {/* MEMO: 募集停止中
         <li>
           <Item href="https://open.talentio.com/1/c/smarthr/requisitions/detail/13859" target="_blank" rel="noopener noreferrer">
             セキュリティエンジニア
