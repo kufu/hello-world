@@ -41,12 +41,12 @@ export const EntrySection = () => (
             <span>（情報システム エンジニア）</span>
           </Item>
         </li>
-        */}
         <li>
           <Item href="https://open.talentio.com/1/c/smarthr/requisitions/detail/13859" target="_blank" rel="noopener noreferrer">
             セキュリティエンジニア
           </Item>
         </li>
+        */}
         <li>
           <Item href="https://open.talentio.com/1/c/smarthr/requisitions/detail/13762" target="_blank" rel="noopener noreferrer">
             カジュアル面談ご希望の方
