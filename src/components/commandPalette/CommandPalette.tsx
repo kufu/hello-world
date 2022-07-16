@@ -67,7 +67,7 @@ export const CommandPaletteProvider: FC<{
       }}
     >
       <Hotkeys
-        keyName="command+shift+p"
+        keyName="command+shift+p, ctrl+shift+p"
         onKeyDown={(_, e) => {
           e.preventDefault()
           setCommand(null)
