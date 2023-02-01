@@ -7,7 +7,9 @@ import { mediaQuery } from '../../themes'
 
 export const Footer = () => (
   <Wrapper>
-    <Logo src="/images/logo_smarthr.png" alt="" />
+    <a href="https://smarthr.co.jp/" target="_blank" rel="noopener noreferrer">
+      <Logo src="/images/logo_smarthr.png" alt="" />
+    </a>
     <Copyright>&copy; SmartHR, Inc.</Copyright>
   </Wrapper>
 )
