@@ -7,7 +7,9 @@ export const EyeCatch = () => (
   <Wrapper>
     <Header>
       <Logo>
-        <LogoImage src="images/logo.svg" alt="SmartHR" />
+        <a href="https://smarthr.co.jp/" target="_blank" rel="noopener noreferrer">
+          <LogoImage src="images/logo.svg" alt="SmartHR" />
+        </a>
         <SiteTitle>Engineer Recruiting</SiteTitle>
       </Logo>
 
