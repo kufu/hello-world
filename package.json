@@ -13,7 +13,7 @@
   },
   "homepage": "https://github.com/kufu/hello-world#readme",
   "engines": {
-    "node": "12.13.0",
+    "node": "12.22.12",
     "yarn": "^1.19.1"
   },
   "scripts": {
