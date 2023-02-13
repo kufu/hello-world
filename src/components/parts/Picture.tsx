@@ -6,8 +6,8 @@ export const Picture: React.FC<{
   loading?: 'lazy' | 'eager' | 'auto' | ''
   className?: string
 }> = ({ src, alt, loading, className }) => {
-  // 雑なので誰か😇
-  const [filename] = src.split('.')
+  if (src.lastIndexOf('.') === -1) return <></>
+  const filename = src.substring(0, src.lastIndexOf('.'))
   return (
     <picture className={className}>
       <source type="image/webp" srcSet={filename + '.webp'} />
