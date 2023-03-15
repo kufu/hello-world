@@ -29,6 +29,16 @@ export const EntrySection = () => (
           </Item>
         </li>
         <li>
+          <Item href="https://open.talentio.com/r/1/c/smarthr/pages/75921" target="_blank" rel="noopener noreferrer">
+            プラットフォーム開発エンジニア（バックエンド）
+          </Item>
+        </li>
+        <li>
+          <Item href="https://open.talentio.com/r/1/c/smarthr/pages/75924" target="_blank" rel="noopener noreferrer">
+            プラットフォーム開発エンジニア（フロントエンド）
+          </Item>
+        </li>
+        <li>
           <Item href="https://open.talentio.com/r/1/c/smarthr/pages/45053" target="_blank" rel="noopener noreferrer">
             QAエンジニア
           </Item>
