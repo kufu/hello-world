@@ -19,17 +19,17 @@ export const EntrySection = () => (
       </Message>
       <List>
         <li>
-          <Item href="https://open.talentio.com/1/c/smarthr/requisitions/detail/6632" target="_blank" rel="noopener noreferrer">
-            ウェブアプリケーションエンジニア
+          <Item href="https://open.talentio.com/r/1/c/smarthr/pages/45049" target="_blank" rel="noopener noreferrer">
+            ウェブアプリケーションエンジニア（バックエンド）
           </Item>
         </li>
         <li>
-          <Item href="https://open.talentio.com/1/c/smarthr/requisitions/detail/7349" target="_blank" rel="noopener noreferrer">
-            フロントエンドエンジニア
+          <Item href="https://open.talentio.com/r/1/c/smarthr/pages/45050" target="_blank" rel="noopener noreferrer">
+            ウェブアプリケーションエンジニア（フロントエンド）
           </Item>
         </li>
         <li>
-          <Item href="https://open.talentio.com/1/c/smarthr/requisitions/detail/12855" target="_blank" rel="noopener noreferrer">
+          <Item href="https://open.talentio.com/r/1/c/smarthr/pages/45053" target="_blank" rel="noopener noreferrer">
             QAエンジニア
           </Item>
         </li>
