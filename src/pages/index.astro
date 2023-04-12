@@ -49,7 +49,7 @@ import Card from '../components/Card.astro'
   }
   .text-gradient {
     background-image: var(--accent-gradient);
-    -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     background-size: 400%;
     background-position: 0%;
@@ -66,11 +66,13 @@ import Card from '../components/Card.astro'
     font-size: 0.875em;
     font-weight: bold;
     background: rgba(var(--accent), 12%);
+    /* stylelint-disable-next-line color-function-notation */
     color: rgb(var(--accent));
     border-radius: 4px;
     padding: 0.3em 0.45em;
   }
   .instructions strong {
+    /* stylelint-disable-next-line color-function-notation */
     color: rgb(var(--accent));
   }
   .link-card-grid {
