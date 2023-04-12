@@ -8,8 +8,9 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "eslint": "eslint 'src/**/*.{js,astro}'",
-    "eslint:fix": "eslint --fix 'src/**/*.{js,astro}'"
+    "lint": "run-p lint:*",
+    "lint:eslint": "eslint 'src/**/*.{js,astro}'",
+    "eslint-fix": "eslint --fix 'src/**/*.{js,astro}'"
   },
   "dependencies": {
     "astro": "^2.1.9"
@@ -17,6 +18,11 @@
   "devDependencies": {
     "@typescript-eslint/parser": "^5.57.1",
     "eslint": "^8.37.0",
-    "eslint-plugin-astro": "^0.26.1"
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-astro": "^0.26.1",
+    "eslint-plugin-prettier": "^4.2.1",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^2.8.7",
+    "prettier-plugin-astro": "^0.8.0"
   }
 }
