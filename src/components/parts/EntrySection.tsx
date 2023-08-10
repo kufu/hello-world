@@ -19,7 +19,7 @@ export const EntrySection = () => (
       </Message>
       <List>
         <li>
-          <Item href="https://open.talentio.com/r/1/c/smarthr/pages/45049" target="_blank" rel="noopener noreferrer">
+          <Item href="https://open.talentio.com/r/1/c/smarthr/pages/82214" target="_blank" rel="noopener noreferrer">
             ウェブアプリケーションエンジニア（バックエンド）
           </Item>
         </li>
