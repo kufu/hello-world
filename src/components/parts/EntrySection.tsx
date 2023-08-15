@@ -24,7 +24,7 @@ export const EntrySection = () => (
           </Item>
         </li>
         <li>
-          <Item href="https://open.talentio.com/r/1/c/smarthr/pages/45050" target="_blank" rel="noopener noreferrer">
+          <Item href="https://open.talentio.com/r/1/c/smarthr/pages/82223" target="_blank" rel="noopener noreferrer">
             ウェブアプリケーションエンジニア（フロントエンド）
           </Item>
         </li>
