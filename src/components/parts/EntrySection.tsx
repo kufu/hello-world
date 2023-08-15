@@ -20,12 +20,16 @@ export const EntrySection = () => (
       <List>
         <li>
           <Item href="https://open.talentio.com/r/1/c/smarthr/pages/82214" target="_blank" rel="noopener noreferrer">
-            ウェブアプリケーションエンジニア（バックエンド）
+            ウェブアプリケーションエンジニア
+            <BrPc />
+            （オープンポジション バックエンド）
           </Item>
         </li>
         <li>
           <Item href="https://open.talentio.com/r/1/c/smarthr/pages/82223" target="_blank" rel="noopener noreferrer">
-            ウェブアプリケーションエンジニア（フロントエンド）
+            ウェブアプリケーションエンジニア
+            <BrPc />
+            （オープンポジション フロントエンド）
           </Item>
         </li>
         <li>
@@ -129,6 +133,8 @@ const Item = styled.a`
   font-weight: bold;
   font-size: 18px;
   letter-spacing: 0.69px;
+  text-align: center;
+  line-height: 1.3;
 
   &::after {
     position: absolute;
@@ -170,10 +176,10 @@ const BrPc = styled.br`
     display: none;
   `)}
 `
-const BrSp = styled.br`
-  display: none;
+// const BrSp = styled.br`
+//   display: none;
 
-  ${mediaQuery.smallStyle(css`
-    display: block;
-  `)}
-`
+//   ${mediaQuery.smallStyle(css`
+//     display: block;
+//   `)}
+// `
