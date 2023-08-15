@@ -20,12 +20,44 @@ export const EntrySection = () => (
       <List>
         <li>
           <Item href="https://open.talentio.com/r/1/c/smarthr/pages/82214" target="_blank" rel="noopener noreferrer">
-            ウェブアプリケーションエンジニア（バックエンド）
+            ウェブアプリケーションエンジニア
+            <BrPc />
+            （オープンポジション バックエンド）
           </Item>
         </li>
         <li>
           <Item href="https://open.talentio.com/r/1/c/smarthr/pages/82223" target="_blank" rel="noopener noreferrer">
-            ウェブアプリケーションエンジニア（フロントエンド）
+            ウェブアプリケーションエンジニア
+            <BrPc />
+            （オープンポジション フロントエンド）
+          </Item>
+        </li>
+        <li>
+          <Item href="https://open.talentio.com/r/1/c/smarthr/pages/82193" target="_blank" rel="noopener noreferrer">
+            ウェブアプリケーションエンジニア
+            <BrPc />
+            （労務領域 バックエンド）
+          </Item>
+        </li>
+        <li>
+          <Item href="https://open.talentio.com/r/1/c/smarthr/pages/82217" target="_blank" rel="noopener noreferrer">
+            ウェブアプリケーションエンジニア
+            <BrPc />
+            （労務領域 フロントエンド）
+          </Item>
+        </li>
+        <li>
+          <Item href="https://open.talentio.com/r/1/c/smarthr/pages/82188" target="_blank" rel="noopener noreferrer">
+            ウェブアプリケーションエンジニア
+            <BrPc />
+            （タレントマネジメント領域 バックエンド）
+          </Item>
+        </li>
+        <li>
+          <Item href="https://open.talentio.com/r/1/c/smarthr/pages/82220" target="_blank" rel="noopener noreferrer">
+            ウェブアプリケーションエンジニア
+            <BrPc />
+            （タレントマネジメント領域 フロントエンド）
           </Item>
         </li>
         <li>
@@ -129,6 +161,8 @@ const Item = styled.a`
   font-weight: bold;
   font-size: 18px;
   letter-spacing: 0.69px;
+  text-align: center;
+  line-height: 1.3;
 
   &::after {
     position: absolute;
@@ -170,10 +204,10 @@ const BrPc = styled.br`
     display: none;
   `)}
 `
-const BrSp = styled.br`
-  display: none;
+// const BrSp = styled.br`
+//   display: none;
 
-  ${mediaQuery.smallStyle(css`
-    display: block;
-  `)}
-`
+//   ${mediaQuery.smallStyle(css`
+//     display: block;
+//   `)}
+// `
