@@ -33,6 +33,34 @@ export const EntrySection = () => (
           </Item>
         </li>
         <li>
+          <Item href="https://open.talentio.com/r/1/c/smarthr/pages/82193" target="_blank" rel="noopener noreferrer">
+            ウェブアプリケーションエンジニア
+            <BrPc />
+            （労務領域 バックエンド）
+          </Item>
+        </li>
+        <li>
+          <Item href="https://open.talentio.com/r/1/c/smarthr/pages/82217" target="_blank" rel="noopener noreferrer">
+            ウェブアプリケーションエンジニア
+            <BrPc />
+            （労務領域 フロントエンド）
+          </Item>
+        </li>
+        <li>
+          <Item href="https://open.talentio.com/r/1/c/smarthr/pages/82188" target="_blank" rel="noopener noreferrer">
+            ウェブアプリケーションエンジニア
+            <BrPc />
+            （タレントマネジメント領域 バックエンド）
+          </Item>
+        </li>
+        <li>
+          <Item href="https://open.talentio.com/r/1/c/smarthr/pages/82220" target="_blank" rel="noopener noreferrer">
+            ウェブアプリケーションエンジニア
+            <BrPc />
+            （タレントマネジメント領域 フロントエンド）
+          </Item>
+        </li>
+        <li>
           <Item href="https://open.talentio.com/r/1/c/smarthr/pages/75921" target="_blank" rel="noopener noreferrer">
             プラットフォーム開発エンジニア（バックエンド）
           </Item>
