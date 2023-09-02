@@ -1,42 +1,95 @@
----
-export interface Props {
-  title: string
-}
-
-const { title } = Astro.props
----
-
 <!doctype html>
-<html lang="en">
+<html lang="ja">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
-    <title>{title}</title>
+    <title>SmartHR エンジニア採用</title>
   </head>
   <body>
     <slot />
   </body>
 </html>
 <style is:global>
-  :root {
-    --accent: 124, 58, 237;
-    /* stylelint-disable color-function-notation */
-    --accent-gradient: linear-gradient(
-      45deg,
-      rgb(var(--accent)),
-      #da62c4 30%,
-      white 60%
-    );
-    /* stylelint-enable color-function-notation */
+  /* reset */
+  html, body, div, span, applet, object, iframe,
+  h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+  a, abbr, acronym, address, big, cite, code,
+  del, dfn, em, img, ins, kbd, q, s, samp,
+  small, strike, strong, sub, sup, tt, var,
+  b, u, i, center,
+  dl, dt, dd, menu, ol, ul, li,
+  fieldset, form, label, legend,
+  table, caption, tbody, tfoot, thead, tr, th, td,
+  article, aside, canvas, details, embed,
+  figure, figcaption, footer, header, hgroup,
+  main, menu, nav, output, ruby, section, summary,
+  time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
   }
-  html {
-    font-family: system-ui, sans-serif;
-    background-color: #f6f6f6;
+  /* HTML5 display-role reset for older browsers */
+  article, aside, details, figcaption, figure,
+  footer, header, hgroup, main, menu, nav, section {
+    display: block;
   }
-  code {
-    font-family:
-      Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
+  /* HTML5 hidden-attribute fix for newer browsers */
+  *[hidden] {
+      display: none;
+  }
+  body {
+    line-height: 1;
+  }
+  menu, ol, ul {
+    list-style: none;
+  }
+  blockquote, q {
+    quotes: none;
+  }
+  blockquote:before, blockquote:after,
+  q:before, q:after {
+    content: '';
+    content: none;
+  }
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+
+  /* normalize */
+  body {
+    overflow-wrap: break-word;
+    font-family: 'Hiragino Kaku Gothic Pro', system-ui, sans-serif;
+  }
+
+  a {
+    color: inherit;
+  }
+
+  img {
+    vertical-align: middle;
+  }
+
+  input,
+  button,
+  textarea {
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: inherit;
+    color: inherit;
+  }
+
+  button,
+  input,
+  select,
+  textarea {
+    font-family: inherit;
+    font-size: 100%;
   }
 </style>
