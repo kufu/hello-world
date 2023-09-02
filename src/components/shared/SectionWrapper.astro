@@ -16,6 +16,21 @@ const { heading } = Astro.props
   <button class="page-top">ページトップに戻る</button>
 </section>
 
+<script>
+  function handleClick() {
+    window.scroll({
+      top: 0,
+      behavior: 'smooth',
+    })
+  }
+
+  const pageTopButtons = document.querySelectorAll('.page-top')
+
+  pageTopButtons.forEach((button) => {
+    button.addEventListener('click', handleClick)
+  })
+</script>
+
 <style>
   h2 {
     font-weight: 600;
