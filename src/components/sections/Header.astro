@@ -1,8 +1,37 @@
+---
+import SmartHRLogo from '../shared/SmartHRLogo.astro'
+---
+
 <header>
+  <div class="headerNavWrapper">
+    <a href="https://smarthr.co.jp/">
+      <SmartHRLogo />
+    </a>
+    <p class="headerNavRepository">/hello-world</p>
+    <p class="headerNavText">プロダクトエンジニア採用</p>
+  </div>
   <h1>歴史に残る<br />模範的なソフトウェアを作ろう</h1>
 </header>
 
 <style>
+  .headerNavWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: .5rem;
+    padding-bottom: 1rem;
+  }
+
+  .headerNavRepository {
+    font-size: 1.4rem;
+    font-weight: 700;
+    padding-right: .5rem;
+  }
+
+  .headerNavText {
+    font-size: 1.5rem;
+  }
+
   h1 {
     font-weight: 600;
     font-size: 6rem;
