@@ -1,0 +1,11 @@
+---
+import { fetchContentByType, parseContent } from '../../services/microcms'
+import SectionWrapper from '../shared/SectionWrapper.astro'
+
+const { content } = await fetchContentByType('links')
+const parsedContent = await parseContent(content)
+---
+
+<SectionWrapper heading="外部リンク">
+  <Fragment set:html={parsedContent} />
+</SectionWrapper>
