@@ -17,6 +17,7 @@
   },
   "dependencies": {
     "astro": "^3.0.7",
+    "microcms-js-sdk": "^2.5.0",
     "remark-html": "^15.0.2"
   },
   "devDependencies": {
@@ -25,7 +26,6 @@
     "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-astro": "^0.29.0",
     "eslint-plugin-prettier": "^5.0.0",
-    "microcms-js-sdk": "^2.5.0",
     "npm-run-all": "^4.1.5",
     "postcss-html": "^1.5.0",
     "prettier": "^3.0.3",

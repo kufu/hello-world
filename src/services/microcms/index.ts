@@ -16,15 +16,21 @@ const client = createClient({
 // コンテンツ種別をもとにコンテンツを取得する
 export const fetchContentByType = async (type: ContentType) => {
   const content = await client
-    .get<ContentResponse>({ endpoint: API_ENDPOINT })
+    .get<ContentResponse>({
+      endpoint: API_ENDPOINT,
+      queries: {
+        limit: 1,
+        orders: '-publishedAt',
+        filters: `type[contains]${type}`,
+      },
+    })
     .then((response) => {
       if (!response.totalCount) {
         throw Error(
           'コンテンツが存在しません。microCMSの管理画面でコンテンツを作成してください',
         )
       }
-      // NOTE: microCMSで種別をユニークキーとして指定できない（同じ種別で複数記事が存在できる）ので最初の1件を取得する
-      return response.contents.find((content) => content.type.includes(type))
+      return response.contents[0]
     })
   if (!content)
     throw Error(
@@ -34,7 +40,7 @@ export const fetchContentByType = async (type: ContentType) => {
 }
 
 // microCMSから取得したマークダウンテキストをhtmlに変換する
-export const parseContent = async (markdownText: string) => {
+export const convertMarkdownToHTML = async (markdownText: string) => {
   const parsedContent = await unified()
     .use(remarkParse)
     .use(remarkHtml)
