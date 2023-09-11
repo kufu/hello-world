@@ -49,6 +49,7 @@ export const convertMarkdownToHTML = async (markdownText: string) => {
     .use(remarkRehype)
     .use(addClasses, {
       a: 'mc-anchor',
+      p: 'mc-paragraph',
     })
     .use(rehypeFormat)
     .use(rehypeStringify)

@@ -8,3 +8,8 @@
     color: var(--color-text-link);
   }
 }
+
+// 段落(paragraph)ごとの余白
+.mc-paragraph {
+  margin-bottom: 1.8rem;
+}
