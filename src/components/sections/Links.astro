@@ -1,14 +1,8 @@
 ---
-import {
-  fetchContentByType,
-  convertMarkdownToHTML,
-} from '../../services/microcms'
+import MicroCMSContent from '../shared/MicroCMSContent.astro'
 import SectionWrapper from '../shared/SectionWrapper.astro'
-
-const { content } = await fetchContentByType('links')
-const parsedContent = await convertMarkdownToHTML(content)
 ---
 
 <SectionWrapper heading="外部リンク">
-  <Fragment set:html={parsedContent} />
+  <MicroCMSContent contentType="links" />
 </SectionWrapper>

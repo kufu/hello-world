@@ -18,8 +18,7 @@
   "dependencies": {
     "astro": "^3.0.7",
     "microcms-js-sdk": "^2.5.0",
-    "rehype-class-names": "^1.0.14",
-    "rehype-format": "^5.0.0"
+    "remark-html": "^15.0.2"
   },
   "devDependencies": {
     "@typescript-eslint/parser": "^6.5.0",

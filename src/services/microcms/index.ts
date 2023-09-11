@@ -1,10 +1,7 @@
 import { createClient } from 'microcms-js-sdk'
 import { unified } from 'unified'
-import addClasses from 'rehype-class-names'
-import rehypeFormat from 'rehype-format'
-import rehypeStringify from 'rehype-stringify'
+import remarkHtml from 'remark-html'
 import remarkParse from 'remark-parse'
-import remarkRehype from 'remark-rehype'
 
 import type { ContentResponse, ContentType } from './types'
 
@@ -46,13 +43,7 @@ export const fetchContentByType = async (type: ContentType) => {
 export const convertMarkdownToHTML = async (markdownText: string) => {
   const parsedContent = await unified()
     .use(remarkParse)
-    .use(remarkRehype)
-    .use(addClasses, {
-      a: 'mc-anchor',
-      p: 'mc-paragraph',
-    })
-    .use(rehypeFormat)
-    .use(rehypeStringify)
+    .use(remarkHtml)
     .process(markdownText)
   return parsedContent
 }
