@@ -1,0 +1,10 @@
+// [リンクテキスト](https://example.com) の構文に対するスタイル
+.mc-anchor {
+  color: var(--color-text-link);
+  &:hover {
+    text-decoration-line: none;
+  }
+  &:visited {
+    color: var(--color-text-link);
+  }
+}
