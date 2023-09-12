@@ -1,0 +1,38 @@
+---
+import {
+  convertMarkdownToHTML,
+  fetchContentByType,
+} from '../../services/microcms'
+import type { ContentType } from '../../services/microcms/types'
+
+export interface Props {
+  contentType: ContentType
+}
+
+const { contentType } = Astro.props
+const { content } = await fetchContentByType(contentType)
+const parsedContent = await convertMarkdownToHTML(content)
+---
+
+<div class="microcms-content-wrapper">
+  <Fragment set:html={parsedContent} />
+</div>
+
+<style is:global>
+  .microcms-content-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+
+    /* [リンクテキスト](https://example.com) の構文に対するスタイル */
+    & a {
+      color: var(--color-text-link);
+      &:hover {
+        text-decoration-line: none;
+      }
+      &:visited {
+        color: var(--color-text-link);
+      }
+    }
+  }
+</style>

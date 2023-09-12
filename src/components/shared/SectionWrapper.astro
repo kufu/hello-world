@@ -7,7 +7,7 @@ const { heading } = Astro.props
 ---
 
 <section>
-  <h2 set:html={heading}></h2>
+  <h2 set:html={heading} />
 
   <div class="body">
     <slot />
@@ -40,9 +40,6 @@ const { heading } = Astro.props
   .body {
     margin: var(--space-m) 0;
     line-height: 180%;
-    > p {
-      margin-bottom: 1.8rem;
-    }
   }
 
   .page-top {

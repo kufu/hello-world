@@ -16,7 +16,9 @@
     "format:stylelint": "stylelint --fix 'src/**/*.{js,astro}'"
   },
   "dependencies": {
-    "astro": "^3.0.7"
+    "astro": "^3.0.7",
+    "microcms-js-sdk": "^2.5.0",
+    "remark-html": "^15.0.2"
   },
   "devDependencies": {
     "@typescript-eslint/parser": "^6.5.0",
