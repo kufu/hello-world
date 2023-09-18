@@ -1,15 +1,16 @@
 ---
 export interface Props {
   heading: string
+  largeSpace?: boolean
 }
 
-const { heading } = Astro.props
+const { heading, largeSpace } = Astro.props
 ---
 
 <section>
   <h2 set:html={heading} />
 
-  <div class="body">
+  <div class:list={['body', { largeSpace }]}>
     <slot />
   </div>
 
@@ -40,6 +41,10 @@ const { heading } = Astro.props
   .body {
     margin: var(--space-m) 0;
     line-height: 180%;
+
+    &.largeSpace {
+      margin: var(--space-2xl) 0;
+    }
   }
 
   .page-top {
