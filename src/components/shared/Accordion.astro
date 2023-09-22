@@ -1,0 +1,37 @@
+---
+export interface Props {
+  title: string
+}
+
+const { title } = Astro.props
+---
+
+<details>
+  <summary class="summary">
+    <span class="summary-inner"
+      >{title}<img src="/icons/plus.svg" alt="accordion open" /></span
+    >
+  </summary>
+  <div class="content">
+    <slot />
+  </div>
+</details>
+
+<style>
+  .summary {
+    display: block;
+    background: white;
+    border: 2px solid #6d6d6d;
+    padding: 0.2em 0.5em;
+  }
+
+  .summary-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .content {
+    padding-top: var(--space-s);
+  }
+</style>
