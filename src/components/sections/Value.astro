@@ -21,7 +21,38 @@ import Accordion from '../shared/Accordion.astro'
         はそんな個人が力を発揮できる環境を全力で作っています。
       </p>
       <p><HighlightText>直近１ヶ月で寄せられた要望数: 123件</HighlightText></p>
-      <Accordion title="良い事例・これはNG">WIP: コンテンツ</Accordion>
+      <Accordion title="良い事例・これはNG">
+        <p class="case-title">👍良い事例</p>
+        <ul class="case-list">
+          <li>
+            ユーザーの要望を表層的に解釈するのではなく、本質的な課題を捉えて解決策を提案した
+          </li>
+          <li>
+            スプリントレビューやユーザーヒアリングで潜在的な課題を吸い上げた
+          </li>
+          <li>
+            仮説段階で作り込みすぎることなく最小限の単位でのリリースを心がけ、リーンにブラッシュアップを重ねていった
+          </li>
+          <li>
+            要望に対応する改修の工数を捻出するためタスクの優先度や実装方針の調整を行った
+          </li>
+        </ul>
+        <p class="case-title">🙅‍♂️これはNG</p>
+        <ul class="case-list">
+          <li>
+            顧客からの要望やスプリントレビューで受けたFBを鵜呑みにし、その裏に隠れている本質的な課題を見逃した
+          </li>
+          <li>
+            ユーザーの声を聞く機会を持つことなく、仮説だけで機能の企画・開発を進めた
+          </li>
+          <li>
+            工数の調整余地を考慮することなく、手間を理由に要望への対応優先度を下げた
+          </li>
+          <li>
+            特定の技術や開発手法の採用を目的にしてしまい、ビジネス上の目的が達成できなかった
+          </li>
+        </ul>
+      </Accordion>
     </Stack>
     <Stack>
       <h2>早いほうがカッコイイ</h2>
@@ -32,7 +63,10 @@ import Accordion from '../shared/Accordion.astro'
         が重視しているのは、フィードバックを受けるまでの早さです。コードも、デザインも、プロダクトも、あらゆるものをなるべく早く軌道修正できるように、小さく作ってフィードバックを受けるようにしています。その小さな早さの違いが、仮説検証サイクルの高速化につながり、本質的な課題解決に至る早さにおいて大きな違いを生むと考えています。
       </p>
       <p><HighlightText>直近１ヶ月で寄せられた要望数: 123件</HighlightText></p>
-      <Accordion title="良い事例・これはNG">WIP: コンテンツ</Accordion>
+      <Accordion title="良い事例・これはNG">
+        <p class="case-title">👍良い事例</p>
+        <p class="case-title">🙅‍♂️これはNG</p>
+      </Accordion>
     </Stack>
     <Stack>
       <h2>人が欲しいと思うものをつくろう</h2>
@@ -42,7 +76,10 @@ import Accordion from '../shared/Accordion.astro'
         の開発組織では、エンジニアとして技術を使った先に顧客にどんな価値が提供できるのかを常に考えています。
       </p>
       <p><HighlightText>直近１ヶ月で寄せられた要望数: 123件</HighlightText></p>
-      <Accordion title="良い事例・これはNG">WIP: コンテンツ</Accordion>
+      <Accordion title="良い事例・これはNG">
+        <p class="case-title">👍良い事例</p>
+        <p class="case-title">🙅‍♂️これはNG</p>
+      </Accordion>
     </Stack>
   </Stack>
 </SectionWrapper>
@@ -52,5 +89,14 @@ import Accordion from '../shared/Accordion.astro'
     font-weight: bold;
     font-size: 1.5rem;
     line-height: 134%;
+  }
+
+  .case-title {
+    font-weight: 800;
+    padding-bottom: var(--space-xs);
+  }
+  .case-list {
+    list-style-type: ' ・ ';
+    margin-left: var(--space-m);
   }
 </style>
