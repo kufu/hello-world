@@ -77,6 +77,11 @@ export const EntrySection = () => (
             QAエンジニア
           </Item>
         </li>
+        <li>
+          <Item href="https://open.talentio.com/r/1/c/smarthr/pages/83193" target="_blank" rel="noopener noreferrer">
+            QAエンジニア（リーダー候補）
+          </Item>
+        </li>
         {/* MEMO: 募集停止中
         <li>
           <Item href="https://open.talentio.com/1/c/smarthr/requisitions/detail/7587" target="_blank" rel="noopener noreferrer">
