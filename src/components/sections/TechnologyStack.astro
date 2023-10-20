@@ -1,0 +1,188 @@
+---
+import SectionWrapper from '../shared/SectionWrapper.astro'
+
+const technologies = [
+  {
+    genre: 'バックエンド',
+    items: [
+      {
+        name: 'Ruby',
+        icon: {
+          src: '/images/technology_stack/icons/ruby.png',
+          width: 50,
+          height: 50,
+        },
+      },
+      {
+        name: 'Ruby on Rails',
+        icon: {
+          src: '/images/technology_stack/icons/ruby.png',
+          width: 50,
+          height: 50,
+        },
+      },
+      {
+        name: 'Ruby',
+        icon: {
+          src: '/images/technology_stack/icons/ruby.png',
+          width: 50,
+          height: 50,
+        },
+      },
+      {
+        name: 'Ruby on Rails',
+        icon: {
+          src: '/images/technology_stack/icons/ruby.png',
+          width: 50,
+          height: 50,
+        },
+      },
+    ],
+  },
+  {
+    genre: 'フロントエンド',
+    items: [
+      {
+        name: 'Ruby',
+        icon: {
+          src: '/images/technology_stack/icons/ruby.png',
+          width: 50,
+          height: 50,
+        },
+      },
+    ],
+  },
+  {
+    genre: 'インフラ系',
+    items: [
+      {
+        name: 'Ruby',
+        icon: {
+          src: '/images/technology_stack/icons/ruby.png',
+          width: 50,
+          height: 50,
+        },
+      },
+    ],
+  },
+  {
+    genre: '利用サービス系',
+    items: [
+      {
+        name: 'Ruby',
+        icon: {
+          src: '/images/technology_stack/icons/ruby.png',
+          width: 50,
+          height: 50,
+        },
+      },
+    ],
+  },
+  {
+    genre: '開発ツール系',
+    items: [
+      {
+        name: 'Ruby',
+        icon: {
+          src: '/images/technology_stack/icons/ruby.png',
+          width: 50,
+          height: 50,
+        },
+      },
+    ],
+  },
+] as const
+---
+
+<SectionWrapper heading="技術スタック">
+  <ul class="GenreList">
+    {
+      technologies.map((technology) => (
+        <li class={technology.genre === '開発ツール系' ? 'wide' : ''}>
+          <div class="GenreItem">
+            <h3 class="GenreTitle">{technology.genre}</h3>
+
+            <ul class="TechnologyList">
+              {technology.items.map((item) => (
+                <li>
+                  <div class="TechnologyItem">
+                    <div class="TechnologyImage">
+                      <img
+                        src={item.icon.src}
+                        width={item.icon.width}
+                        height={item.icon.height}
+                        alt={item.name}
+                      />
+                    </div>
+
+                    <span>{item.name}</span>
+                  </div>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </li>
+      ))
+    }
+  </ul>
+</SectionWrapper>
+
+<style>
+  .GenreList {
+    display: flex;
+    flex-wrap: wrap;
+    margin: calc((var(--space-m) / 2) * -1);
+    line-height: 1;
+
+    & > li {
+      width: 50%;
+      padding: calc(var(--space-m) / 2);
+      box-sizing: border-box;
+
+      &.wide {
+        width: 100%;
+      }
+    }
+
+    @media screen and (max-width: 679px) {
+      display: block;
+
+      & > li {
+        width: 100%;
+      }
+    }
+  }
+  .GenreItem {
+    height: 100%;
+    padding: var(--space-s);
+    background-color: var(--color-background);
+    box-sizing: border-box;
+  }
+  .GenreTitle {
+    margin-bottom: var(--space-s);
+    font-weight: bold;
+  }
+  .TechnologyList {
+    display: flex;
+    flex-wrap: wrap;
+    margin: calc(var(--space-xs) * -1);
+
+    & > li {
+      padding: var(--space-xs) 0;
+    }
+  }
+  .TechnologyItem {
+    font-size: 12px;
+    text-align: center;
+  }
+  .TechnologyImage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 72px;
+    height: 72px;
+    margin: 0 var(--space-xs) var(--space-xs);
+    border-radius: 16px;
+    background-color: #fff;
+  }
+</style>
