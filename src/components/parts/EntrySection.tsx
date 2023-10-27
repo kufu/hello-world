@@ -82,22 +82,16 @@ export const EntrySection = () => (
             QAエンジニア（リーダー候補）
           </Item>
         </li>
-        {/* MEMO: 募集停止中
         <li>
           <Item href="https://open.talentio.com/1/c/smarthr/requisitions/detail/7587" target="_blank" rel="noopener noreferrer">
             コーポレートエンジニア
-            <BrSp />
-            <span>（情報システム エンジニア）</span>
           </Item>
         </li>
-        */}
-        {/* MEMO: 募集停止中
         <li>
           <Item href="https://open.talentio.com/1/c/smarthr/requisitions/detail/13859" target="_blank" rel="noopener noreferrer">
             セキュリティエンジニア
           </Item>
         </li>
-        */}
         <li>
           <Item href="https://open.talentio.com/1/c/smarthr/requisitions/detail/13762" target="_blank" rel="noopener noreferrer">
             カジュアル面談ご希望の方
