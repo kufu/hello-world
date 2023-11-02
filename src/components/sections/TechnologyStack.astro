@@ -16,23 +16,15 @@ const technologies = [
       {
         name: 'Ruby on Rails',
         icon: {
-          src: '/images/technology_stack/icons/ruby.png',
+          src: '/images/technology_stack/icons/rails.svg',
           width: 50,
           height: 50,
         },
       },
       {
-        name: 'Ruby',
+        name: 'GraphQL',
         icon: {
-          src: '/images/technology_stack/icons/ruby.png',
-          width: 50,
-          height: 50,
-        },
-      },
-      {
-        name: 'Ruby on Rails',
-        icon: {
-          src: '/images/technology_stack/icons/ruby.png',
+          src: '/images/technology_stack/icons/graphql.svg',
           width: 50,
           height: 50,
         },
@@ -43,9 +35,33 @@ const technologies = [
     genre: 'フロントエンド',
     items: [
       {
-        name: 'Ruby',
+        name: 'TypeScript',
         icon: {
-          src: '/images/technology_stack/icons/ruby.png',
+          src: '/images/technology_stack/icons/typescript.svg',
+          width: 50,
+          height: 50,
+        },
+      },
+      {
+        name: 'React',
+        icon: {
+          src: '/images/technology_stack/icons/react.svg',
+          width: 50,
+          height: 50,
+        },
+      },
+      {
+        name: 'Next.js',
+        icon: {
+          src: '/images/technology_stack/icons/nextjs.png',
+          width: 50,
+          height: 50,
+        },
+      },
+      {
+        name: 'jQuery',
+        icon: {
+          src: '/images/technology_stack/icons/jquery.png',
           width: 50,
           height: 50,
         },
@@ -53,12 +69,28 @@ const technologies = [
     ],
   },
   {
-    genre: 'インフラ系',
+    genre: 'インフラ',
     items: [
       {
-        name: 'Ruby',
+        name: 'GCP',
         icon: {
-          src: '/images/technology_stack/icons/ruby.png',
+          src: '/images/technology_stack/icons/gcp.png',
+          width: 50,
+          height: 50,
+        },
+      },
+      {
+        name: 'Terraform',
+        icon: {
+          src: '/images/technology_stack/icons/terraform.svg',
+          width: 50,
+          height: 50,
+        },
+      },
+      {
+        name: 'Docker',
+        icon: {
+          src: '/images/technology_stack/icons/docker.svg',
           width: 50,
           height: 50,
         },
@@ -66,12 +98,20 @@ const technologies = [
     ],
   },
   {
-    genre: '利用サービス系',
+    genre: '利用サービス',
     items: [
       {
-        name: 'Ruby',
+        name: 'SendGrid',
         icon: {
-          src: '/images/technology_stack/icons/ruby.png',
+          src: '/images/technology_stack/icons/sendgrid.png',
+          width: 50,
+          height: 50,
+        },
+      },
+      {
+        name: 'Authlete',
+        icon: {
+          src: '/images/technology_stack/icons/authlete.png',
           width: 50,
           height: 50,
         },
@@ -79,12 +119,76 @@ const technologies = [
     ],
   },
   {
-    genre: '開発ツール系',
+    genre: '開発ツール',
     items: [
       {
-        name: 'Ruby',
+        name: 'GitHub',
         icon: {
-          src: '/images/technology_stack/icons/ruby.png',
+          src: '/images/technology_stack/icons/github.svg',
+          width: 50,
+          height: 50,
+        },
+      },
+      {
+        name: 'GitHub Copilot',
+        icon: {
+          src: '/images/technology_stack/icons/github-copilot.svg',
+          width: 50,
+          height: 50,
+        },
+      },
+      {
+        name: 'CircleCI',
+        icon: {
+          src: '/images/technology_stack/icons/circleci.png',
+          width: 50,
+          height: 50,
+        },
+      },
+      {
+        name: 'GitHub Actions',
+        icon: {
+          src: '/images/technology_stack/icons/github-actions.svg',
+          width: 50,
+          height: 50,
+        },
+      },
+      {
+        name: 'Sentry',
+        icon: {
+          src: '/images/technology_stack/icons/sentry.svg',
+          width: 50,
+          height: 50,
+        },
+      },
+      {
+        name: 'NewRelic',
+        icon: {
+          src: '/images/technology_stack/icons/newrelic.svg',
+          width: 50,
+          height: 50,
+        },
+      },
+      {
+        name: 'Jira',
+        icon: {
+          src: '/images/technology_stack/icons/jira.svg',
+          width: 50,
+          height: 50,
+        },
+      },
+      {
+        name: 'Figma',
+        icon: {
+          src: '/images/technology_stack/icons/figma.svg',
+          width: 50,
+          height: 50,
+        },
+      },
+      {
+        name: 'Miro',
+        icon: {
+          src: '/images/technology_stack/icons/miro.svg',
           width: 50,
           height: 50,
         },
@@ -98,7 +202,7 @@ const technologies = [
   <ul class="GenreList">
     {
       technologies.map((technology) => (
-        <li class={technology.genre === '開発ツール系' ? 'wide' : ''}>
+        <li class={technology.genre === '開発ツール' ? 'wide' : ''}>
           <div class="GenreItem">
             <h3 class="GenreTitle">{technology.genre}</h3>
 
