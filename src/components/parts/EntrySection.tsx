@@ -62,7 +62,9 @@ export const EntrySection = () => (
         </li>
         <li>
           <Item href="https://open.talentio.com/r/1/c/smarthr/pages/75921" target="_blank" rel="noopener noreferrer">
-            プラットフォーム開発エンジニア（バックエンド）
+            ウェブアプリケーションエンジニア
+            <BrPc />
+            （プラットフォーム領域 バックエンド）
           </Item>
         </li>
         {/* MEMO: 募集停止中
