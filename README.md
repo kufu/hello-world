@@ -28,3 +28,9 @@ Welcome to...
 #### SECRET_MICROCMS_KEY
 
 [hello-world Manage API Keys | microCMS](https://smarthr-hello-world.microcms.io/api-keys)からAPIキーを取得できます
+
+### 起動コマンド
+```
+$ yarn install
+$ yarn dev
+```
