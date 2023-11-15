@@ -12,5 +12,11 @@ module.exports = {
         'astro/semi': 'off',
       },
     },
+    {
+      files: ['*.cjs'],
+      rules: {
+        'astro/semi': 'off',
+      },
+    },
   ],
 }
