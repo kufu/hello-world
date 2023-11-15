@@ -137,8 +137,12 @@ import Accordion from '../shared/Accordion.astro'
   }
 
   .case-title {
+    font-size: 0.9rem;
     font-weight: 800;
     padding-bottom: var(--space-xs);
+  }
+  .case-title:not(:first-of-type) {
+    padding-top: var(--space-m);
   }
   .case-list {
     list-style-type: ' ・ ';
