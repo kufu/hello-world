@@ -1,11 +1,11 @@
 ---
-import SectionWrapper from '../shared/SectionWrapper.astro'
+import ContentBox from '../shared/ContentBox.astro'
 import TextLink from '../shared/TextLink.astro'
 import Stack from '../shared/Stack.astro'
 import Accordion from '../shared/Accordion.astro'
 ---
 
-<SectionWrapper heading="開発組織のバリュー">
+<ContentBox heading="開発組織のバリュー">
   <Stack>
     <p>
       SmartHRは<TextLink href="https://smarthr.co.jp/about/">
@@ -56,7 +56,8 @@ import Accordion from '../shared/Accordion.astro'
     <Stack>
       <h2>早いほうがカッコイイ</h2>
       <p>
-        Slackでレスをするのも、コードを書くのも、Pull Requestのレビューをするのも、なんだって早いほうがカッコイイものです。中でも特にSmartHRが重視しているのは、フィードバックを受けるまでの早さです。コードも、デザインも、プロダクトも、あらゆるものをなるべく早く軌道修正できるように、小さく作ってフィードバックを受けるようにしています。その小さな早さの違いが、仮説検証サイクルの高速化につながり、本質的な課題解決に至る早さにおいて大きな違いを生むと考えています。
+        Slackでレスをするのも、コードを書くのも、Pull
+        Requestのレビューをするのも、なんだって早いほうがカッコイイものです。中でも特にSmartHRが重視しているのは、フィードバックを受けるまでの早さです。コードも、デザインも、プロダクトも、あらゆるものをなるべく早く軌道修正できるように、小さく作ってフィードバックを受けるようにしています。その小さな早さの違いが、仮説検証サイクルの高速化につながり、本質的な課題解決に至る早さにおいて大きな違いを生むと考えています。
       </p>
       <Accordion title="良い事例・これはNG">
         <p class="case-title">👍良い事例</p>
@@ -126,7 +127,7 @@ import Accordion from '../shared/Accordion.astro'
       </Accordion>
     </Stack>
   </Stack>
-</SectionWrapper>
+</ContentBox>
 
 <style>
   & h2 {
@@ -136,8 +137,12 @@ import Accordion from '../shared/Accordion.astro'
   }
 
   .case-title {
+    font-size: 0.9rem;
     font-weight: 800;
     padding-bottom: var(--space-xs);
+  }
+  .case-title:not(:first-of-type) {
+    padding-top: var(--space-m);
   }
   .case-list {
     list-style-type: ' ・ ';

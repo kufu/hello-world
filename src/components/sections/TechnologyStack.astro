@@ -1,5 +1,5 @@
 ---
-import SectionWrapper from '../shared/SectionWrapper.astro'
+import ContentBox from '../shared/ContentBox.astro'
 
 const technologies = [
   {
@@ -198,7 +198,7 @@ const technologies = [
 ] as const
 ---
 
-<SectionWrapper heading="技術スタック">
+<ContentBox heading="技術スタック">
   <ul class="GenreList">
     {
       technologies.map((technology) => (
@@ -229,7 +229,7 @@ const technologies = [
       ))
     }
   </ul>
-</SectionWrapper>
+</ContentBox>
 
 <style>
   .GenreList {

@@ -7,7 +7,7 @@ export interface Props {
 const { heading, largeSpace } = Astro.props
 ---
 
-<section>
+<div>
   <h2 set:html={heading} />
 
   <div class:list={['body', { largeSpace }]}>
@@ -15,7 +15,7 @@ const { heading, largeSpace } = Astro.props
   </div>
 
   <button class="page-top">ページトップに戻る</button>
-</section>
+</div>
 
 <script>
   function handleClick() {

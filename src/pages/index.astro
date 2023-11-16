@@ -16,16 +16,44 @@ import Copyright from '../components/sections/Copyright.astro'
 <Layout>
   <main>
     <Header />
-    <Introduction />
-    <Document />
-    <DevelopmentEnvironment />
-    <Value />
-    <Welfare />
-    <TechnologyStack />
-    <OrganizationalStructure />
-    <Links />
-    <Positions />
-    <Copyright />
+
+    <section>
+      <Introduction />
+    </section>
+
+    <section>
+      <Document />
+    </section>
+
+    <section>
+      <DevelopmentEnvironment />
+    </section>
+
+    <section>
+      <Value />
+    </section>
+
+    <section>
+      <Welfare />
+    </section>
+
+    <section>
+      <TechnologyStack />
+    </section>
+
+    <section>
+      <OrganizationalStructure />
+    </section>
+
+    <section>
+      <Links />
+    </section>
+
+    <section>
+      <Positions />
+    </section>
+
+    <p class="copyright">&copy; SmartHR, Inc.</p>
   </main>
 </Layout>
 
@@ -38,5 +66,10 @@ import Copyright from '../components/sections/Copyright.astro'
     > section {
       margin-top: calc(var(--space-s) * 6);
     }
+  }
+
+  .copyright {
+    margin-top: calc(var(--space-s) * 6);
+    text-align: center;
   }
 </style>
