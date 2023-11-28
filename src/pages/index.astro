@@ -11,11 +11,10 @@ import OrganizationalStructure from '../components/sections/OrganizationalStruct
 import Links from '../components/sections/Links.astro'
 import Positions from '../components/sections/Positions.astro'
 import Copyright from '../components/sections/Copyright.astro'
-import GitHubCorner from '../components/parts/GitHubCorner.astro'
+import GitHubLink from '../components/parts/GitHubLink.astro'
 ---
 
 <Layout>
-  <GitHubCorner />
   <main>
     <Header />
 
@@ -55,6 +54,7 @@ import GitHubCorner from '../components/parts/GitHubCorner.astro'
       <Positions />
     </section>
 
+    <GitHubLink />
     <p class="copyright">&copy; SmartHR, Inc.</p>
   </main>
 </Layout>
@@ -71,7 +71,7 @@ import GitHubCorner from '../components/parts/GitHubCorner.astro'
   }
 
   .copyright {
-    margin-top: calc(var(--space-s) * 6);
+    margin-top: calc(var(--space-s) * 2);
     text-align: center;
   }
 </style>
