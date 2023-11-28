@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <meta
+      name="description"
+      content="株式会社SmartHRのエンジニア採用サイトです。私たちは、誰もが心地よく、健康に、そして幸せに働ける社会を目指し、テクノロジーと創意工夫で、日本の労働を一歩ずつアップデートしています。歴史に残る模範的なソフトウェアを一緒に作りませんか？"
+    />
+    <meta property="og:title" content="SmartHR エンジニア採用" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://hello-world.smarthr.co.jp" />
+    <meta
+      property="og:image"
+      content="https://hello-world.smarthr.co.jp/images/ogp.png"
+    />
+    <meta property="og:site_name" content="Engineer Recruiting | SmartHR" />
+    <meta
+      property="og:description"
+      content="株式会社SmartHRのエンジニア採用サイトです。私たちは、誰もが心地よく、健康に、そして幸せに働ける社会を目指し、テクノロジーと創意工夫で、日本の労働を一歩ずつアップデートしています。歴史に残る模範的なソフトウェアを一緒に作りませんか？"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="SmartHR エンジニア採用" />
+    <meta name="twitter:site" content="@SmartHR_jp" />
+    <link rel="icon" href="/favicon/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/favicon/apple-touch-icon.png"
+    />
+    <title>SmartHR エンジニア採用</title>
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>
+<style is:global>
+  @font-face {
+    font-family: 'DINAlternateBold';
+    src: url('/fonts/DINAlternate-Bold.woff') format('woff');
+  }
+
+  /* variables */
+  :root {
+    --space-xs: 8px;
+    --space-s: 16px;
+    --space-m: 24px;
+    --space-l: 32px;
+    --space-xl: 40px;
+    --space-2xl: 48px;
+
+    --color-background: #efeeed;
+    --color-text-link: #0071c1;
+  }
+
+  /* reset */
+  html,
+  body,
+  div,
+  span,
+  applet,
+  object,
+  iframe,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  blockquote,
+  pre,
+  a,
+  abbr,
+  acronym,
+  address,
+  big,
+  cite,
+  code,
+  del,
+  dfn,
+  em,
+  img,
+  ins,
+  kbd,
+  q,
+  s,
+  samp,
+  small,
+  strike,
+  strong,
+  sub,
+  sup,
+  tt,
+  var,
+  b,
+  u,
+  i,
+  center,
+  dl,
+  dt,
+  dd,
+  menu,
+  ol,
+  ul,
+  li,
+  fieldset,
+  form,
+  label,
+  legend,
+  table,
+  caption,
+  tbody,
+  tfoot,
+  thead,
+  tr,
+  th,
+  td,
+  article,
+  aside,
+  canvas,
+  details,
+  embed,
+  figure,
+  figcaption,
+  footer,
+  header,
+  hgroup,
+  main,
+  menu,
+  nav,
+  output,
+  ruby,
+  section,
+  summary,
+  time,
+  mark,
+  audio,
+  video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+  }
+  /* HTML5 display-role reset for older browsers */
+  article,
+  aside,
+  details,
+  figcaption,
+  figure,
+  footer,
+  header,
+  hgroup,
+  main,
+  menu,
+  nav,
+  section {
+    display: block;
+  }
+  /* HTML5 hidden-attribute fix for newer browsers */
+  *[hidden] {
+    display: none;
+  }
+  body {
+    line-height: 1;
+  }
+  menu,
+  ol,
+  ul {
+    list-style: none;
+  }
+  blockquote,
+  q {
+    quotes: none;
+  }
+  blockquote:before,
+  blockquote:after,
+  q:before,
+  q:after {
+    content: '';
+    content: none;
+  }
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+
+  /* normalize */
+  body {
+    overflow-wrap: break-word;
+    color: #23221e;
+    background: #f9f8f7;
+    font-family: 'Hiragino Kaku Gothic Pro', system-ui, sans-serif;
+  }
+
+  a {
+    color: inherit;
+  }
+
+  img {
+    vertical-align: middle;
+  }
+
+  input,
+  button,
+  textarea {
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: inherit;
+    color: inherit;
+  }
+
+  button,
+  input,
+  select,
+  textarea {
+    font-family: inherit;
+    font-size: 100%;
+  }
+</style>
+
+<!-- font-family: 'DIN Alternate'; タイトル-->

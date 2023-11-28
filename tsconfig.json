@@ -1,24 +1,3 @@
 {
-  "compilerOptions": {
-    "outDir": "./dist/",
-    "sourceMap": true,
-    "allowJs": false,
-    "moduleResolution": "node",
-    "module": "esnext",
-    "target": "es5",
-    "jsx": "react",
-    "lib": ["dom", "esnext"],
-    "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true,
-    "noFallthroughCasesInSwitch": true,
-    "noImplicitReturns": true,
-    "allowSyntheticDefaultImports": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "strict": true,
-  },
-  "exclude": ["node_modules"],
-  "include": [
-    "./src/**/*"
-  ]
+  "extends": "astro/tsconfigs/strict"
 }

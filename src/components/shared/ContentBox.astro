@@ -1,0 +1,59 @@
+---
+export interface Props {
+  heading: string
+  largeSpace?: boolean
+}
+
+const { heading, largeSpace } = Astro.props
+---
+
+<div>
+  <h2 set:html={heading} />
+
+  <div class:list={['body', { largeSpace }]}>
+    <slot />
+  </div>
+
+  <button class="page-top">ページトップに戻る</button>
+</div>
+
+<script>
+  function handleClick() {
+    window.scroll({
+      top: 0,
+      behavior: 'smooth',
+    })
+  }
+
+  const pageTopButtons = document.querySelectorAll('.page-top')
+
+  pageTopButtons.forEach((button) => {
+    button.addEventListener('click', handleClick)
+  })
+</script>
+
+<style>
+  h2 {
+    font-weight: 600;
+    font-size: 3rem;
+    line-height: 125%;
+  }
+  .body {
+    margin: var(--space-m) 0;
+    line-height: 180%;
+
+    &.largeSpace {
+      margin: var(--space-2xl) 0;
+    }
+  }
+
+  .page-top {
+    color: var(--color-text-link);
+    text-decoration-line: underline;
+    cursor: pointer;
+
+    &:hover {
+      text-decoration-line: none;
+    }
+  }
+</style>

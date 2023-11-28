@@ -1,0 +1,30 @@
+---
+import MicroCMSContent from '../shared/MicroCMSContent.astro'
+import ContentBox from '../shared/ContentBox.astro'
+---
+
+<ContentBox heading="WE ARE HIRING!!!" largeSpace>
+  <div class="content">
+    <h2>ウェブアプリケーションエンジニアの求人</h2>
+    <MicroCMSContent contentType="web-application-engineer-positions" />
+    <h2>他のエンジニアの求人</h2>
+    <MicroCMSContent contentType="other-engineer-positions" />
+    <h2>とりあえず話を聞いてみたい</h2>
+    <MicroCMSContent contentType="casual-interview" />
+  </div>
+</ContentBox>
+
+<style>
+  .content {
+    & h2 {
+      font-weight: bold;
+      font-size: 1.5rem;
+      line-height: 134%;
+      margin-bottom: var(--space-m);
+
+      &:not(:first-child) {
+        margin-top: var(--space-2xl);
+      }
+    }
+  }
+</style>

@@ -1,0 +1,77 @@
+---
+import Layout from '../layouts/Layout.astro'
+import Header from '../components/sections/Header.astro'
+import Introduction from '../components/sections/Introduction.astro'
+import Document from '../components/sections/Document.astro'
+import DevelopmentEnvironment from '../components/sections/DevelopmentEnvironment.astro'
+import Value from '../components/sections/Value.astro'
+import Welfare from '../components/sections/Welfare.astro'
+import TechnologyStack from '../components/sections/TechnologyStack.astro'
+import OrganizationalStructure from '../components/sections/OrganizationalStructure.astro'
+import Links from '../components/sections/Links.astro'
+import Positions from '../components/sections/Positions.astro'
+import Copyright from '../components/sections/Copyright.astro'
+import GitHubLink from '../components/parts/GitHubLink.astro'
+---
+
+<Layout>
+  <main>
+    <Header />
+
+    <section>
+      <Introduction />
+    </section>
+
+    <section>
+      <Document />
+    </section>
+
+    <section>
+      <DevelopmentEnvironment />
+    </section>
+
+    <section>
+      <Value />
+    </section>
+
+    <section>
+      <Welfare />
+    </section>
+
+    <section>
+      <TechnologyStack />
+    </section>
+
+    <section>
+      <OrganizationalStructure />
+    </section>
+
+    <section>
+      <Links />
+    </section>
+
+    <section>
+      <Positions />
+    </section>
+
+    <GitHubLink />
+    <p class="copyright">&copy; SmartHR, Inc.</p>
+  </main>
+</Layout>
+
+<style>
+  main {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: var(--space-l) var(--space-s);
+
+    > section {
+      margin-top: calc(var(--space-s) * 6);
+    }
+  }
+
+  .copyright {
+    margin-top: calc(var(--space-s) * 2);
+    text-align: center;
+  }
+</style>
