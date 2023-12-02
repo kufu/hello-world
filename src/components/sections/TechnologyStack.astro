@@ -261,6 +261,10 @@ const technologies = [
     padding: var(--space-s);
     background-color: var(--color-background);
     box-sizing: border-box;
+
+    @media (forced-colors: active) {
+      outline: solid 1px ButtonBorder;
+    }
   }
   .GenreTitle {
     margin-bottom: var(--space-s);
