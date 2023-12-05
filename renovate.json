@@ -12,6 +12,7 @@
         "matchUpdateTypes": ["minor", "patch"],
         "automerge": true
       }
-    ]
+    ],
+    "postUpdateOptions": ["yarnDedupeHighest"]
   }
 }
