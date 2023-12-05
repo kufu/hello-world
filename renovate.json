@@ -1,0 +1,17 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "local>kufu/renovate-config"
+  ],
+  "enabledManagers": ["npm"],
+  "npm": {
+    "rangeStrategy": "bump",
+    "packageRules": [
+      {
+        "matchDepTypes": ["devDependencies"],
+        "matchUpdateTypes": ["minor", "patch"],
+        "automerge": true
+      }
+    ]
+  }
+}
