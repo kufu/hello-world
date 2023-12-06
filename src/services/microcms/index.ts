@@ -10,7 +10,7 @@ const API_ENDPOINT = 'contents'
 
 const client = createClient({
   serviceDomain: SERVICE_DOMAIN,
-  apiKey: import.meta.env.SECRET_MICROCMS_KEY,
+  apiKey: import.meta.env.SECRET_MICROCMS_KEY || 'key',
 })
 
 // コンテンツ種別をもとにコンテンツを取得する
