@@ -1,9 +1,10 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "github>kufu/renovate-config"
+    "github>kufu/renovate-config",
+    "helpers:pinGitHubActionDigests"
   ],
-  "enabledManagers": ["npm"],
+  "enabledManagers": ["github-actions", "npm"],
   "npm": {
     "rangeStrategy": "bump",
     "packageRules": [
