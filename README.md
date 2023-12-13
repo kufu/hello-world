@@ -20,16 +20,17 @@ Welcome to...
 
 ## Setup
 
-### 環境変数
+### 環境変数 (社内向け)
 
-`.env`ファイルをコピーして`.env.development`ファイルを作成してください。
+`.env`ファイルをコピーして`.env.local`ファイルを作成してください。
 その後、それぞれ必要な値を設定してください。
 
 #### SECRET_MICROCMS_KEY
 
-[hello-world Manage API Keys | microCMS](https://smarthr-hello-world.microcms.io/api-keys)からAPIキーを取得できます
+1passwordのDev保管庫に`hello-world MicroCMS API Key`としてAPI Keyを格納してあるのでそちらを参照してください
 
 ### 起動コマンド
+
 ```
 $ yarn install
 $ yarn dev
