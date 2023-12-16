@@ -16,7 +16,7 @@
     "format:stylelint": "stylelint --fix 'src/**/*.{js,astro}'"
   },
   "dependencies": {
-    "astro": "^3.0.7",
+    "astro": "^3.6.4",
     "autoprefixer": "^10.4.16",
     "microcms-js-sdk": "^2.5.0",
     "postcss-preset-env": "^9.3.0",
