@@ -10,10 +10,12 @@
     "astro": "astro",
     "lint": "run-p lint:*",
     "lint:eslint": "eslint 'src/**/*.{js,ts,astro}'",
-    "lint:stylelint": "stylelint 'src/**/*.{js,astro}'",
+    "lint:stylelint": "stylelint 'src/**/*.{js,ts,astro}'",
+    "lint:prettier": "prettier --check 'src/**/*.{js,ts}'",
     "format": "run-s format:*",
     "format:eslint": "eslint --fix 'src/**/*.{js,ts,astro}'",
-    "format:stylelint": "stylelint --fix 'src/**/*.{js,astro}'"
+    "format:stylelint": "stylelint --fix 'src/**/*.{js,ts,astro}'",
+    "format:prettier": "prettier --write 'src/**/*.{js,ts}'"
   },
   "dependencies": {
     "microcms-js-sdk": "^2.5.0",

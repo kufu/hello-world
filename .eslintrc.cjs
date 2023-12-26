@@ -5,8 +5,8 @@ module.exports = {
     browser: true,
   },
   extends: [
-    "eslint:recommended",
-    "plugin:astro/all",
+    'eslint:recommended',
+    'plugin:astro/all',
   ],
   parserOptions: {
     ecmaVersion: 'latest',
@@ -14,13 +14,13 @@ module.exports = {
   },
   overrides: [
     {
-      files: ["*.astro"],
-      parser: "astro-eslint-parser",
+      files: ['*.astro'],
+      parser: 'astro-eslint-parser',
       parserOptions: {
-        parser: "@typescript-eslint/parser",
-        extraFileExtensions: [".astro"],
+        parser: '@typescript-eslint/parser',
+        extraFileExtensions: ['.astro'],
       },
-      processor: "astro/client-side-ts",
+      processor: 'astro/client-side-ts',
       rules: {
         'astro/no-set-html-directive': 'off'
       },
