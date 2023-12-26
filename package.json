@@ -17,7 +17,7 @@
   },
   "dependencies": {
     "microcms-js-sdk": "^2.5.0",
-    "remark-html": "^15.0.2"
+    "remark-html": "^16.0.1"
   },
   "devDependencies": {
     "@typescript-eslint/parser": "^6.16.0",
