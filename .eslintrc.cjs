@@ -5,7 +5,7 @@ module.exports = {
     browser: true,
   },
   extends: [
-    "plugin:astro/recommended",
+    "plugin:astro/all",
   ],
   parserOptions: {
     ecmaVersion: 'latest',
@@ -20,7 +20,9 @@ module.exports = {
         extraFileExtensions: [".astro"],
       },
       processor: "astro/client-side-ts",
-      rules: {},
+      rules: {
+        'astro/no-set-html-directive': 'off'
+      },
     },
   ],
 }
