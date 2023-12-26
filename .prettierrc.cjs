@@ -2,7 +2,7 @@ module.exports = {
   plugins: [require.resolve('prettier-plugin-astro')],
   singleQuote: true,
   trailingComma: 'all',
-  semi: false,
+  semi: true,
   overrides: [
     {
       files: '*.astro',

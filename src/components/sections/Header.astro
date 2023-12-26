@@ -1,5 +1,5 @@
 ---
-import SmartHRLogo from '../shared/SmartHRLogo.astro'
+import SmartHRLogo from '../shared/SmartHRLogo.astro';
 ---
 
 <header>
@@ -30,7 +30,7 @@ import SmartHRLogo from '../shared/SmartHRLogo.astro'
 
   .headerNavRepository {
     font-weight: 700;
-    font-family: DINAlternateBold;
+    font-family: DINAlternateBold, sans-serif;
     padding-right: 0.5rem;
   }
 
@@ -41,7 +41,7 @@ import SmartHRLogo from '../shared/SmartHRLogo.astro'
     letter-spacing: -0.06em;
   }
 
-  @media screen and (max-width: 679px) {
+  @media screen and (width <= 679px) {
     .headerNavWrapper {
       font-size: 1.4rem;
     }
@@ -51,7 +51,7 @@ import SmartHRLogo from '../shared/SmartHRLogo.astro'
     }
   }
 
-  @media screen and (max-width: 599px) {
+  @media screen and (width <= 599px) {
     .headerNavWrapper {
       font-size: 0.8rem;
     }

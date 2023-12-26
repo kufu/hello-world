@@ -1,5 +1,5 @@
 ---
-import ContentBox from '../shared/ContentBox.astro'
+import ContentBox from '../shared/ContentBox.astro';
 
 const technologies = [
   {
@@ -195,14 +195,14 @@ const technologies = [
       },
     ],
   },
-] as const
+] as const;
 ---
 
 <ContentBox heading="技術スタック">
   <ul class="GenreList">
     {
       technologies.map((technology) => (
-        <li class={technology.genre === '開発ツール' ? 'wide' : ''}>
+        <li class:list={{ wide: technology.genre === '開発ツール' }}>
           <div class="GenreItem">
             <h3 class="GenreTitle">{technology.genre}</h3>
 
@@ -248,7 +248,7 @@ const technologies = [
       }
     }
 
-    @media screen and (max-width: 679px) {
+    @media screen and (width <= 679px) {
       display: block;
 
       & > li {

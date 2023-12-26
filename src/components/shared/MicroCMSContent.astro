@@ -2,19 +2,20 @@
 import {
   convertMarkdownToHTML,
   fetchContentByType,
-} from '../../services/microcms'
-import type { ContentType } from '../../services/microcms/types'
+} from '../../services/microcms';
+import type { ContentType } from '../../services/microcms/types';
 
 export interface Props {
-  contentType: ContentType
+  contentType: ContentType;
 }
 
-const { contentType } = Astro.props
-const { content } = await fetchContentByType(contentType)
-const parsedContent = await convertMarkdownToHTML(content)
+const { contentType } = Astro.props;
+const { content } = await fetchContentByType(contentType);
+const parsedContent = await convertMarkdownToHTML(content);
 ---
 
 <div class="microcms-content-wrapper">
+  <!-- eslint-disable-next-line astro/no-set-html-directive -->
   <Fragment set:html={parsedContent} />
 </div>
 

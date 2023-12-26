@@ -1,56 +1,56 @@
 ---
-import Layout from '../layouts/Layout.astro'
-import Header from '../components/sections/Header.astro'
-import Introduction from '../components/sections/Introduction.astro'
-import Document from '../components/sections/Document.astro'
-import DevelopmentEnvironment from '../components/sections/DevelopmentEnvironment.astro'
-import Value from '../components/sections/Value.astro'
-import Welfare from '../components/sections/Welfare.astro'
-import TechnologyStack from '../components/sections/TechnologyStack.astro'
-import OrganizationalStructure from '../components/sections/OrganizationalStructure.astro'
-import Links from '../components/sections/Links.astro'
-import Positions from '../components/sections/Positions.astro'
-import Copyright from '../components/sections/Copyright.astro'
-import GitHubLink from '../components/parts/GitHubLink.astro'
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/sections/Header.astro';
+import Introduction from '../components/sections/Introduction.astro';
+import Document from '../components/sections/Document.astro';
+import DevelopmentEnvironment from '../components/sections/DevelopmentEnvironment.astro';
+import Value from '../components/sections/Value.astro';
+import Welfare from '../components/sections/Welfare.astro';
+import TechnologyStack from '../components/sections/TechnologyStack.astro';
+import OrganizationalStructure from '../components/sections/OrganizationalStructure.astro';
+import Links from '../components/sections/Links.astro';
+import Positions from '../components/sections/Positions.astro';
+import Copyright from '../components/sections/Copyright.astro';
+import GitHubLink from '../components/parts/GitHubLink.astro';
 ---
 
 <Layout>
-  <main>
+  <main class="main">
     <Header />
 
-    <section>
+    <section class="section">
       <Introduction />
     </section>
 
-    <section>
+    <section class="section">
       <Document />
     </section>
 
-    <section>
+    <section class="section">
       <DevelopmentEnvironment />
     </section>
 
-    <section>
+    <section class="section">
       <Value />
     </section>
 
-    <section>
+    <section class="section">
       <Welfare />
     </section>
 
-    <section>
+    <section class="section">
       <TechnologyStack />
     </section>
 
-    <section>
+    <section class="section">
       <OrganizationalStructure />
     </section>
 
-    <section>
+    <section class="section">
       <Links />
     </section>
 
-    <section>
+    <section class="section">
       <Positions />
     </section>
 
@@ -60,16 +60,14 @@ import GitHubLink from '../components/parts/GitHubLink.astro'
 </Layout>
 
 <style>
-  main {
+  .main {
     max-width: 640px;
     margin: 0 auto;
     padding: var(--space-l) var(--space-s);
-
-    > section {
-      margin-top: calc(var(--space-s) * 6);
-    }
   }
-
+  .section {
+    margin-top: calc(var(--space-s) * 6);
+  }
   .copyright {
     margin-top: calc(var(--space-s) * 2);
     text-align: center;
