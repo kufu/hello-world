@@ -6,6 +6,7 @@ module.exports = {
   },
   extends: [
     "plugin:astro/all",
+    "prettier",
   ],
   parserOptions: {
     ecmaVersion: 'latest',
@@ -23,6 +24,10 @@ module.exports = {
       rules: {
         'astro/no-set-html-directive': 'off'
       },
+    },
+    {
+      files: ['*.ts'],
+      parser: '@typescript-eslint/parser',
     },
   ],
 }

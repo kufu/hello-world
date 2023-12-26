@@ -1,8 +1,5 @@
 module.exports = {
-  plugins: [require.resolve('prettier-plugin-astro')],
-  singleQuote: true,
-  trailingComma: 'all',
-  semi: true,
+  plugins: ['prettier-plugin-astro'],
   overrides: [
     {
       files: '*.astro',
@@ -11,4 +8,7 @@ module.exports = {
       },
     },
   ],
+  singleQuote: true,
+  trailingComma: 'all',
+  semi: true,
 }
