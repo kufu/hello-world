@@ -202,7 +202,7 @@ const technologies = [
   <ul class="GenreList">
     {
       technologies.map((technology) => (
-        <li class={technology.genre === '開発ツール' ? 'wide' : ''}>
+        <li class:list={{ wide: technology.genre === '開発ツール' }}>
           <div class="GenreItem">
             <h3 class="GenreTitle">{technology.genre}</h3>
 
