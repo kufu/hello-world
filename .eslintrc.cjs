@@ -5,8 +5,8 @@ module.exports = {
     browser: true,
   },
   extends: [
+    "eslint:recommended",
     "plugin:astro/all",
-    "prettier",
   ],
   parserOptions: {
     ecmaVersion: 'latest',
