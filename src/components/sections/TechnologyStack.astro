@@ -1,5 +1,5 @@
 ---
-import ContentBox from '../shared/ContentBox.astro'
+import ContentBox from '../shared/ContentBox.astro';
 
 const technologies = [
   {
@@ -195,7 +195,7 @@ const technologies = [
       },
     ],
   },
-] as const
+] as const;
 ---
 
 <ContentBox heading="技術スタック">
@@ -248,7 +248,7 @@ const technologies = [
       }
     }
 
-    @media screen and (max-width: 679px) {
+    @media screen and (width <= 679px) {
       display: block;
 
       & > li {

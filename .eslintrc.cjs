@@ -9,13 +9,13 @@ module.exports = {
         extraFileExtensions: ['.astro'],
       },
       rules: {
-        'astro/semi': 'off',
+        'astro/no-set-html-directive': 'off',
       },
     },
     {
       files: ['*.cjs'],
       rules: {
-        'astro/semi': 'off',
+        'astro/no-set-html-directive': 'off',
       },
     },
   ],
