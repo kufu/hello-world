@@ -20,7 +20,9 @@
     "autoprefixer": "^10.4.16",
     "microcms-js-sdk": "^2.5.0",
     "postcss-preset-env": "^9.3.0",
-    "remark-html": "^16.0.1"
+    "remark-html": "^16.0.1",
+    "remark-parse": "^11.0.0",
+    "unified": "^11.0.4"
   },
   "devDependencies": {
     "@typescript-eslint/parser": "^6.5.0",
