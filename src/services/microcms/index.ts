@@ -44,6 +44,7 @@ export const convertMarkdownToHTML = async (markdownText: string) => {
   const parsedContent = await unified()
     .use(remarkParse)
     .use(remarkHtml)
-    .parse(markdownText);
+    .process(markdownText);
+
   return parsedContent;
 };
