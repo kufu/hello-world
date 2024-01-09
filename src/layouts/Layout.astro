@@ -1,40 +1,14 @@
-<!doctype html>
+---
+import Head from './Head.astro';
+---
+
 <html lang="ja">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} />
-    <meta
-      name="description"
-      content="株式会社SmartHRのエンジニア採用サイトです。私たちは、誰もが心地よく、健康に、そして幸せに働ける社会を目指し、テクノロジーと創意工夫で、日本の労働を一歩ずつアップデートしています。歴史に残る模範的なソフトウェアを一緒に作りませんか？"
-    />
-    <meta property="og:title" content="SmartHR エンジニア採用" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://hello-world.smarthr.co.jp" />
-    <meta
-      property="og:image"
-      content="https://hello-world.smarthr.co.jp/images/ogp.png"
-    />
-    <meta property="og:site_name" content="Engineer Recruiting | SmartHR" />
-    <meta
-      property="og:description"
-      content="株式会社SmartHRのエンジニア採用サイトです。私たちは、誰もが心地よく、健康に、そして幸せに働ける社会を目指し、テクノロジーと創意工夫で、日本の労働を一歩ずつアップデートしています。歴史に残る模範的なソフトウェアを一緒に作りませんか？"
-    />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="SmartHR エンジニア採用" />
-    <meta name="twitter:site" content="@SmartHR_jp" />
-    <link rel="icon" href="/favicon/favicon.ico" />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="/favicon/apple-touch-icon.png"
-    />
-    <title>SmartHR エンジニア採用</title>
-  </head>
+  <Head />
   <body>
     <slot />
   </body>
 </html>
+
 <style is:global>
   @font-face {
     font-family: DINAlternateBold;

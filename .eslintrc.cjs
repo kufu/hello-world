@@ -1,5 +1,17 @@
 module.exports = {
-  extends: ['plugin:astro/all', 'plugin:prettier/recommended'],
+  env: {
+    node: true,
+    es2024: true,
+    browser: true,
+  },
+  extends: [
+    'eslint:recommended',
+    'plugin:astro/all',
+  ],
+  parserOptions: {
+    ecmaVersion: 'latest',
+    sourceType: 'module',
+  },
   overrides: [
     {
       files: ['*.astro'],
@@ -8,15 +20,14 @@ module.exports = {
         parser: '@typescript-eslint/parser',
         extraFileExtensions: ['.astro'],
       },
+      processor: 'astro/client-side-ts',
       rules: {
-        'astro/no-set-html-directive': 'off',
+        'astro/no-set-html-directive': 'off'
       },
     },
     {
-      files: ['*.cjs'],
-      rules: {
-        'astro/no-set-html-directive': 'off',
-      },
+      files: ['*.ts'],
+      parser: '@typescript-eslint/parser',
     },
   ],
-};
+}

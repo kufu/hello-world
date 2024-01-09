@@ -1,17 +1,17 @@
-import { createClient } from 'microcms-js-sdk'
-import { unified } from 'unified'
-import remarkHtml from 'remark-html'
-import remarkParse from 'remark-parse'
+import { createClient } from 'microcms-js-sdk';
+import { unified } from 'unified';
+import remarkHtml from 'remark-html';
+import remarkParse from 'remark-parse';
 
-import type { ContentResponse, ContentType } from './types'
+import type { ContentResponse, ContentType } from './types';
 
-const SERVICE_DOMAIN = 'smarthr-hello-world'
-const API_ENDPOINT = 'contents'
+const SERVICE_DOMAIN = 'smarthr-hello-world';
+const API_ENDPOINT = 'contents';
 
 const client = createClient({
   serviceDomain: SERVICE_DOMAIN,
   apiKey: import.meta.env.SECRET_MICROCMS_KEY || 'key',
-})
+});
 
 // コンテンツ種別をもとにコンテンツを取得する
 export const fetchContentByType = async (type: ContentType) => {
@@ -28,22 +28,23 @@ export const fetchContentByType = async (type: ContentType) => {
       if (!response.totalCount) {
         throw Error(
           'コンテンツが存在しません。microCMSの管理画面でコンテンツを作成してください',
-        )
+        );
       }
-      return response.contents[0]
-    })
+      return response.contents[0];
+    });
   if (!content)
     throw Error(
       '指定した種別のコンテンツが存在しません。microCMSの管理画面でコンテンツを作成してください',
-    )
-  return content
-}
+    );
+  return content;
+};
 
 // microCMSから取得したマークダウンテキストをhtmlに変換する
 export const convertMarkdownToHTML = async (markdownText: string) => {
   const parsedContent = await unified()
     .use(remarkParse)
     .use(remarkHtml)
-    .process(markdownText)
-  return parsedContent
-}
+    .process(markdownText);
+
+  return parsedContent;
+};
