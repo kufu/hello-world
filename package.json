@@ -24,7 +24,7 @@
     "unified": "^11.0.4"
   },
   "devDependencies": {
-    "@typescript-eslint/parser": "^6.18.0",
+    "@typescript-eslint/parser": "^6.19.0",
     "astro": "^4.1.1",
     "autoprefixer": "^10.4.16",
     "eslint": "^8.56.0",
