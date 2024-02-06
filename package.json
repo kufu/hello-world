@@ -37,7 +37,6 @@
     "prettier": "^3.2.5",
     "prettier-plugin-astro": "^0.13.0",
     "stylelint": "^16.2.1",
-    "stylelint-config-prettier": "^9.0.5",
     "stylelint-config-standard": "^36.0.0",
     "typescript": "^5.3.3"
   }

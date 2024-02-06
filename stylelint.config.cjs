@@ -1,5 +1,5 @@
 module.exports = {
-  extends: ['stylelint-config-standard', 'stylelint-config-prettier'],
+  extends: ['stylelint-config-standard'],
   customSyntax: 'postcss-html',
   rules: {
     'value-keyword-case': null,
