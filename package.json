@@ -18,16 +18,16 @@
     "format:prettier": "prettier --write 'src/**/*.{js,ts}'"
   },
   "dependencies": {
-    "microcms-js-sdk": "^2.5.0",
+    "microcms-js-sdk": "^2.7.0",
     "remark-html": "^16.0.1",
     "remark-parse": "^11.0.0",
     "unified": "^11.0.4"
   },
   "devDependencies": {
-    "@typescript-eslint/parser": "^6.19.0",
+    "@typescript-eslint/parser": "^7.1.0",
     "astro": "^4.1.1",
     "autoprefixer": "^10.4.17",
-    "eslint": "^8.56.0",
+    "eslint": "^8.57.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-astro": "^0.31.4",
     "eslint-plugin-prettier": "^5.1.3",
