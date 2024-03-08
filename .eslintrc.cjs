@@ -12,6 +12,9 @@ module.exports = {
     ecmaVersion: 'latest',
     sourceType: 'module',
   },
+  globals: {
+    dataLayer: false,
+  },
   overrides: [
     {
       files: ['*.astro'],
