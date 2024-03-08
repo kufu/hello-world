@@ -50,6 +50,14 @@
     unist-util-visit "^5.0.0"
     vfile "^6.0.1"
 
+"@astrojs/partytown@^2.0.4":
+  version "2.0.4"
+  resolved "https://registry.yarnpkg.com/@astrojs/partytown/-/partytown-2.0.4.tgz#402ebabf2813f916bd9fb9fb8a85b0cb98133d03"
+  integrity sha512-yC1smFLOBn7CWNAzaigXAr4bSJSgRJYF4g9jDuSR0NbShLd1SVUpRm9QOmOIrfSFGh2YtZEW8gnwvI5SZw+WmA==
+  dependencies:
+    "@builder.io/partytown" "^0.8.0"
+    mrmime "^1.0.1"
+
 "@astrojs/prism@^3.0.0":
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/@astrojs/prism/-/prism-3.0.0.tgz#c9443e4cbf435acf0b5adc2c627d9789991514e7"
@@ -278,6 +286,11 @@
     "@babel/helper-string-parser" "^7.23.4"
     "@babel/helper-validator-identifier" "^7.22.20"
     to-fast-properties "^2.0.0"
+
+"@builder.io/partytown@^0.8.0":
+  version "0.8.2"
+  resolved "https://registry.yarnpkg.com/@builder.io/partytown/-/partytown-0.8.2.tgz#bd3689aac3965d7dc05e56c1bb0ef357fdd1d0b0"
+  integrity sha512-WKGE+SO0qUGirW8J+xOWkHeCkfFEoPPvHnFkcdMl+MY3kDbAcTwjZCzjg27JCvoD0h8fH47FR7DSIss0/S5lyg==
 
 "@csstools/cascade-layer-name-parser@^1.0.5", "@csstools/cascade-layer-name-parser@^1.0.6":
   version "1.0.6"
@@ -3695,6 +3708,11 @@ minimatch@^3.0.4, minimatch@^3.0.5, minimatch@^3.1.1, minimatch@^3.1.2:
   version "7.0.4"
   resolved "https://registry.yarnpkg.com/minipass/-/minipass-7.0.4.tgz#dbce03740f50a4786ba994c1fb908844d27b038c"
   integrity sha512-jYofLM5Dam9279rdkWzqHozUo4ybjdZmCsDHePy5V/PbBcVMiSZR97gmAy45aqi8CK1lG2ECd356FU86avfwUQ==
+
+mrmime@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/mrmime/-/mrmime-1.0.1.tgz#5f90c825fad4bdd41dc914eff5d1a8cfdaf24f27"
+  integrity sha512-hzzEagAgDyoU1Q6yg5uI+AorQgdvMCur3FcKf7NhMKWsaYg+RnbTyHRa/9IlLF9rf455MOCtcqqrQQ83pPP7Uw==
 
 ms@2.0.0:
   version "2.0.0"
