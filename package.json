@@ -9,7 +9,7 @@
     "preview": "astro preview",
     "astro": "astro",
     "lint": "run-p lint:*",
-    "lint:eslint": "eslint 'src/**/*.{js,ts,astro}'",
+    "lint:eslint": "eslint -c ./.eslintrc.cjs 'src/**/*.{ts,astro}'",
     "lint:stylelint": "stylelint 'src/**/*.{js,ts,astro}'",
     "lint:prettier": "prettier --check 'src/**/*.{js,ts}'",
     "format": "run-s format:*",
