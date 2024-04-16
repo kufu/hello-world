@@ -119,6 +119,43 @@ const technologies = [
     ],
   },
   {
+    genre: 'モバイルアプリ',
+    items: [
+      {
+        name: 'Swift',
+        icon: {
+          src: '/images/technology_stack/icons/swift.svg',
+          width: 50,
+          height: 50,
+        },
+      },
+      {
+        name: 'Kotlin',
+        icon: {
+          src: '/images/technology_stack/icons/kotlin.svg',
+          width: 44,
+          height: 44,
+        },
+      },
+      {
+        name: 'Firebase',
+        icon: {
+          src: '/images/technology_stack/icons/firebase.svg',
+          width: 50,
+          height: 50,
+        },
+      },
+      {
+        name: 'Bitrise',
+        icon: {
+          src: '/images/technology_stack/icons/bitrise.svg',
+          width: 50,
+          height: 50,
+        },
+      },
+    ],
+  },
+  {
     genre: '開発ツール',
     items: [
       {
@@ -194,7 +231,7 @@ const technologies = [
   <ul class="GenreList">
     {
       technologies.map((technology) => (
-        <li class:list={{ wide: technology.genre === '開発ツール' }}>
+        <li class:list={{ wide: technology.genre === 'モバイルアプリ' || technology.genre === '開発ツール' }}>
           <div class="GenreItem">
             <h3 class="GenreTitle">{technology.genre}</h3>
 
