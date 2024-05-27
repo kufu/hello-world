@@ -4556,10 +4556,10 @@ prettier-linter-helpers@^1.0.0:
   dependencies:
     fast-diff "^1.1.2"
 
-prettier-plugin-astro@^0.13.0:
-  version "0.13.0"
-  resolved "https://registry.yarnpkg.com/prettier-plugin-astro/-/prettier-plugin-astro-0.13.0.tgz#0e1ff91caae17cad5b9493eb55bbd7114515bc5b"
-  integrity sha512-5HrJNnPmZqTUNoA97zn4gNQv9BgVhv+et03314WpQ9H9N8m2L9OSV798olwmG2YLXPl1iSstlJCR1zB3x5xG4g==
+prettier-plugin-astro@^0.14.0:
+  version "0.14.0"
+  resolved "https://registry.yarnpkg.com/prettier-plugin-astro/-/prettier-plugin-astro-0.14.0.tgz#035bb78b7b8a45b4ab7c5b926f73850af9afffb6"
+  integrity sha512-7jRGJsexaRIyUzTk8uzXlP45cw6DQ5Ci4bTe0xCBCcuO1Fff8jJy9oI+kRCQKSdDFTSAArMSg8GpvzlKBtSaZA==
   dependencies:
     "@astrojs/compiler" "^1.5.5"
     prettier "^3.0.0"
