@@ -8,9 +8,13 @@ import Accordion from '../shared/Accordion.astro';
 <ContentBox heading="開発組織のバリュー">
   <Stack>
     <p>
-      SmartHRは<TextLink href="https://smarthr.co.jp/about/">
-        7つのバリュー
-      </TextLink>を掲げています。その中から3つピックアップして、プロダクト開発の文脈でどのように体現しているかをご紹介します。
+      SmartHRのバリューがプロダクト開発の文脈でどのように体現しているかをご紹介します。
+    </p>
+    <p class="value-outdated-annotation">
+      こちらは公開日時点のバリューに基づく内容です。
+      <br>
+      <TextLink href="https://note.com/smarthr_co/n/n3c1e6f7ea04c">SmartHRのバリューが新しくなりました</TextLink>
+        ので、リニューアルを予定しております！
     </p>
     <Stack>
       <h3>自律駆動</h3>
@@ -147,5 +151,11 @@ import Accordion from '../shared/Accordion.astro';
   .case-list {
     list-style-type: ' ・ ';
     margin-left: var(--space-m);
+  }
+  .value-outdated-annotation {
+    border: solid 1px #00c4cc;
+    border-radius: 6px;
+    background-color: rgba(0, 196, 204, 0.1);
+    padding: 1rem;
   }
 </style>
