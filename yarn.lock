@@ -49,10 +49,10 @@
     unist-util-visit-parents "^6.0.1"
     vfile "^6.0.3"
 
-"@astrojs/partytown@^2.1.1":
-  version "2.1.1"
-  resolved "https://registry.yarnpkg.com/@astrojs/partytown/-/partytown-2.1.1.tgz#5c5270ca75eb692f6fe7ef3f80be41163f170eb7"
-  integrity sha512-KvecQuGGgrDrdTjC5awmtoQXqJFinChfeizKBJyr7F5EGQPx62xq8SIWkcXamLr5xZyNw0lryKeLtIzbxRH/zw==
+"@astrojs/partytown@^2.1.2":
+  version "2.1.2"
+  resolved "https://registry.yarnpkg.com/@astrojs/partytown/-/partytown-2.1.2.tgz#2df6745eb6add076e721ebd7e32c1bcd28063d1f"
+  integrity sha512-1a9T5lqxtnrw0qLPo1KwliUvaaUzPNPtWucD8VxdwT7zqcpODFk1RzGgAgqVo+YhutFrTu/qclbtnOfXBuskjw==
   dependencies:
     "@builder.io/partytown" "^0.10.2"
     mrmime "^2.0.0"
@@ -1358,7 +1358,7 @@ astro-eslint-parser@^1.0.2:
     is-glob "^4.0.3"
     semver "^7.3.8"
 
-astro@^4.11.3:
+astro@^4.11.6:
   version "4.16.3"
   resolved "https://registry.yarnpkg.com/astro/-/astro-4.16.3.tgz#66dfd9130770d4098d2bf8c88488861542554bf0"
   integrity sha512-0IrnbCUprAyfeZ8Au/d/d0ssrYGMAZOZ1K3fX7GxI0OwUhkA9bSex0+ywiyVNiVZE5uRlTKRSkvLNKYQWdtHqw==
