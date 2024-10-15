@@ -27,7 +27,7 @@
   "devDependencies": {
     "@typescript-eslint/parser": "^8.9.0",
     "astro": "^4.11.6",
-    "autoprefixer": "^10.4.18",
+    "autoprefixer": "^10.4.20",
     "eslint": "^8.57.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-astro": "^1.2.4",
