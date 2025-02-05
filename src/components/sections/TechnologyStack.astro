@@ -286,10 +286,9 @@ const technologies = [
       technologies.map((technology) => (
         <li
           class:list={{
-            wide:
-              technology.genre === 'モバイルアプリ' ||
-              technology.genre === '開発ツール' ||
-              technology.genre === 'AI/LLM',
+            wide: /^(モバイルアプリ|開発ツール|AI\/LLM)$/.test(
+              technology.genre,
+            ),
           }}
         >
           <div class="GenreItem">
