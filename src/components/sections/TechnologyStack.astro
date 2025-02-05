@@ -29,6 +29,22 @@ const technologies = [
           height: 50,
         },
       },
+      {
+        name: 'Python',
+        icon: {
+          src: '/images/technology_stack/icons/python.svg',
+          width: 50,
+          height: 50,
+        },
+      },
+      {
+        name: 'FastAPI',
+        icon: {
+          src: '/images/technology_stack/icons/fastapi.svg',
+          width: 50,
+          height: 50,
+        },
+      },
     ],
   },
   {
@@ -156,6 +172,43 @@ const technologies = [
     ],
   },
   {
+    genre: 'AI/LLM',
+    items: [
+      {
+        name: 'Gemini',
+        icon: {
+          src: '/images/technology_stack/icons/gemini.svg',
+          width: 50,
+          height: 50,
+        },
+      },
+      {
+        name: 'Azure OpenAI',
+        icon: {
+          src: '/images/technology_stack/icons/aoai.svg',
+          width: 50,
+          height: 50,
+        },
+      },
+      {
+        name: 'LangFuse',
+        icon: {
+          src: '/images/technology_stack/icons/langfuse.svg',
+          width: 50,
+          height: 50,
+        },
+      },
+      {
+        name: 'Azure AI Search',
+        icon: {
+          src: '/images/technology_stack/icons/azureaisearch.svg',
+          width: 50,
+          height: 50,
+        },
+      },
+    ],
+  },
+  {
     genre: '開発ツール',
     items: [
       {
@@ -231,7 +284,13 @@ const technologies = [
   <ul class="GenreList">
     {
       technologies.map((technology) => (
-        <li class:list={{ wide: technology.genre === 'モバイルアプリ' || technology.genre === '開発ツール' }}>
+        <li
+          class:list={{
+            wide: /^(モバイルアプリ|開発ツール|AI\/LLM)$/.test(
+              technology.genre,
+            ),
+          }}
+        >
           <div class="GenreItem">
             <h3 class="GenreTitle">{technology.genre}</h3>
 
