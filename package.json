@@ -15,7 +15,7 @@
     "format": "run-s format:*",
     "format:eslint": "eslint --fix 'src/**/*.{js,ts,astro}'",
     "format:stylelint": "stylelint --fix 'src/**/*.{js,ts,astro}'",
-    "format:prettier": "prettier --write 'src/**/*.{js,ts}'"
+    "format:prettier": "prettier --write 'src/**/*.{js,ts,astro}'"
   },
   "dependencies": {
     "@astrojs/partytown": "2.1.3",
