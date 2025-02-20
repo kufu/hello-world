@@ -4,45 +4,43 @@ import font from '/fonts/DINAlternate-Bold.woff';
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width" />
-  <meta name="generator" content={Astro.generator} />
+  <meta content="width=device-width" name="viewport" />
+  <meta content={Astro.generator} name="generator" />
   <meta
+    content="株式会社SmartHRのエンジニア採用サイトです。私たちは、誰もが心地よく、健康に、そして幸せに働ける社会を目指し、テクノロジーと創意工夫で、日本の労働を一歩ずつアップデートしています。歴史に残る模範的なソフトウェアを一緒に作りませんか？"
     name="description"
-    content="株式会社SmartHRのエンジニア採用サイトです。私たちは、誰もが心地よく、健康に、そして幸せに働ける社会を目指し、テクノロジーと創意工夫で、日本の労働を一歩ずつアップデートしています。歴史に残る模範的なソフトウェアを一緒に作りませんか？"
   />
-  <meta property="og:title" content="SmartHR エンジニア採用" />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://hello-world.smarthr.co.jp" />
+  <meta content="SmartHR エンジニア採用" property="og:title" />
+  <meta content="website" property="og:type" />
+  <meta content="https://hello-world.smarthr.co.jp" property="og:url" />
   <meta
-    property="og:image"
     content="https://hello-world.smarthr.co.jp/images/ogp.png"
+    property="og:image"
   />
-  <meta property="og:site_name" content="Engineer Recruiting | SmartHR" />
+  <meta content="Engineer Recruiting | SmartHR" property="og:site_name" />
   <meta
-    property="og:description"
     content="株式会社SmartHRのエンジニア採用サイトです。私たちは、誰もが心地よく、健康に、そして幸せに働ける社会を目指し、テクノロジーと創意工夫で、日本の労働を一歩ずつアップデートしています。歴史に残る模範的なソフトウェアを一緒に作りませんか？"
+    property="og:description"
   />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="SmartHR エンジニア採用" />
-  <meta name="twitter:site" content="@SmartHR_jp" />
-  <link rel="icon" href="/favicon/favicon.ico" />
+  <meta content="summary_large_image" name="twitter:card" />
+  <meta content="SmartHR エンジニア採用" name="twitter:title" />
+  <meta content="@SmartHR_jp" name="twitter:site" />
+  <link href="/favicon/favicon.ico" rel="icon" />
+  <link as="font" crossorigin href={font} rel="preload" type="font/woff2" />
   <link
-      rel="preload"
-      as="font"
-      href={font}
-      type="font/woff2"
-      crossorigin
-  />
-  <link
+    href="/favicon/apple-touch-icon.png"
     rel="apple-touch-icon"
     sizes="180x180"
-    href="/favicon/apple-touch-icon.png"
   />
   <title>SmartHR エンジニア採用</title>
-  <script type="text/partytown" src="https://www.googletagmanager.com/gtag/js?id=GTM-PZL8HM7V"></script>
+  <script
+    src="https://www.googletagmanager.com/gtag/js?id=GTM-PZL8HM7V"
+    type="text/partytown"></script>
   <script type="text/partytown">
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+    function gtag() {
+      dataLayer.push(arguments);
+    }
     gtag('js', new Date());
     gtag('config', 'GTM-PZL8HM7V');
   </script>
