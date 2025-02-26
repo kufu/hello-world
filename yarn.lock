@@ -1177,10 +1177,10 @@ astro-eslint-parser@^1.0.2:
     is-glob "^4.0.3"
     semver "^7.3.8"
 
-astro@5.3.0:
-  version "5.3.0"
-  resolved "https://registry.yarnpkg.com/astro/-/astro-5.3.0.tgz#20a2772c019448f6797396f9dbabe72615877842"
-  integrity sha512-e88l/Yk/6enR/ZDddLbqtM+oblBFk5mneNSmNesyVYGL/6Dj4UA67GPAZOk79VxT5dbLlclZSyyw/wlxN1aj3A==
+astro@5.3.1:
+  version "5.3.1"
+  resolved "https://registry.yarnpkg.com/astro/-/astro-5.3.1.tgz#1b3379f99e327c47a2fbf1f77062e04ebc2c05e4"
+  integrity sha512-dfcuWKkGsYI6XH6zhSK4tHGFXRgEbPZZwZQ/VmGtKBnDfFW+3faq6k+ETKlKDeRB4LwDGtaeoH+US4HYC5w1SA==
   dependencies:
     "@astrojs/compiler" "^2.10.3"
     "@astrojs/internal-helpers" "0.5.1"
@@ -1207,7 +1207,6 @@ astro@5.3.0:
     es-module-lexer "^1.6.0"
     esbuild "^0.24.2"
     estree-walker "^3.0.3"
-    fast-glob "^3.3.3"
     flattie "^1.1.1"
     github-slugger "^2.0.0"
     html-escaper "3.0.3"
@@ -1216,17 +1215,18 @@ astro@5.3.0:
     kleur "^4.1.5"
     magic-string "^0.30.17"
     magicast "^0.3.5"
-    micromatch "^4.0.8"
     mrmime "^2.0.0"
     neotraverse "^0.6.18"
     p-limit "^6.2.0"
     p-queue "^8.1.0"
+    picomatch "^4.0.2"
     preferred-pm "^4.1.1"
     prompts "^2.4.2"
     rehype "^13.0.2"
     semver "^7.7.1"
     shiki "^1.29.2"
     tinyexec "^0.3.2"
+    tinyglobby "^0.2.12"
     tsconfck "^3.1.4"
     ultrahtml "^1.5.3"
     unist-util-visit "^5.0.0"
@@ -2230,6 +2230,11 @@ fastq@^1.6.0:
   integrity sha512-7SFSRCNjBQIZH/xZR3iy5iQYR8aGBE0h3VG6/cwlbrpdciNYBMotQav8c1XI3HjHH+NikUpP53nPdlZSdWmFzA==
   dependencies:
     reusify "^1.0.4"
+
+fdir@^6.4.3:
+  version "6.4.3"
+  resolved "https://registry.yarnpkg.com/fdir/-/fdir-6.4.3.tgz#011cdacf837eca9b811c89dbb902df714273db72"
+  integrity sha512-PMXmW2y1hDDfTSRc9gaXIuCCRpuoz3Kaz8cUelp3smouvfT632ozg2vrT6lJsHKKOF59YLbOGfAWGUcKEfRMQw==
 
 file-entry-cache@^10.0.5:
   version "10.0.6"
@@ -5154,6 +5159,14 @@ tinyexec@^0.3.2:
   version "0.3.2"
   resolved "https://registry.yarnpkg.com/tinyexec/-/tinyexec-0.3.2.tgz#941794e657a85e496577995c6eef66f53f42b3d2"
   integrity sha512-KQQR9yN7R5+OSwaK0XQoj22pwHoTlgYqmUscPYoknOoWCWfj/5/ABTMRi69FrKU5ffPVh5QcFikpWJI/P1ocHA==
+
+tinyglobby@^0.2.12:
+  version "0.2.12"
+  resolved "https://registry.yarnpkg.com/tinyglobby/-/tinyglobby-0.2.12.tgz#ac941a42e0c5773bd0b5d08f32de82e74a1a61b5"
+  integrity sha512-qkf4trmKSIiMTs/E63cxH+ojC2unam7rJ0WrauAzpT3ECNTxGRMlaXxVbfxMUC/w0LaYk6jQ4y/nGR9uBO3tww==
+  dependencies:
+    fdir "^6.4.3"
+    picomatch "^4.0.2"
 
 to-regex-range@^5.0.1:
   version "5.0.1"
