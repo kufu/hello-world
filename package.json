@@ -18,7 +18,7 @@
     "format:prettier": "prettier --write 'src/**/*.{js,ts,astro}'"
   },
   "dependencies": {
-    "@astrojs/partytown": "2.1.3",
+    "@astrojs/partytown": "2.1.4",
     "microcms-js-sdk": "^3.1.2",
     "remark-html": "^16.0.1",
     "remark-parse": "^11.0.0",
@@ -26,7 +26,7 @@
   },
   "devDependencies": {
     "@typescript-eslint/parser": "^8.24.1",
-    "astro": "5.4.0",
+    "astro": "5.4.3",
     "autoprefixer": "^10.4.21",
     "eslint": "^8.57.1",
     "eslint-config-prettier": "^9.1.0",
