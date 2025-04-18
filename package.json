@@ -38,7 +38,7 @@
     "postcss-preset-env": "^10.0.8",
     "prettier": "^3.5.1",
     "prettier-plugin-astro": "^0.14.1",
-    "stylelint": "^16.14.1",
+    "stylelint": "^16.18.0",
     "stylelint-config-standard": "^36.0.1",
     "typescript": "^5.7.3"
   }
