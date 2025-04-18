@@ -19,7 +19,7 @@
   },
   "dependencies": {
     "@astrojs/partytown": "2.1.4",
-    "microcms-js-sdk": "^3.1.2",
+    "microcms-js-sdk": "^3.2.0",
     "remark-html": "^16.0.1",
     "remark-parse": "^11.0.0",
     "unified": "^11.0.5"
