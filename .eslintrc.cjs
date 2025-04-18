@@ -4,10 +4,7 @@ module.exports = {
     es2024: true,
     browser: true,
   },
-  extends: [
-    'eslint:recommended',
-    'plugin:astro/all',
-  ],
+  extends: ['eslint:recommended', 'plugin:astro/all'],
   parserOptions: {
     ecmaVersion: 'latest',
     sourceType: 'module',
@@ -25,7 +22,7 @@ module.exports = {
       },
       processor: 'astro/client-side-ts',
       rules: {
-        'astro/no-set-html-directive': 'off'
+        'astro/no-set-html-directive': 'off',
       },
     },
     {
@@ -33,4 +30,4 @@ module.exports = {
       parser: '@typescript-eslint/parser',
     },
   ],
-}
+};
