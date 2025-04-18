@@ -4106,7 +4106,7 @@ postcss-place@^10.0.0:
   dependencies:
     postcss-value-parser "^4.2.0"
 
-postcss-preset-env@^10.0.9:
+postcss-preset-env@^10.1.5:
   version "10.1.5"
   resolved "https://registry.yarnpkg.com/postcss-preset-env/-/postcss-preset-env-10.1.5.tgz#1e12d050a5dbebc4230cc73c0d2e122c30a6a937"
   integrity sha512-LQybafF/K7H+6fAs4SIkgzkSCixJy0/h0gubDIAP3Ihz+IQBRwsjyvBnAZ3JUHD+A/ITaxVRPDxn//a3Qy4pDw==
