@@ -32,6 +32,6 @@ Welcome to...
 ### 起動コマンド
 
 ```
-$ yarn install
-$ yarn dev
+$ pnpm install
+$ pnpm dev
 ```
