@@ -1,0 +1,10 @@
+[build.environment]
+FEATURE_FLAGS = "build-image-disable-node-corepack"
+
+[build]
+command = """
+  corepack disable \
+  && npm i -g pnpm@10.8.1 --force \
+  && pnpm install --frozen-lockfile \
+  && pnpm run build
+"""
