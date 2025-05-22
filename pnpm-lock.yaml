@@ -34,8 +34,8 @@ importers:
         specifier: ^8.32.1
         version: 8.32.1(eslint@9.27.0)(typescript@5.8.3)
       astro:
-        specifier: 5.7.13
-        version: 5.7.13(@types/node@22.15.17)(rollup@4.40.0)(typescript@5.8.3)
+        specifier: 5.7.14
+        version: 5.7.14(@types/node@22.15.17)(rollup@4.40.0)(typescript@5.8.3)
       astro-eslint-parser:
         specifier: ^1.2.2
         version: 1.2.2
@@ -1008,8 +1008,8 @@ packages:
     resolution: {integrity: sha512-JepyLROIad6f44uyqMF6HKE2QbunNzp3mYKRcPoDGt0QkxXmH222FAFC64WTyQu2Kg8NNEXHTN/sWuUId9sSxw==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
-  astro@5.7.13:
-    resolution: {integrity: sha512-cRGq2llKOhV3XMcYwQpfBIUcssN6HEK5CRbcMxAfd9OcFhvWE7KUy50zLioAZVVl3AqgUTJoNTlmZfD2eG0G1w==}
+  astro@5.7.14:
+    resolution: {integrity: sha512-DfuDD49f7mbHB7ygLm8KXEC6QQtpLoNrmoylcMLKdl1ahXNdiw+mgW8ApEMyHTUyVrqEUnr4gZCKSlZ9POCHjQ==}
     engines: {node: ^18.17.1 || ^20.3.0 || >=22.0.0, npm: '>=9.6.5', pnpm: '>=7.1.0'}
     hasBin: true
 
@@ -1534,14 +1534,6 @@ packages:
 
   fastq@1.19.1:
     resolution: {integrity: sha512-GwLTyxkCXjXbxqIhTsMI2Nui8huMPtnxg7krajPJAjnEG/iiOS7i+zCtWGZR9G0NBKbXKh6X9m9UIsYX/N6vvQ==}
-
-  fdir@6.4.3:
-    resolution: {integrity: sha512-PMXmW2y1hDDfTSRc9gaXIuCCRpuoz3Kaz8cUelp3smouvfT632ozg2vrT6lJsHKKOF59YLbOGfAWGUcKEfRMQw==}
-    peerDependencies:
-      picomatch: ^3 || ^4
-    peerDependenciesMeta:
-      picomatch:
-        optional: true
 
   fdir@6.4.4:
     resolution: {integrity: sha512-1NZP+GK4GfuAv3PqKvxQRDMjdSRZjnkq7KfhlNrCNNlZ0ygQFpebfrnfnq/W7fpUnAv9aGWmY1zKx7FYL3gwhg==}
@@ -2902,10 +2894,6 @@ packages:
   tinyexec@0.3.2:
     resolution: {integrity: sha512-KQQR9yN7R5+OSwaK0XQoj22pwHoTlgYqmUscPYoknOoWCWfj/5/ABTMRi69FrKU5ffPVh5QcFikpWJI/P1ocHA==}
 
-  tinyglobby@0.2.12:
-    resolution: {integrity: sha512-qkf4trmKSIiMTs/E63cxH+ojC2unam7rJ0WrauAzpT3ECNTxGRMlaXxVbfxMUC/w0LaYk6jQ4y/nGR9uBO3tww==}
-    engines: {node: '>=12.0.0'}
-
   tinyglobby@0.2.13:
     resolution: {integrity: sha512-mEwzpUgrLySlveBwEVDMKk5B57bhLPYovRfPAXD5gA/98Opn0rCDj3GtLwFvCvH5RK9uPCExUROW5NjDwvqkxw==}
     engines: {node: '>=12.0.0'}
@@ -4097,7 +4085,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  astro@5.7.13(@types/node@22.15.17)(rollup@4.40.0)(typescript@5.8.3):
+  astro@5.7.14(@types/node@22.15.17)(rollup@4.40.0)(typescript@5.8.3):
     dependencies:
       '@astrojs/compiler': 2.11.0
       '@astrojs/internal-helpers': 0.6.1
@@ -4129,6 +4117,7 @@ snapshots:
       github-slugger: 2.0.0
       html-escaper: 3.0.3
       http-cache-semantics: 4.1.1
+      import-meta-resolve: 4.1.0
       js-yaml: 4.1.0
       kleur: 4.1.5
       magic-string: 0.30.17
@@ -4144,7 +4133,7 @@ snapshots:
       semver: 7.7.1
       shiki: 3.2.2
       tinyexec: 0.3.2
-      tinyglobby: 0.2.12
+      tinyglobby: 0.2.13
       tsconfck: 3.1.5(typescript@5.8.3)
       ultrahtml: 1.6.0
       unifont: 0.5.0
@@ -4792,10 +4781,6 @@ snapshots:
   fastq@1.19.1:
     dependencies:
       reusify: 1.1.0
-
-  fdir@6.4.3(picomatch@4.0.2):
-    optionalDependencies:
-      picomatch: 4.0.2
 
   fdir@6.4.4(picomatch@4.0.2):
     optionalDependencies:
@@ -6608,11 +6593,6 @@ snapshots:
   tiny-inflate@1.0.3: {}
 
   tinyexec@0.3.2: {}
-
-  tinyglobby@0.2.12:
-    dependencies:
-      fdir: 6.4.3(picomatch@4.0.2)
-      picomatch: 4.0.2
 
   tinyglobby@0.2.13:
     dependencies:
