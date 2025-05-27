@@ -1,9 +1,6 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": [
-    "github>kufu/renovate-config",
-    "helpers:pinGitHubActionDigests"
-  ],
+  "extends": ["github>kufu/renovate-config", "helpers:pinGitHubActionDigests"],
   "enabledManagers": ["github-actions", "npm"],
   "npm": {
     "rangeStrategy": "bump",
@@ -14,6 +11,6 @@
         "automerge": true
       }
     ],
-    "postUpdateOptions": ["yarnDedupeHighest"]
+    "postUpdateOptions": ["pnpmDedupe"]
   }
 }
