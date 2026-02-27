@@ -25,7 +25,7 @@
     "unified": "^11.0.5"
   },
   "devDependencies": {
-    "@eslint/eslintrc": "^3.3.3",
+    "@eslint/eslintrc": "^3.3.4",
     "@eslint/js": "^9.39.2",
     "@typescript-eslint/parser": "^8.46.0",
     "astro": "5.17.1",
