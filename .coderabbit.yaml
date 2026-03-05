@@ -1,0 +1,165 @@
+# yaml-language-server: $schema=https://coderabbit.ai/integrations/schema.v2.json
+language: ja-JP
+
+reviews:
+  high_level_summary: false
+  review_status: false
+  related_issues: false
+  related_prs: false
+  suggested_labels: false
+  suggested_reviewers: false
+  in_progress_fortune: false
+  poem: false
+
+  auto_review:
+    auto_incremental_review: false
+    ignore_title_keywords:
+      - "WIP"
+      - "Draft"
+    labels:
+      - dependencies
+      - renovate
+
+  path_filters:
+    - "!dist/**"
+    - "!.astro/**"
+
+  path_instructions:
+    - path: "package.json"
+      instructions: |
+        このPRはRenovateによる依存関係の自動更新です。
+        以下の観点でレビューしてください：
+        - メジャーバージョンアップの場合、破壊的変更（Breaking Changes）の有無を指摘してください
+        - セキュリティ修正が含まれる場合は明示してください
+        - peerDependenciesに問題がないか確認してください
+        - Astro本体のアップデートは特に注意（SSGのビルド出力に影響する可能性があります）
+    - path: "pnpm-lock.yaml"
+      instructions: |
+        lockファイルの自動更新です。package.jsonの変更と整合しているか確認してください。
+        lockファイル単体へのレビューコメントは不要です。
+    - path: "**/*.astro"
+      instructions: |
+        - frontmatter（---ブロック）のTypeScriptに型の問題がないか確認してください
+        - 画像にはalt属性が適切に設定されているか確認してください
+        - アクセシビリティ上の問題（見出し順序、aria属性など）がないか確認してください
+    - path: "src/**/*.{ts,tsx}"
+      instructions: |
+        - 型定義が適切か確認してください
+        - `any`の使用は避けるよう指摘してください
+
+  finishing_touches:
+    docstrings:
+      enabled: false
+    unit_tests:
+      enabled: false
+
+  pre_merge_checks:
+    docstrings:
+      mode: 'off'
+    title:
+      mode: 'off'
+    description:
+      mode: 'off'
+    issue_assessment:
+      mode: 'off'
+
+  tools:
+    eslint:
+      enabled: true
+    stylelint:
+      enabled: true
+    markdownlint:
+      enabled: true
+    gitleaks:
+      enabled: true
+    osvScanner:
+      enabled: true
+    ruff:
+      enabled: false
+    biome:
+      enabled: false
+    shellcheck:
+      enabled: false
+    hadolint:
+      enabled: false
+    swiftlint:
+      enabled: false
+    phpstan:
+      enabled: false
+    phpmd:
+      enabled: false
+    phpcs:
+      enabled: false
+    golangci-lint:
+      enabled: false
+    detekt:
+      enabled: false
+    flake8:
+      enabled: false
+    fortitudeLint:
+      enabled: false
+    buf:
+      enabled: false
+    regal:
+      enabled: false
+    pmd:
+      enabled: false
+    clang:
+      enabled: false
+    cppcheck:
+      enabled: false
+    clippy:
+      enabled: false
+    prismaLint:
+      enabled: false
+    pylint:
+      enabled: false
+    oxc:
+      enabled: false
+    shopifyThemeCheck:
+      enabled: false
+    luacheck:
+      enabled: false
+    checkmake:
+      enabled: false
+    checkov:
+      enabled: false
+    tflint:
+      enabled: false
+    rubocop:
+      enabled: false
+    brakeman:
+      enabled: false
+    dotenvLint:
+      enabled: false
+    blinter:
+      enabled: false
+    psscriptanalyzer:
+      enabled: false
+
+chat:
+  art: false
+  auto_reply: false
+  integrations:
+    jira:
+      usage: disabled
+    linear:
+      usage: disabled
+
+knowledge_base:
+  web_search:
+    enabled: true
+  learnings:
+    scope: local
+  issues:
+    scope: local
+  jira:
+    usage: disabled
+  linear:
+    usage: disabled
+  pull_requests:
+    scope: local
+
+code_generation:
+  docstrings:
+    language: ja-JP
