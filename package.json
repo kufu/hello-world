@@ -29,7 +29,7 @@
     "@eslint/js": "^9.39.4",
     "@typescript-eslint/parser": "^8.46.0",
     "astro": "5.17.3",
-    "astro-eslint-parser": "^1.2.2",
+    "astro-eslint-parser": "^1.4.0",
     "autoprefixer": "^10.4.21",
     "eslint": "^9.39.4",
     "eslint-config-prettier": "^10.1.8",
