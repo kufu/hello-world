@@ -18,7 +18,7 @@
     "format:prettier": "prettier --write 'src/**/*.{js,ts,astro}'"
   },
   "dependencies": {
-    "@astrojs/partytown": "2.1.4",
+    "@astrojs/partytown": "2.1.5",
     "microcms-js-sdk": "^3.3.0",
     "remark-html": "^16.0.1",
     "remark-parse": "^11.0.0",
