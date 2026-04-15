@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@astrojs/partytown':
-        specifier: 2.1.5
-        version: 2.1.5
+        specifier: 2.1.6
+        version: 2.1.6
       microcms-js-sdk:
         specifier: ^3.3.0
         version: 3.3.0
@@ -96,8 +96,8 @@ packages:
   '@astrojs/markdown-remark@6.3.10':
     resolution: {integrity: sha512-kk4HeYR6AcnzC4QV8iSlOfh+N8TZ3MEStxPyenyCtemqn8IpEATBFMTJcfrNW32dgpt6MY3oCkMM/Tv3/I4G3A==}
 
-  '@astrojs/partytown@2.1.5':
-    resolution: {integrity: sha512-Uo2Uqmvjh/5w08wGoVAspdj14hUoE28uQH8SkzaBMw9bTBNIviEkPi3VkJi+tj1ZYAY9oX7OSkRDJ48QRtMhlw==}
+  '@astrojs/partytown@2.1.6':
+    resolution: {integrity: sha512-pS95OSnPkSmuOHzwLXCea8p4P8bqmA2fm3BUBW6/egzSTaWYte/Gp1jiAoPmCZ6FV7jGx4GHduO2CUltUXc3Og==}
 
   '@astrojs/prism@3.3.0':
     resolution: {integrity: sha512-q8VwfU/fDZNoDOf+r7jUnMC2//H2l0TuQ6FkGJL8vD8nw/q5KiL3DS1KKBI3QhI9UQhpJ5dc7AtqfbXWuOgLCQ==}
@@ -3545,7 +3545,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@astrojs/partytown@2.1.5':
+  '@astrojs/partytown@2.1.6':
     dependencies:
       '@qwik.dev/partytown': 0.11.2
       mrmime: 2.0.1
