@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@astrojs/partytown':
-        specifier: 2.1.6
-        version: 2.1.6
+        specifier: 2.1.7
+        version: 2.1.7
       microcms-js-sdk:
         specifier: ^3.3.0
         version: 3.3.0
@@ -96,8 +96,8 @@ packages:
   '@astrojs/markdown-remark@6.3.11':
     resolution: {integrity: sha512-hcaxX/5aC6lQgHeGh1i+aauvSwIT6cfyFjKWvExYSxUhZZBBdvCliOtu06gbQyhbe0pGJNoNmqNlQZ5zYUuIyQ==}
 
-  '@astrojs/partytown@2.1.6':
-    resolution: {integrity: sha512-pS95OSnPkSmuOHzwLXCea8p4P8bqmA2fm3BUBW6/egzSTaWYte/Gp1jiAoPmCZ6FV7jGx4GHduO2CUltUXc3Og==}
+  '@astrojs/partytown@2.1.7':
+    resolution: {integrity: sha512-dbffmNmJ+sAJ0/aXSaLX4aI04EZS/2C6Mm/+fmd4ikqWO7hV6nIi0sug8Z3c+yqedJNi1swFvpwluWmGjLHNzw==}
 
   '@astrojs/prism@3.3.0':
     resolution: {integrity: sha512-q8VwfU/fDZNoDOf+r7jUnMC2//H2l0TuQ6FkGJL8vD8nw/q5KiL3DS1KKBI3QhI9UQhpJ5dc7AtqfbXWuOgLCQ==}
@@ -1001,8 +1001,8 @@ packages:
     resolution: {integrity: sha512-QNqXyfVS2wm9hweSYD2O7F0G06uurj9kZ96TRQE5Y9hU7+tgdZwIkbAKc5Ocy1HxEY2kuDQa6cQ1WRs/O5LFKA==}
     engines: {node: ^12.20.0 || ^14.18.0 || >=16.0.0}
 
-  '@qwik.dev/partytown@0.11.2':
-    resolution: {integrity: sha512-795y49CqBiKiwKAD+QBZlzlqEK275hVcazZ7wBPSfgC23L+vWuA7PJmMpgxojOucZHzYi5rAAQ+IP1I3BKVZxw==}
+  '@qwik.dev/partytown@0.13.2':
+    resolution: {integrity: sha512-Umls4bSkuzqLVcGvf8OgwIn/OldproSAbaQ/iYGe8VPYBpl2CaOSxabWwkeC72LDFqxVL0b0q8XlI8MuChDyzg==}
     engines: {node: '>=18.0.0'}
     hasBin: true
 
@@ -3551,9 +3551,9 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@astrojs/partytown@2.1.6':
+  '@astrojs/partytown@2.1.7':
     dependencies:
-      '@qwik.dev/partytown': 0.11.2
+      '@qwik.dev/partytown': 0.13.2
       mrmime: 2.0.1
 
   '@astrojs/prism@3.3.0':
@@ -4263,7 +4263,7 @@ snapshots:
 
   '@pkgr/core@0.2.9': {}
 
-  '@qwik.dev/partytown@0.11.2':
+  '@qwik.dev/partytown@0.13.2':
     dependencies:
       dotenv: 16.5.0
 
