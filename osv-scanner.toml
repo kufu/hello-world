@@ -1,0 +1,7 @@
+# osv-scanner.toml
+# CodeRabbitがOSV-Scannerを実行するために必要なファイルです。
+# 特定の脆弱性を無視したい場合は以下のように追記します：
+#
+# [[IgnoredVulns]]
+# id = "GHSA-xxxx-xxxx-xxxx"
+# reason = "このプロジェクトには影響しないため"
