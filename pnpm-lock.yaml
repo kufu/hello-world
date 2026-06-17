@@ -37,8 +37,8 @@ importers:
         specifier: ^8.61.1
         version: 8.61.1(eslint@9.39.4)(typescript@6.0.3)
       astro:
-        specifier: 6.4.5
-        version: 6.4.5(@types/node@24.10.1)(rollup@4.61.1)(yaml@2.9.0)
+        specifier: 6.4.6
+        version: 6.4.6(@types/node@24.10.1)(rollup@4.61.1)(yaml@2.9.0)
       astro-eslint-parser:
         specifier: ^1.4.0
         version: 1.4.0
@@ -1292,8 +1292,8 @@ packages:
     resolution: {integrity: sha512-+QDcgc7e+au6EZ0YjMmRRjNoQo5bDMlaR45aWDoFsuxQTCM9qmCHRoiKJPELgckJ8Wmr7vcfpa9eCDHBFh6G4w==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
-  astro@6.4.5:
-    resolution: {integrity: sha512-0R7WLD1+WD/mTPcZxyKtcF0CztQi9ahFRtGM7oChJhxjNbr4lSBenxi+mk91k5bPTaUEoZ6edg1fDo2qP8bCwg==}
+  astro@6.4.6:
+    resolution: {integrity: sha512-48OBTBKR9ctbf+DQxpOuxGl8ebfn59zTuNQMBzptmG/Mi/H8IdfMSbJgGuX1I/4U6g9yazG1p4BHlf4+2hWU4Q==}
     engines: {node: '>=22.12.0', npm: '>=9.6.5', pnpm: '>=7.1.0'}
     hasBin: true
 
@@ -4751,7 +4751,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  astro@6.4.5(@types/node@24.10.1)(rollup@4.61.1)(yaml@2.9.0):
+  astro@6.4.6(@types/node@24.10.1)(rollup@4.61.1)(yaml@2.9.0):
     dependencies:
       '@astrojs/compiler': 4.0.0
       '@astrojs/internal-helpers': 0.10.0
