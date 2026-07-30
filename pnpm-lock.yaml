@@ -43,7 +43,7 @@ importers:
         specifier: ^1.4.0
         version: 1.4.0
       autoprefixer:
-        specifier: ^10.5.3
+        specifier: ^10.5.4
         version: 10.5.4(postcss@8.5.15)
       eslint:
         specifier: ^9.39.4
