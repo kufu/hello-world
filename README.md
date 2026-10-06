@@ -1,6 +1,6 @@
 > [!IMPORTANT]
 > SmartHRの採用サイトのリニューアルに伴い、このリポジトリはアーカイブしています。  
-> 最新の採用情報は、[採用サイト](https://recruit.smarthr.co.jp/)をご覧ください。
+> 最新の採用情報は、[採用サイト](https://recruit.smarthr.co.jp/engineer/)をご覧ください。
 
 <pre align="center">
 Welcome to...
