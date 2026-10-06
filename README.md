@@ -1,3 +1,7 @@
+> [!IMPORTANT]
+> SmartHRの採用サイトのリニューアルに伴い、このリポジトリはアーカイブしています。  
+> 最新の採用情報は、[採用サイト](https://recruit.smarthr.co.jp/engineer/)をご覧ください。
+
 <pre align="center">
 Welcome to...
 
@@ -11,12 +15,6 @@ Welcome to...
 ░  ░  ░  ░      ░     ░   ▒     ░░   ░   ░       ░  ░░ ░  ░░   ░
       ░         ░         ░  ░   ░               ░  ░  ░   ░     
 </pre>
-
-<div align="center">
-  <img src="https://img.shields.io/badge/hiring-open-brightgreen">
-  <img src="https://img.shields.io/badge/members-113-blue">
-  <img src="https://img.shields.io/badge/location-Roppongi-00ac9b">
-</div>
 
 ## Setup
 
